@@ -1,0 +1,149 @@
+            /*字号
+标题文字：fz-title;
+一级导航标题文字：fz-nav;
+常规文字：fz-rule;
+辅助文字：fz-assist;
+*/
+            
+            .fz-title {
+                font-size: 16px;
+            }
+            
+            .fz-nav {
+                font-size: 15px;
+            }
+            
+            .fz-rule {
+                font-size: 14px;
+            }
+            
+            .fz-assist {
+                font-size: 12px;
+            }
+            /*============================================================================*/
+            /*文字颜色
+标题、常规文字： cl-title cl-rule;
+辅助文字：cl-assist;
+强调文字：cl-stress;
+操作文字：cl-operate;
+错误文字：cl-error;
+*/
+            
+            .cl-title,
+            .cl-rulec {
+                color: #434a54
+            }
+            
+            .cl-assist {
+                color: #aab2bd
+            }
+            
+            .cl-stress {
+                color: #f27838
+            }
+            
+            .cl-operate {
+                color: #10ac86
+            }
+            
+            .cl-error {
+                color: #f85043
+            }
+            /*头部导航*/
+            
+            nav {
+                background: #e6e9ed;
+            }
+            
+            #Ndiv a:hover {
+                color: #10ac86;
+            }
+            
+            #Ndiv {
+                width: 1210px;
+                height: 30px;
+                margin: 0 auto;
+            }
+            
+            #Ndiv ul {
+                display: block;
+                float: right;
+                line-height: 30px;
+            }
+            
+            #Ndiv li {
+                display: block;
+                float: left;
+                font-size: 14px;
+                margin-left: 15px;
+            }
+            /*搜索*/
+            
+            #search {
+                width: 1210px;
+                height: 100px;
+                margin: 0 auto;
+            }
+            
+            #search div {
+                float: left;
+            }
+            
+            form * {
+                float: left;
+            }
+            
+            .ClickHover {
+                background: #06c27a;
+            }
+            
+            #search input[type="text"] {
+                width: 500px;
+                height: 34px;
+                border: 2px solid #10ac86;
+                margin-top: 30px;
+                font-size: 16px;
+                outline: 0;
+                padding: 6px;
+                line-height: 24px;
+                color: #aab2bd;
+            }
+            
+            .seaBids {
+                outline: 0;
+                width: 90px;
+                height: 50px;
+                margin-top: 30px;
+                font-size: 16px;
+                border: 0;
+                color: white;
+                background: #10ac86;
+            }
+            
+            .bidsPust {
+                outline: 0;
+                width: 120px;
+                height: 50px;
+                margin-top: 30px;
+                font-size: 16px;
+                border: 0;
+                color: white;
+                background: #10ac86;
+                line-height: 50px;
+                text-align: center;
+            }
+            
+            .spanMaybe {
+                color: #aab2bd;
+                font-size: 20px;
+                margin-top: 40px;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            
+            #logo a {
+                display: block;
+                width: 200px;
+                height: 200px;
+                background: url("../imgs/logo.png") no-repeat scroll 0 20px/100px;
+            }
