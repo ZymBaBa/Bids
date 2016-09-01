@@ -31,23 +31,26 @@
             
             .cl-title,
             .cl-rulec {
-                color: #434a54
+                color: #434a54;
             }
             
             .cl-assist {
-                color: #aab2bd
+                color: #aab2bd;
             }
             
             .cl-stress {
-                color: #f27838
+                color: #f27838;
+                font-weight: bold;
             }
             
             .cl-operate {
-                color: #10ac86
+                color: #10ac86;
+                font-weight: bold;
             }
             
             .cl-error {
-                color: #f85043
+                color: #f85043;
+                font-weight: bold;
             }
             /*头部导航*/
             
@@ -77,6 +80,14 @@
                 font-size: 14px;
                 margin-left: 15px;
             }
+            /*分割线样式*/
+            
+            hr {
+                float: left;
+                width: 100%;
+                border: 1px dashed #10ac86;
+                z-index: 1;
+            }
             /*搜索*/
             
             #search {
@@ -104,7 +115,7 @@
                 border: 2px solid #10ac86;
                 border-right: none;
                 margin-top: 22px;
-                font-size: 18px;
+                font-size: 16px;
                 outline: 0;
                 padding: 6px;
                 line-height: 24px;
@@ -150,8 +161,8 @@
             #logo a {
                 display: block;
                 width: 200px;
-                height: 200px;
-                background: url("../imgs/logo.png") no-repeat scroll 0 20px/100px;
+                height: 100px;
+                background: url("../images/logo.png") no-repeat scroll 0 20px/100px;
             }
             /*热门搜索*/
             
@@ -159,6 +170,8 @@
                 width: 600px;
                 height: auto;
                 margin-top: 5px;
+                margin-left: 50px;
+                ;
             }
             
             #hot-search span,
@@ -173,8 +186,186 @@
                 font-size: 16px;
             }
             
-            #hot-search li>a {
+            #hot-search li a {
                 margin-right: 20px;
                 color: #10ac86;
+                font-size: 14px;
+            }
+            
+            #f-search {
+                margin-left: 50px;
+            }
+            /*内容导航*/
+            
+            #cpNav {
+                height: 44px;
+                background-color: #10ac86;
+                margin-top: 16px;
+                box-shadow: 0 1px 1px #06c27a;
+            }
+            
+            #navCenter {
+                width: 1210px;
+                margin: 0 auto;
+            }
+            
+            #navCenter ul {
+                display: block;
+                margin-left: 30px;
+            }
+            
+            #navCenter li a {
+                display: block;
+                float: left;
+                line-height: 45px;
+                margin-right: 65px;
+                color: #fff;
                 font-size: 16px;
+            }
+            /*重要通知*/
+            
+            #cpMessage {
+                width: 1210px;
+                margin: 0 auto;
+                height: auto;
+                margin-top: 5px;
+            }
+            
+            #cpMessage div {
+                float: left;
+            }
+            
+            #messageTitle {
+                width: 100px;
+                height: 45px;
+                text-align: center;
+                line-height: 45px;
+                background: #f27838;
+                color: #fff;
+                font-weight: bold;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                -moz-border-top-left-radius: 5px;
+                -moz-border-bottom-left-radius: 5px;
+                -webkit-border-top-left-radius: 5px;
+                -webkit-border-bottom-left-radius: 5px;
+                font-size: 14px;
+            }
+            
+            #messageList {
+                width: 1085px;
+                height: 43px;
+                border: 1px solid #f27838;
+                border-left: none;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                -moz-border-top-right-radius: 5px;
+                -moz-border-bottom-right-radius: 5px;
+                -webkit-border-top-right-radius: 5px;
+                -webkit-border-bottom-right-radius: 5px;
+            }
+            
+            #messageList li {
+                float: left;
+                list-style: square !important;
+                margin-left: 40px;
+                line-height: 45px;
+                color: #f27838;
+            }
+            
+            #messageList a {
+                color: #f27838;
+                font-size: 14px;
+            }
+            /*广告、通知、规则*/
+            
+            #Banner {
+                width: 1210px;
+                margin: 0 auto;
+                height: auto;
+                margin-top: 3px;
+            }
+            
+            #Banner div {
+                float: left;
+            }
+            /*            广告模块*/
+            
+            #bigBanner {
+                width: 850px;
+                height: 390px;
+            }
+            /*            大广告*/
+            
+            #bigB {
+                border: 1px solid #646464;
+                width: 834px;
+                height: 250px;
+            }
+            /*            小广告*/
+            
+            #smallB {
+                width: 850px;
+                height: 130px;
+                margin-top: 10px;
+            }
+            
+            #smallB a {
+                display: block;
+                float: left;
+                width: 130px;
+                height: 130px;
+                border: 1px solid #10ac86;
+                margin-right: 9px;
+            }
+            
+            #messageBanner {
+                width: 320px;
+                height: auto;
+            }
+            
+            #messageBanner div {
+                float: left;
+            }
+            /*            通知公告,招标需知*/
+            
+            #mbTitle,
+            #mbLaws {
+                border: 1px solid #10ac86;
+                width: 320px;
+                height: 190px;
+                margin-left: 10px;
+                margin-top: 10PX;
+                z-index: 100;
+            }
+            /*            通知公告文字*/
+            
+            .mbSpan {
+                display: block;
+                float: left;
+                margin: 5px 5px 5px 10px;
+                font-size: 14px;
+                width: 260px;
+            }
+            /*            更多*/
+            
+            .mbImg {
+                display: block;
+                float: right;
+                text-align: right;
+                margin-top: 5px;
+                width: 32px;
+                height: 32px;
+                background: url("../images/more0.png") no-repeat scroll 0 0/24px;
+            }
+            
+            #mbTitle ul，#mbLaws ul {
+                display: block;
+                float: left;
+                margin-top: 5px;
+            }
+            
+            #mbTitle li,
+            #mbLaws li {
+                margin-top: 3px;
             }
