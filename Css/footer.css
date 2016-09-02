@@ -1,15 +1,14 @@
 footer {
     background: #ececec;
     height: 150px;
+    width: 100%;
     position: relative;
     margin-top: 1200px;
 }
 
 #divFoot {
-    display: block;
-    margin: 0 auto;
     width: 1210px;
+    margin: 0 auto;
     height: auto;
-    text-align: center;
-    position: absolute;
+    margin-top: 3px;
 }

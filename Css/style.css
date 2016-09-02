@@ -42,264 +42,24 @@
     color: #aab2bd;
 }
 
+.cl-hover {
+    color: #06c27a;
+    font-weight: 500;
+}
+
 .cl-stress {
     color: #f27838;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .cl-operate {
     color: #10ac86;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .cl-error {
     color: #f85043;
-    font-weight: bold;
-}
-
-
-/*头部导航*/
-
-nav {
-    background: #e6e9ed;
-}
-
-#Ndiv a:hover {
-    color: #10ac86;
-}
-
-#Ndiv {
-    width: 1210px;
-    height: 30px;
-    margin: 0 auto;
-}
-
-#Ndiv ul {
-    display: block;
-    float: right;
-    line-height: 30px;
-}
-
-#Ndiv li {
-    display: block;
-    float: left;
-    font-size: 14px;
-    margin-left: 15px;
-}
-
-
-/*分割线样式*/
-
-hr {
-    float: left;
-    width: 100%;
-    border: 1px dashed #10ac86;
-    z-index: 1;
-}
-
-
-/*搜索*/
-
-#search {
-    width: 1210px;
-    height: 100px;
-    margin: 0 auto;
-}
-
-#search div {
-    float: left;
-}
-
-form * {
-    float: left;
-}
-
-.ClickHover {
-    background: #06c27a;
-}
-
-
-/*            搜索框*/
-
-#search input[type="text"] {
-    width: 500px;
-    height: 34px;
-    border: 2px solid #10ac86;
-    border-right: none;
-    margin-top: 22px;
-    font-size: 16px;
-    outline: 0;
-    padding: 6px;
-    line-height: 24px;
-    color: #aab2bd;
-}
-
-
-/*            搜索按钮*/
-
-.seaBids {
-    outline: 0;
-    width: 90px;
-    height: 50px;
-    margin-top: 22px;
-    font-size: 16px;
-    border: 0;
-    color: white;
-    background: #10ac86;
-    border: none;
-}
-
-
-/*            免费发布招标*/
-
-.bidsPust {
-    outline: 0;
-    width: 120px;
-    height: 50px;
-    margin-top: 22px;
-    font-size: 16px;
-    border: 0;
-    color: white;
-    background: #10ac86;
-    line-height: 50px;
-    text-align: center;
-}
-
-
-/*            或者*/
-
-.spanMaybe {
-    color: #aab2bd;
-    font-size: 20px;
-    margin-top: 32px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-#logo a {
-    display: block;
-    width: 200px;
-    height: 100px;
-    background: url("../images/logo.png") no-repeat scroll 0 20px/100px;
-}
-
-
-/*热门搜索*/
-
-#hot-search {
-    width: 600px;
-    height: auto;
-    margin-top: 5px;
-    margin-left: 50px;
-    ;
-}
-
-#hot-search span,
-#hot-search li {
-    display: block;
-    float: left;
-}
-
-#hot-search span {
-    margin-right: 20px;
-    color: #f27838;
-    font-size: 16px;
-}
-
-#hot-search li a {
-    margin-right: 20px;
-    color: #10ac86;
-    font-size: 14px;
-}
-
-#f-search {
-    margin-left: 50px;
-}
-
-
-/*内容导航*/
-
-#cpNav {
-    height: 44px;
-    background-color: #10ac86;
-    margin-top: 16px;
-    box-shadow: 0 1px 1px #06c27a;
-}
-
-#navCenter {
-    width: 1210px;
-    margin: 0 auto;
-}
-
-#navCenter ul {
-    display: block;
-    margin-left: 30px;
-}
-
-#navCenter li a {
-    display: block;
-    float: left;
-    line-height: 45px;
-    margin-right: 65px;
-    color: #fff;
-    font-size: 16px;
-}
-
-
-/*重要通知*/
-
-#cpMessage {
-    width: 1210px;
-    margin: 0 auto;
-    height: auto;
-    margin-top: 5px;
-}
-
-#cpMessage div {
-    float: left;
-}
-
-#messageTitle {
-    width: 100px;
-    height: 45px;
-    text-align: center;
-    line-height: 45px;
-    background: #f27838;
-    color: #fff;
-    font-weight: bold;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    -moz-border-top-left-radius: 5px;
-    -moz-border-bottom-left-radius: 5px;
-    -webkit-border-top-left-radius: 5px;
-    -webkit-border-bottom-left-radius: 5px;
-    font-size: 14px;
-}
-
-#messageList {
-    width: 1085px;
-    height: 43px;
-    border: 1px solid #f27838;
-    border-left: none;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    -moz-border-top-right-radius: 5px;
-    -moz-border-bottom-right-radius: 5px;
-    -webkit-border-top-right-radius: 5px;
-    -webkit-border-bottom-right-radius: 5px;
-}
-
-#messageList li {
-    float: left;
-    list-style: square !important;
-    margin-left: 40px;
-    line-height: 45px;
-    color: #f27838;
-}
-
-#messageList a {
-    color: #f27838;
-    font-size: 14px;
+    font-weight: 600;
 }
 
 
@@ -367,9 +127,8 @@ form * {
 #mbTitle,
 #mbLaws {
     border: 1px solid #10ac86;
-    width: 320px;
+    width: 360px;
     height: 190px;
-    margin-left: 10px;
     margin-top: 10PX;
     z-index: 100;
 }
@@ -414,24 +173,10 @@ form * {
 /*物资采购-左边列表*/
 
 #MaterialPurchasing {
-    width: 1210px;
+    width: 1220px;
     margin: 0 auto;
     height: auto;
     margin-top: 465px;
-}
-
-#mpTitle img {
-    float: left;
-    margin-right: 5px;
-    margin-top: 7px;
-}
-
-#mpTitle h2 {
-    font-size: 20px;
-    color: #333;
-    font-family: "microsoft yahei";
-    font-weight: 400;
-    margin-bottom: 2px;
 }
 
 #mpSort,
@@ -487,11 +232,218 @@ form * {
 /*            物资采购-最新发布*/
 
 #mpContent {
-    width: 840px;
-    border: 1px solid #10ac86;
+    width: 870px;
+    border: 1px solid rgba(16, 172, 134, 0.8);
 }
 
 #mpcList {
+    height: auto;
     position: absolute;
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+#mpcList li {
+    display: block;
+    float: left;
+    width: 390px;
+    padding-right: 20px;
+    border-bottom: 1px solid #e6e9ed;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+#mpcList li:last-child,
+#mpcList li:nth-last-child(2) {
+    border-bottom: none;
+}
+
+#mpcList li a {
+    float: left;
+    width: 410px;
+}
+
+
+/*工程项目-左边列表*/
+
+#project {
+    width: 1230px;
+    margin: 0 auto;
+    height: auto;
+    margin-top: 475px;
+}
+
+.pjTitle img {
+    float: left;
+    margin-right: 5px;
+    margin-top: 7px;
+    margin-right: 12px;
+}
+
+.pjTitle h2 {
+    font-size: 20px;
+    color: #333;
+    font-family: "microsoft yahei";
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.pjTitle a {
+    display: block;
+    width: 200px;
+}
+
+#pjSort,
+#pjContent {
+    float: left;
+    height: 280px;
+    position: relative;
+}
+
+#pjSort {
+    width: 330px;
+    margin-right: 10px;
+    border-top: 2px solid #10ac86;
+}
+
+#pjSortTop {
+    float: left;
+    height: 100px;
+    width: 330px;
+    background: rgba(135, 213, 194, 0.3);
+    overflow: hidden;
+}
+
+#pjSortTop li {
+    display: block;
+    margin-left: 8px;
+    float: left;
+    text-align: center;
+    padding: 8px;
+}
+
+#pjSortDown {
+    float: left;
+    height: 180px;
+    width: 330px;
+    background: rgba(245, 245, 245, 0.6);
+    overflow: hidden;
+}
+
+#pjSortDown li {
+    display: block;
+    margin-left: 6px;
+    float: left;
+    text-align: center;
+    padding: 6px;
+}
+
+#pjSortDown ul {
+    margin-top: 5px;
+}
+
+
+/*            工程项目-最新发布*/
+
+#pjContent {
+    width: 870px;
+    border: 1px solid rgba(16, 172, 134, 0.8);
+}
+
+#pjcList {
+    height: auto;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+#pjcList li {
+    display: block;
+    float: left;
+    width: 390px;
+    padding-right: 20px;
+    border-bottom: 1px solid #e6e9ed;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+#pjcList li:last-child,
+#pjcList li:nth-last-child(2) {
+    border-bottom: none;
+}
+
+#pjcList li a {
+    float: left;
+    width: 390px;
+}
+
+
+/* 延期公告*/
+
+#delay {
+    width: 1210px;
+    margin: 0 auto;
+    height: auto;
+    margin-top: 300px;
+    position: relative;
+}
+
+.pjTitle hr {
+    width: 1210px;
+    border: 1px solid #10ac86;
+    opacity: 0.4;
+}
+
+.dlContent ul {
+    margin-top: 10px;
+}
+
+.dlContent ul li {
+    /*    width: 1150px;*/
+    border-bottom: 1px dashed #10ac86;
+    padding-left: 10px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-right: -10px;
+    height: 20px;
+}
+
+.dlContent ul li:last-child {
+    border-bottom: none;
+}
+
+.dlContent ul li a {
+    display: block;
+    width: 585px;
+    margin-right: 15px;
+    float: left;
+}
+
+.dlContent ul li span {
+    margin-right: 5px;
+}
+
+.dlContent {
+    height: auto;
+}
+
+
+/*中标公告*/
+
+#bid {
+    width: 1210px;
+    margin: 0 auto;
+    height: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.bidContent ul li a {
+    width: 500px;
+}
+
+.bidContet ul li span {
+    float: left;
 }

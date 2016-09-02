@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        #div1 {
+            display: block;
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        
+        .div2 {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1"></div>
+    <span class="div2">点我</span>
+</body>
+<script>
+    var classDiv = document.getElementsByClassName('div2');
+
+    function classWidth() {
+        var classDiv1 = document.getElementById('div1');
+        classDiv1.style.background = "bull";
+        classDiv1.style.width = '500px';
+        classDiv1.style.height = '500px';
+    }
+    classDiv.onclick = classWidth;
+</script>
+
+</html>
