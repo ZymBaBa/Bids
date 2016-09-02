@@ -9,7 +9,11 @@
 /*头部导航*/
 
 nav {
-    background: #e6e9ed;
+    background: #000;
+}
+
+#Ndiv a {
+    color: #fff;
 }
 
 #Ndiv a:hover {
@@ -50,8 +54,13 @@ hr {
 
 #search {
     width: 1210px;
-    height: 100px;
+    height: 150px;
     margin: 0 auto;
+    padding-top: 20px;
+}
+
+.articleNav {
+    background: #ececec;
 }
 
 #search div {
@@ -97,6 +106,14 @@ form * {
     border: none;
 }
 
+.seaBids:hover {
+    background: #06c27a;
+}
+
+.seaBids:active {
+    background: #10ac86;
+}
+
 
 /*            免费发布招标*/
 
@@ -111,6 +128,14 @@ form * {
     background: #10ac86;
     line-height: 50px;
     text-align: center;
+}
+
+.bidsPust:hover {
+    background: #06c27a;
+}
+
+.bidsPust:active {
+    background: #10ac86;
 }
 
 
@@ -139,7 +164,6 @@ form * {
     height: auto;
     margin-top: 5px;
     margin-left: 50px;
-    ;
 }
 
 #hot-search span,
@@ -170,7 +194,7 @@ form * {
 #cpNav {
     height: 44px;
     background-color: #10ac86;
-    margin-top: 16px;
+    /*    margin-top: 16px;*/
     box-shadow: 0 1px 1px #06c27a;
 }
 

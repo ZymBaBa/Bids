@@ -1,0 +1,45 @@
+#bidsPust {
+    width: 1220px;
+    margin: 0 auto;
+    height: auto;
+    margin-top: 10px;
+}
+
+.bpTitle hr {
+    border-top: 1px solid #10ac86;
+    border-bottom: 1px solid #06c27a;
+}
+
+.bpTitle a {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 5px;
+    color: #10ac86;
+    font-weight: 500;
+}
+
+.formStyle {
+    display: block;
+    width: 1220px;
+    height: 800px;
+    border: 1px solid #10ac86;
+}
+
+.basicBids,
+.bidsInfo,
+.bidsTime,
+.footBids {
+    width: 1220px;
+}
+
+.basicBids div {
+    width: 1220px;
+}
+
+.spanTitle {
+    font-size: 14px;
+    display: block;
+    padding: 5px;
+    margin-left: 5px;
+}
