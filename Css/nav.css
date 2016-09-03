@@ -5,6 +5,10 @@
 *重要通知
 */
 
+body {
+    min-width: 1440px;
+}
+
 
 /*头部导航*/
 
@@ -67,7 +71,7 @@ hr {
     float: left;
 }
 
-form * {
+#f-search form * {
     float: left;
 }
 
@@ -75,10 +79,14 @@ form * {
     background: #06c27a;
 }
 
+#inputBids:focus {
+    border-right: none;
+}
+
 
 /*            搜索框*/
 
-#search input[type="text"] {
+#inputBids {
     width: 500px;
     height: 34px;
     border: 2px solid #10ac86;
@@ -153,7 +161,7 @@ form * {
     display: block;
     width: 200px;
     height: 100px;
-    background: url("../images/logo.png") no-repeat scroll 0 20px/100px;
+    background: url("../images/logo.png") no-repeat scroll 0 20px/160px;
 }
 
 
@@ -215,6 +223,12 @@ form * {
     margin-right: 65px;
     color: #fff;
     font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#navCenter li a:hover {
+    background: #06c27a;
 }
 
 

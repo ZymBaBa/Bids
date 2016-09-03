@@ -7,8 +7,18 @@
     <link rel="stylesheet" href="Css/cube.css" />
     <link rel="stylesheet" href="Css/nav.css" />
     <link rel="stylesheet" href="Css/bidsPust.css" />
+    <link rel="stylesheet" href="Css/footer.css" />
     <script src="Js/jquery-3.1.0.js"></script>
     <script src="Js/style.js"></script>
+<!--
+    <script>
+    window.onload = function () {
+        $("#scBids").click(function () {
+            $("#scBids").click();
+        });
+    }
+</script>
+-->
 </head>
 
 <body>
@@ -67,7 +77,7 @@
     <article id="cpNav">
         <div id="navCenter">
             <ul>
-                <li><a href="#">首页</a></li>
+                <li><a href="index.html">首页</a></li>
                 <li><a href="#">物资采购</a></li>
                 <li><a href="#">工程项目</a></li>
                 <li><a href="#">延期公告</a></li>
@@ -94,34 +104,101 @@
             <div class="bpTitle"><a href="#">免费发布招标信息</a>
                 <hr/>
             </div>
-            <div class="bpContent">
-                <form action="post" class="formStyle">
-                    <div class="basicBids">
-                        <div>
-                            <span class="spanTitle">招标类型</span>
+            <form action="post" class="formStyle">
+                <div class="basicBids">
+                    <p class="pTitle">招标类型</p>
+                    <br/>
+                    <div class="bidsTip">
+                        <div id="scBids" class="showCard showCard-foucs">
+                            <div class="scBids"></div>
+                            <p class="pFoucs">物资采购</p>
                         </div>
-                        <div>
-                            <span>111</span>
-                            <span>222</span>
-                        </div>
-                    </div>
-                    <div class="basicBids">
-                        <div>
-                            <span class="spanTitle">招标方式</span>
-                        </div>
-                        <div>
-
+                        <div id="pjBids" class="showCard">
+                            <div class="pjBids pjBidsFoucs"></div>
+                            <p class="pFoucsD">工程项目</p>
                         </div>
                     </div>
-                    <div class="bidsInfo"><span class="spanTitle">招标信息</span></div>
-                    <div class="bidsTime"><span class="spanTitle">招标时间</span></div>
-                    <div class="footBids">
-                        <input type="submit" value="提交">
+                    <hr/>
+                </div>
+                <div class="classIfy">
+                    <div>
+                        <span id="ciList"></span><span class="pTitle">分类选择</span>
                     </div>
-                </form>
-            </div>
+                    <div>
+                        111111
+                    </div>
+                </div>
+                <!--
+                <div class="bidsInfo"><span class="spanTitle">招标信息</span></div>
+<div class="bidsTime"><span class="spanTitle">招标时间</span></div>
+<div class="footBids">
+    <input type="submit" value="提交">
+</div>
+-->
+            </form>
         </div>
     </article>
+    <footer>
+        <div class="divFoot">
+            <div class="footLogo">
+                <img src="./images/logo.png" alt="圣龙马招标">
+                <p>圣龙马，专注于中小企业招标</p>
+            </div>
+            <div class="footContent">
+                <dl>
+                    <dt>网站导航</dt>
+                    <dd><a href="#">物资采购</a></dd>
+                    <dd><a href="#">工程项目</a></dd>
+                    <dd><a href="#">延期公告</a></dd>
+                    <dd><a href="#">中标公告</a></dd>
+                </dl>
+                <dl>
+                    <dt>招标法规则</dt>
+                    <dd><a href="#">用户协议</a></dd>
+                    <dd><a href="#">用户协议</a></dd>
+                    <dd><a href="#">保险法规</a></dd>
+                    <dd><a href="#">履约协议</a></dd>
+                </dl>
+                <dl>
+                    <dt>其他</dt>
+                    <dd><a href="#">关于我们</a></dd>
+                    <dd><a href="#">使用指南</a></dd>
+                    <dd><a href="#">加入我们</a></dd>
+                    <dd><a href="#">联系我们</a></dd>
+                </dl>
+            </div>
+            <div class="serve">
+                <p>服务热线：<strong>0573-88787878</strong></p>
+                <img src="./images/Qcode.png" alt="#">
+            </div>
+        </div>
+        <div class="copyRight">
+            Copyright &#169; 2013-2016
+            <strong><a href="https://www.slm168.com">slm168.com</a></strong> All Rights Reversed. 浙ICP备11018032号-8 浙公网安备11010802020210
+        </div>
+    </footer>
+    <script>
+        $(function () {
+            $("#scBids").click(function () {
+                $("#pjBids").removeClass("showCard-foucs");
+                $("#pjBids>div").addClass("pjBidsFoucs");
+                $("#pjBids>p").removeClass("pFoucs");
+                $("#scBids").addClass("showCard-foucs");
+                $("#scBids>div").removeClass("scBidsFoucs");
+                $("#scBids>p").removeClass("pFoucsD");
+                $("#ciList").html("物资采购");
+            });
+            $("#pjBids").click(function () {
+                $("#pjBids").addClass("showCard-foucs");
+                $("#pjBids>div").removeClass("pjBidsFoucs");
+                $("#pjBids>p").removeClass("pFoucsD");
+                $("#scBids").removeClass("showCard-foucs");
+                $("#scBids>div").addClass("scBidsFoucs");
+                $("#scBids>p").addClass("pFoucsD");
+                $("#ciList").html("工程项目");
+            })
+        })
+    </script>
 </body>
 
 </html>
