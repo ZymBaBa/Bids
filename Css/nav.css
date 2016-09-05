@@ -46,12 +46,16 @@ nav {
 
 /*分割线样式*/
 
+/*
 hr {
     float: left;
     width: 100%;
-    border: 1px dashed #10ac86;
+    border: 1px solid RGB(230, 233, 237, 0.5);
     z-index: 1;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
+*/
 
 
 /*搜索*/
@@ -88,14 +92,13 @@ hr {
 
 #inputBids {
     width: 500px;
-    height: 34px;
+    height: 50px;
     border: 2px solid #10ac86;
     border-right: none;
     margin-top: 22px;
     font-size: 16px;
     outline: 0;
     padding: 6px;
-    line-height: 24px;
     color: #aab2bd;
 }
 
@@ -136,14 +139,17 @@ hr {
     background: #10ac86;
     line-height: 50px;
     text-align: center;
+    color: #fff;
 }
 
 .bidsPust:hover {
     background: #06c27a;
+    color: #fff;
 }
 
 .bidsPust:active {
     background: #10ac86;
+    color: #fff;
 }
 
 
@@ -264,7 +270,7 @@ hr {
 
 #messageList {
     width: 1085px;
-    height: 43px;
+    height: 45px;
     border: 1px solid #f27838;
     border-left: none;
     border-top-right-radius: 5px;

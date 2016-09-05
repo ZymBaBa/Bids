@@ -4,24 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <style type="text/css">
-        div {
-            display: block;
-            float: left;
-        }
-        
-        #div3 {
-            float: none;
-        }
-    </style>
+    <link rel="stylesheet" href="Css/bootstrap.css">
+    <link rel="stylesheet" href="Css/bootstrap-datetimepicker.css">
 </head>
 
 <body>
-    <div>1</div>
-    <div>2</div>
-    <br/>
-    <div id="div3">3</div>
-</body>
 
+    <div class="control-group">
+        <label class="control-label">报名结束时间</label>
+        <div class="controls input-append date form_datetime" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy" data-link-field="dtp_input1">
+            <input size="16" type="text" value="" readonly>
+            <span class="add-on"><i class="icon-remove"></i></span>
+            <span class="add-on"><i class="icon-th"></i></span>
+        </div>
+        <input type="hidden" id="dtp_input1" value="" />
+        <br/>
+    </div>
+    <div class="control-group">
+        <label class="control-label">交标书结束时间</label>
+        <div class="controls input-append date form_datetime" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy" data-link-field="dtp_input1">
+            <input size="16" type="text" value="" readonly>
+            <span class="add-on"><i class="icon-remove"></i></span>
+            <span class="add-on"><i class="icon-th"></i></span>
+        </div>
+        <input type="hidden" id="dtp_input1" value="" />
+        <br/>
+    </div>
+    <div class="control-group">
+        <label class="control-label">竞价开始时间</label>
+        <div class="controls input-append date form_datetime" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii" data-link-field="dtp_input1">
+            <input size="16" type="text" value="" readonly>
+            <span class="add-on"><i class="icon-remove"></i></span>
+            <span class="add-on"><i class="icon-th"></i></span>
+        </div>
+        <input type="hidden" id="dtp_input1" value="" />
+        <br/>
+    </div>
+</body>
+<script src="Js/jquery-3.1.0.js"></script>
+<script src="Js/bootstrap.js"></script>
+<script src="Js/bootstrap-datetimepicker.js"></script>
+<script src="Js/bootstrap-datetimepicker.fr.js"></script>
+<script type="text/javascript">
+    $('.form_datetime').datetimepicker({
+        //language:  'fr',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
+    });
+    $('.form_date').datetimepicker({
+        language: 'fr',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
+    $('.form_time').datetimepicker({
+        language: 'fr',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 1,
+        minView: 0,
+        maxView: 1,
+        forceParse: 0
+    });
+</script>
 
 </html>

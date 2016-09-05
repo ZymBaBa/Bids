@@ -5,11 +5,6 @@
     margin-top: 10px;
 }
 
-.bpTitle hr {
-    border-top: 1px solid #10ac86;
-    border-bottom: 1px solid #06c27a;
-}
-
 .bpTitle a {
     display: block;
     font-size: 16px;
@@ -20,22 +15,31 @@
 }
 
 .formStyle {
-    display: block;
-    width: 1220px;
-    height: 800px;
+    width: 1250px;
+    height: auto;
     border: 1px solid #10ac86;
+    border-top: 2px solid #10ac86;
+    float: left;
+}
+
+.formStyle hr {
+    width: 1200px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    float: left;
+    margin-left: 10px;
 }
 
 .basicBids {
     width: 1220px;
-    height: 150px;
+    height: auto;
+    float: left;
 }
 
 .pTitle {
     font-size: 14px;
-    padding: 5px;
-    margin-left: 5px;
-    margin-top: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .showCard {
@@ -108,17 +112,38 @@
     color: #aab2bd;
 }
 
-.basicBids hr {
-    margin-top: 20px;
+.bidsTip {
+    margin-left: 30px;
+    margin-top: 15px;
 }
 
-.bidsTip {
+.bidsTip textarea {
+    width: 800px;
+    height: 300px;
+}
+
+.form-group {
+    margin-top: 10px;
     margin-left: 30px;
 }
 
+.bidsConter {
+    position: relative;
+    height: 1400px;
+}
 
-/**/
+.bpTitle a img {
+    margin-top: 5px;
+}
 
-.classIfy {
+.btn {
+    width: 100px;
+    height: 35px;
+    margin-left: 500px;
+    padding-bottom: 20px;
+}
+
+.successBtu {
     margin-top: 20px;
+    padding-bottom: 20px;
 }

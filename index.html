@@ -6,13 +6,17 @@
     <title>圣龙马(slm1688.com)-综合招标网</title>
     <meta name="keywords" content="圣龙马，招标网,物资采购,工程项目">
     <meta name="description" content="圣龙刀招标网致力于中小企业采购招标！">
-    <link rel="stylesheet" href="Css/cube.css" />
+    <!--    <link rel="stylesheet" href="Css/cube.css" />-->
+    <link rel="stylesheet" href="Css/bootstrap.css">
+    <link rel="stylesheet" href="Css/hemaStyle.css">
+    <link rel="stylesheet" href="Css/bigBanner.min.css">
     <link rel="stylesheet" href="Css/nav.css" />
     <link rel="stylesheet" href="Css/style.css" />
     <link rel="stylesheet" href="Css/bigBanner.css" />
     <link rel="stylesheet" href="Css/footer.css" />
     <script src="Js/jquery-3.1.0.js"></script>
     <script src="Js/style.js"></script>
+    <script src="Js/bootstrap.js"></script>
 </head>
 
 <body>
@@ -71,7 +75,7 @@
     <article id="cpNav">
         <div id="navCenter">
             <ul>
-                <li><a href="#">首页</a></li>
+                <li><a href="index.html">首页</a></li>
                 <li><a href="#">物资采购</a></li>
                 <li><a href="#">工程项目</a></li>
                 <li><a href="#">延期公告</a></li>
@@ -168,7 +172,7 @@
             </div>
         </div>
         <div id="messageBanner">
-            <div id="mbTitle">
+            <div class="mbTitle">
                 <span class="mbSpan">通知公告</span>
                 <a href="#" class="mbImg"></a>
                 <hr/>
@@ -184,7 +188,7 @@
                     <li><a href="#"><span class="cl-error">【警告】</span>招标恶意违约公司通知</a></li>
                 </ul>
             </div>
-            <div id="mbLaws">
+            <div class="mbTitle">
                 <span class="mbSpan">招标&#167;投标需知</span>
                 <a href="#" class="mbImg"></a>
                 <hr/>
@@ -212,13 +216,15 @@
     <!--    物资采购-->
     <article id="MaterialPurchasing">
         <div class="pjTitle">
-            <a href="#"><img src="./images/procure.png" alt="物资采购">
-                <h2>物资采购</h2></a>
+            <a href="#">
+                <img src="./images/procure.png" alt="物资采购" />
+                <h2>物资采购</h2>
+            </a>
         </div>
         <!--        物资采购导航连接-->
         <div id="mpSort">
             <!--           二级类目-->
-            <div id="mpSortTop">
+            <div class="mpSortTop">
                 <ul>
                     <li><a href="#">教育产品</a></li>
                     <li><a href="#">体育器材</a></li>
@@ -239,7 +245,7 @@
                 </ul>
             </div>
             <!--            三级类目-->
-            <div id="mpSortDown">
+            <div class="mpSortDown">
                 <ul>
                     <li><a href="#">电子白板</a></li>
                     <li><a href="#">多媒体</a></li>
@@ -281,119 +287,83 @@
             <span class="mbSpan">最新招标</span>
             <a href="#" class="mbImg"></a>
             <hr/>
-            <div id="mpcList">
+            <div class="mpcList">
                 <ul>
-                    <li>
-                        <a href="#">潍坊市长松路和玉清街绿地养护招标公告 <span class="cl-hover fz-rule">（综合招标）</span></a>
-                        <a href="#" class="cl-hover">
-                            <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
+                    <li class="cl-hover">
+                        <a href="#">潍坊市长松路和玉清街绿地养护招标公告 <span class="cl-hover fz-rule">（综合招标）</span>
+                        <p>
+                           <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
                             <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
                             <span>保证金：</span><span>2</span><span>万</span>
+                        </p>
                         </a>
                     </li>
                     <li>
-                        <a href="#">潍坊市救助管理站消防配套设施建设工程招标公告 <span class="cl-hover fz-rule">（竞价招标）</span></a>
-                        <a href="#" class="cl-hover">
-                            <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
+                        <a href="#">潍坊市救助管理站消防配套设施建设工程招标公告 <span class="cl-hover fz-rule">（竞价招标）</span><p>
+                              <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
                             <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
                             <span>保证金：</span><span>2</span><span>万</span>
-                        </a>
+                        </p></a>
                     </li>
                     <li>
-                        <a href="#">广饶县大王镇吕庄村巷道硬化施工 <span class="cl-hover fz-rule">（竞价招标）</span></a>
-                        <a href="#" class="cl-hover">
-                            <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
+                        <a href="#">广饶县大王镇吕庄村巷道硬化施工 <span class="cl-hover fz-rule">（竞价招标）</span><p><span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
                             <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span>
-                        </a>
+                            <span>保证金：</span><span>2</span><span>万</span></p></a>
                     </li>
                     <li>
-                        <a href="#">广饶县气象局新址业务用房建设项目施工及监理 <span class="cl-hover fz-rule">（竞价招标）</span></a>
-                        <a href="#" class="cl-hover">
-                            <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
+                        <a href="#">广饶县气象局新址业务用房建设项目施工及监理 <span class="cl-hover fz-rule">（竞价招标）</span><p>   <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
                             <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span>
-                        </a>
+                            <span>保证金：</span><span>2</span><span>万</span></p></a>
                     </li>
                     <li>
-                        <a href="#">峄城区榴园镇肖庄南道路工程招标公告 <span class="cl-hover fz-rule">（竞价招标）</span></a>
-                        <a href="#" class="cl-hover">
-                            <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
+                        <a href="#">峄城区榴园镇肖庄南道路工程招标公告 <span class="cl-hover fz-rule">（竞价招标）</span><p> <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
                             <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span>
-                        </a>
+                            <span>保证金：</span><span>2</span><span>万</span></p></a>
                     </li>
                     <li>
-                        <a href="#">潍坊市长松路和玉清街绿地养护招标公告 <span class="cl-hover fz-rule">（综合招标）</span></a>
-                        <a href="#" class="cl-hover">
-                            <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
+                        <a href="#">潍坊市长松路和玉清街绿地养护招标公告 <span class="cl-hover fz-rule">（综合招标）</span><p><span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
                             <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span>
-                        </a>
+                            <span>保证金：</span><span>2</span><span>万</span></p></a>
                     </li>
                     <li>
-                        <a href="#">潍坊市救助管理站消防配套设施建设工程招标公告 <span class="cl-hover fz-rule">（竞价招标）</span></a>
-                        <a href="#" class="cl-hover">
-                            <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
+                        <a href="#">潍坊市救助管理站消防配套设施建设工程招标公告 <span class="cl-hover fz-rule">（竞价招标）</span><p><span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
                             <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span>
-                        </a>
+                            <span>保证金：</span><span>2</span><span>万</span></p></a>
                     </li>
                     <li>
-                        <a href="#">广饶县大王镇吕庄村巷道硬化施工 <span class="cl-hover fz-rule">（竞价招标）</span></a>
-                        <a href="#" class="cl-hover">
-                            <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
+                        <a href="#">广饶县大王镇吕庄村巷道硬化施工 <span class="cl-hover fz-rule">（竞价招标）</span><p><span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
                             <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span>
-                        </a>
+                            <span>保证金：</span><span>2</span><span>万</span></p></a>
                     </li>
                     <li>
-                        <a href="#">广饶县气象局新址业务用房建设项目施工及监理 <span class="cl-hover fz-rule">（竞价招标）</span></a>
-                        <a href="#" class="cl-hover">
-                            <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
+                        <a href="#">广饶县气象局新址业务用房建设项目施工及监理 <span class="cl-hover fz-rule">（竞价招标）</span><p><span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
                             <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span>
-                        </a>
+                            <span>保证金：</span><span>2</span><span>万</span></p></a>
                     </li>
                     <li>
-                        <a href="#">峄城区榴园镇肖庄南道路工程招标公告 <span class="cl-hover fz-rule">（竞价招标）</span></a>
-                        <a href="#" class="cl-hover">
-                            <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
+                        <a href="#">峄城区榴园镇肖庄南道路工程招标公告 <span class="cl-hover fz-rule">（竞价招标）</span><p> <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
                             <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span>
-                        </a>
+                            <span>保证金：</span><span>2</span><span>万</span></p></a>
                     </li>
                     <li>
-                        <a href="#">潍坊市长松路和玉清街绿地养护招标公告 <span class="cl-hover fz-rule">（综合招标）</span></a>
-                        <a href="#" class="cl-hover">
-                            <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
+                        <a href="#">潍坊市长松路和玉清街绿地养护招标公告 <span class="cl-hover fz-rule">（综合招标）</span><p> <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
                             <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span>
-                        </a>
+                            <span>保证金：</span><span>2</span><span>万</span></p></a>
                     </li>
                     <li>
-                        <a href="#">潍坊市救助管理站消防配套设施建设工程招标公告 <span class="cl-hover fz-rule">（竞价招标）</span></a>
-                        <a href="#" class="cl-hover">
-                            <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
+                        <a href="#">潍坊市救助管理站消防配套设施建设工程招标公告 <span class="cl-hover fz-rule">（竞价招标）</span><p>  <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
                             <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span>
-                        </a>
+                            <span>保证金：</span><span>2</span><span>万</span></p></a>
                     </li>
                     <li>
-                        <a href="#">潍坊市长松路和玉清街绿地养护招标公告 <span class="cl-hover fz-rule">（综合招标）</span></a>
-                        <a href="#" class="cl-hover">
-                            <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
+                        <a href="#">潍坊市长松路和玉清街绿地养护招标公告 <span class="cl-hover fz-rule">（综合招标）</span><p> <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
                             <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span>
-                        </a>
+                            <span>保证金：</span><span>2</span><span>万</span></p></a>
                     </li>
                     <li>
-                        <a href="#">潍坊市救助管理站消防配套设施建设工程招标公告 <span class="cl-hover fz-rule">（竞价招标）</span></a>
-                        <a href="#" class="cl-hover">
-                            <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
+                        <a href="#">潍坊市救助管理站消防配套设施建设工程招标公告 <span class="cl-hover fz-rule">（竞价招标）</span><p>   <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
                             <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span>
-                        </a>
+                            <span>保证金：</span><span>2</span><span>万</span></p></a>
                     </li>
                 </ul>
             </div>
@@ -409,7 +379,7 @@
         <!--        工程项目导航连接-->
         <div id="pjSort">
             <!--           二级类目-->
-            <div id="pjSortTop">
+            <div class="pjSortTop">
                 <ul>
                     <li><a href="#">教育产品</a></li>
                     <li><a href="#">体育器材</a></li>
@@ -422,7 +392,7 @@
                 </ul>
             </div>
             <!--            三级类目-->
-            <div id="pjSortDown">
+            <div class="pjSortDown">
                 <ul>
                     <li><a href="#">电子白板</a></li>
                     <li><a href="#">多媒体</a></li>
@@ -450,7 +420,7 @@
             <span class="mbSpan">最新招标</span>
             <a href="#" class="mbImg"></a>
             <hr/>
-            <div id="pjcList">
+            <div class="pjcList">
                 <ul>
                     <li>
                         <a href="#">潍坊市长松路和玉清街绿地养护招标公告 </a>
@@ -717,7 +687,7 @@
         </div>
         <div class="copyRight">
             Copyright &#169; 2013-2016
-            <strong><a href="https://www.slm168.com">slm168.com</a></strong> All Rights Reversed. 浙ICP备11018032号-8 浙公网安备11010802020210
+            <a href="https://www.slm168.com">slm168.com</a> All Rights Reversed. 浙ICP备11018032号-8 浙公网安备11010802020210
         </div>
     </footer>
 </body>
