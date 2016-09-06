@@ -7,6 +7,10 @@
 
 body {
     min-width: 1440px;
+    height: auto;
+    /*        padding-bottom: 50px;*/
+    /*    display: block;*/
+    /*    position: absolute;*/
 }
 
 
@@ -45,6 +49,7 @@ nav {
 
 
 /*分割线样式*/
+
 
 /*
 hr {
@@ -163,11 +168,11 @@ hr {
     margin-right: 30px;
 }
 
-#logo a {
+.logo a {
     display: block;
-    width: 200px;
+    width: 160px;
     height: 100px;
-    background: url("../images/logo.png") no-repeat scroll 0 20px/160px;
+    background: url("../images/logo.png") no-repeat scroll 0 20px/152px;
 }
 
 
@@ -244,11 +249,13 @@ hr {
     width: 1210px;
     margin: 0 auto;
     height: auto;
-    margin-top: 5px;
+    display: block;
+    margin-top: 10px;
 }
 
 #cpMessage div {
     float: left;
+    display: block;
 }
 
 #messageTitle {

@@ -4,18 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <title>圣龙马(slm1688.com)-综合招标网</title>
+    <!--    核心CSS-->
     <link rel="stylesheet" href="Css/bootstrap.css">
     <link rel="stylesheet" href="Css/hemaStyle.css">
     <link rel="stylesheet" href="Css/nav.css">
-    <link rel="stylesheet" href="Css/bidsPust.css">
     <link rel="stylesheet" href="Css/footer.css">
+    <!--    bidsPust页面CSS-->
+    <link rel="stylesheet" href="Css/bidsPust.css">
     <link rel="stylesheet" href="Css/bootstrap-select.css">
     <link rel="stylesheet" href="Css/bootstrap-datetimepicker.css">
+    <!--    核心JS-->
     <script src="Js/jquery-3.1.0.js"></script>
     <script src="Js/bootstrap.js"></script>
+    <!--    bidsPust页面JS-->
     <script src="Js/bootstrap-select.js"></script>
     <script src="Js/style.js"></script>
-
 </head>
 
 <body>
@@ -49,10 +52,7 @@
             <div id="f-search">
                 <form>
                     <input type="text" value="请输入你要查找的标底名称" id="inputBids">
-                    <input type="submit" value="搜索" class="seaBids">
-                    <span class="spanMaybe">或者</span>
-                    <a href="bidsPust.html" class="bidsPust" rel="next">免费发布招标</a>
-                </form>
+                    <input type="submit" value="搜索" class="seaBids"> <span class="spanMaybe">或者</span> <a href="bidsPust.html" class="bidsPust" rel="next">免费发布招标</a> </form>
             </div>
             <div id="hot-search">
                 <ul>
@@ -103,8 +103,7 @@
                 <div class="basicBids">
                     <p class="pTitle">标底名称</p>
                     <div class="col-lg-6 bidsTip">
-                        <input type="text" class="form-control" placeholder="请输入标底名称">
-                    </div>
+                        <input type="text" class="form-control" placeholder="请输入标底名称"> </div>
                 </div>
                 <hr>
                 <div class="basicBids">
@@ -136,8 +135,7 @@
                 </div>
                 <hr>
                 <div class="basicBids">
-                    <p class="pTitle"><span id="ciList">物资采购</span>
-                        <span>招标分类</span></p>
+                    <p class="pTitle"><span id="ciList">物资采购</span> <span>招标分类</span></p>
                     <div class="form-group">
                         <div class="col-lg-4 col-md-4 col-xs-4">
                             <select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
@@ -149,7 +147,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-xs-4">
                             <select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
-                                <option data-subtext="无保险品类">电子白板</option>
+                                <option>电子白板</option>
                                 <option>多媒体</option>
                                 <option>图书</option>
                                 <option>电脑椅</option>
@@ -165,33 +163,21 @@
                         <div class="control-group col-lg-3 col-md-4 col-sm-4 col-xs-12">
                             <label class="control-label">报名结束时间</label>
                             <div class="controls input-append date form_datetime" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy" data-link-field="dtp_input1">
-                                <input size="16" type="text" value="" readonly>
-                                <span class="add-on"><i class="icon-remove"></i></span>
-                                <span class="add-on"><i class="icon-th"></i></span>
-                            </div>
+                                <input size="16" type="text" value="" readonly> <span class="add-on"><i class="icon-remove"></i></span> <span class="add-on"><i class="icon-th"></i></span> </div>
                             <input type="hidden" id="dtp_input1" value="" />
-                            <br/>
-                        </div>
+                            <br/> </div>
                         <div class="control-group col-lg-3 col-md-4 col-sm-4 col-xs-12">
                             <label class="control-label">交标书结束时间</label>
                             <div class="controls input-append date form_datetime" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy" data-link-field="dtp_input1">
-                                <input size="16" type="text" value="" readonly>
-                                <span class="add-on"><i class="icon-remove"></i></span>
-                                <span class="add-on"><i class="icon-th"></i></span>
-                            </div>
+                                <input size="16" type="text" value="" readonly> <span class="add-on"><i class="icon-remove"></i></span> <span class="add-on"><i class="icon-th"></i></span> </div>
                             <input type="hidden" id="dtp_input1" value="" />
-                            <br/>
-                        </div>
+                            <br/> </div>
                         <div class="control-group col-lg-3 col-md-4 col-sm-4 col-xs-12">
                             <label class="control-label">竞价开始时间</label>
                             <div class="controls input-append date form_datetime" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii" data-link-field="dtp_input1">
-                                <input size="16" type="text" value="" readonly>
-                                <span class="add-on"><i class="icon-remove"></i></span>
-                                <span class="add-on"><i class="icon-th"></i></span>
-                            </div>
+                                <input size="16" type="text" value="" readonly> <span class="add-on"><i class="icon-remove"></i></span> <span class="add-on"><i class="icon-th"></i></span> </div>
                             <input type="hidden" id="dtp_input1" value="" />
-                            <br/>
-                        </div>
+                            <br/> </div>
                     </div>
                 </div>
                 <hr>
@@ -228,9 +214,9 @@
                 <div class="basicBids">
                     <p class="pTitle">上传标底</p>
                     <div class="col-lg-8 col-md-8 col-xs-8 bidsTip">
-                        <input type="file">
-                    </div>
+                        <input type="file"> </div>
                 </div>
+                <!--                标底只有一个，其他辅助文件一个（相应的说明可以上传那些文件类型：如果有多个文件的时候能打包上传-->
                 <hr>
                 <div class="successBtu">
                     <button type="button" class="btn btn-success">提交</button>
@@ -240,27 +226,23 @@
     </article>
     <footer>
         <div class="divFoot">
-            <div class="footLogo">
-                <img src="./images/logo.png" alt="圣龙马招标">
+            <div class="footLogo"> <img src="./images/logo.png" alt="圣龙马招标">
                 <p>圣龙马，服务于中小企业！</p>
             </div>
             <div class="footContent">
-                <dl>
-                    <dt>网站导航</dt>
+                <dl> <dt>网站导航</dt>
                     <dd><a href="#">物资采购</a></dd>
                     <dd><a href="#">工程项目</a></dd>
                     <dd><a href="#">延期公告</a></dd>
                     <dd><a href="#">中标公告</a></dd>
                 </dl>
-                <dl>
-                    <dt>招标法规则</dt>
+                <dl> <dt>招标法规则</dt>
                     <dd><a href="#">用户协议</a></dd>
                     <dd><a href="#">用户协议</a></dd>
                     <dd><a href="#">保险法规</a></dd>
                     <dd><a href="#">履约协议</a></dd>
                 </dl>
-                <dl>
-                    <dt>其他</dt>
+                <dl> <dt>其他</dt>
                     <dd><a href="#">关于我们</a></dd>
                     <dd><a href="#">使用指南</a></dd>
                     <dd><a href="#">加入我们</a></dd>
@@ -268,14 +250,9 @@
                 </dl>
             </div>
             <div class="serve">
-                <p>服务热线：<strong>0573-88787878</strong></p>
-                <img src="./images/Qcode.png" alt="#">
-            </div>
+                <p>服务热线：<strong>0573-88787878</strong></p> <img src="./images/Qcode.png" alt="#"> </div>
         </div>
-        <div class="copyRight">
-            Copyright &#169; 2013-2016
-            <a href="https://www.slm168.com">slm168.com</a>All Rights Reversed. 浙ICP备11018032号-8 浙公网安备11010802020210
-        </div>
+        <div class="copyRight"> Copyright &#169; 2013-2016 <a href="https://www.slm168.com">slm168.com</a>All Rights Reversed. 浙ICP备11018032号-8 浙公网安备11010802020210 </div>
     </footer>
     <script>
         $(function () {
@@ -305,34 +282,34 @@
 <script type="text/javascript">
     $('.form_datetime').datetimepicker({
         //language:  'fr',
-        weekStart: 1,
-        todayBtn: 1,
-        autoclose: 1,
-        todayHighlight: 1,
-        startView: 2,
-        forceParse: 0,
-        showMeridian: 1
+        weekStart: 1
+        , todayBtn: 1
+        , autoclose: 1
+        , todayHighlight: 1
+        , startView: 2
+        , forceParse: 0
+        , showMeridian: 1
     });
     $('.form_date').datetimepicker({
-        language: 'fr',
-        weekStart: 1,
-        todayBtn: 1,
-        autoclose: 1,
-        todayHighlight: 1,
-        startView: 2,
-        minView: 2,
-        forceParse: 0
+        language: 'fr'
+        , weekStart: 1
+        , todayBtn: 1
+        , autoclose: 1
+        , todayHighlight: 1
+        , startView: 2
+        , minView: 2
+        , forceParse: 0
     });
     $('.form_time').datetimepicker({
-        language: 'fr',
-        weekStart: 1,
-        todayBtn: 1,
-        autoclose: 1,
-        todayHighlight: 1,
-        startView: 1,
-        minView: 0,
-        maxView: 1,
-        forceParse: 0
+        language: 'fr'
+        , weekStart: 1
+        , todayBtn: 1
+        , autoclose: 1
+        , todayHighlight: 1
+        , startView: 1
+        , minView: 0
+        , maxView: 1
+        , forceParse: 0
     });
 </script>
 

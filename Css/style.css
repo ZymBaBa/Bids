@@ -74,7 +74,7 @@
     width: 1210px;
     margin: 0 auto;
     height: auto;
-    margin-top: 3px;
+    display: block;
 }
 
 #Banner div {
@@ -182,14 +182,12 @@
     width: 1220px;
     margin: 0 auto;
     height: auto;
-    margin-top: 465px;
 }
 
 #mpSort,
 #mpContent {
     float: left;
     height: 450px;
-    position: relative;
 }
 
 #mpSort {
@@ -244,7 +242,6 @@
 
 .mpcList {
     height: auto;
-    position: absolute;
     margin-left: 20px;
     overflow: hidden;
 }
@@ -277,7 +274,12 @@
     width: 1230px;
     margin: 0 auto;
     height: auto;
-    margin-top: 475px;
+    display: block;
+    top: 20px;
+}
+
+.pjTitle {
+    height: auto;
 }
 
 .pjTitle a {
@@ -307,7 +309,6 @@
 #pjContent {
     float: left;
     height: 280px;
-    position: relative;
 }
 
 #pjSort {
@@ -375,7 +376,6 @@
 
 .pjcList {
     height: auto;
-    position: absolute;
     margin-left: 20px;
     overflow: hidden;
 }
@@ -407,8 +407,8 @@
     width: 1210px;
     margin: 0 auto;
     height: auto;
-    margin-top: 300px;
-    position: relative;
+    top: 20px;
+    display: block;
 }
 
 .mbTitle hr,
@@ -460,8 +460,8 @@
     width: 1210px;
     margin: 0 auto;
     height: auto;
-    margin-top: 20px;
-    position: relative;
+    top: 20px;
+    display: block;
 }
 
 .bidContent ul li a {

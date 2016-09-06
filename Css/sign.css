@@ -1,0 +1,43 @@
+nav {
+    background: #fff;
+    height: 130px;
+    background: url("../images/headbg.jpg") repeat-x left bottom;
+}
+
+.signNav {
+    width: 1210px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.signNav div {
+    float: left;
+}
+
+.logo-title {
+    height: 34px;
+    line-height: 34px;
+    font-size: 18px;
+    color: #000;
+    border-left: 1px solid #bbb;
+    margin-left: 25px;
+    padding-left: 25px;
+    margin-top: 34px;
+}
+
+.register {
+    float: right!important;
+    font-size: 16px;
+    margin-top: 55px;
+    color: #999!important;
+}
+
+.register a:hover {
+    color: #06c27a;
+}
+
+.signContent {
+    width: 1200px;
+    margin: 0 auto;
+    height: 250px;
+}
