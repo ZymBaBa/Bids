@@ -7,8 +7,6 @@
     <!--    核心CSS-->
     <link rel="stylesheet" href="Css/bootstrap.css">
     <link rel="stylesheet" href="Css/hemaStyle.css">
-    <link rel="stylesheet" href="Css/nav.css">
-    <link rel="stylesheet" href="Css/footer.css">
     <!--    bidsPust页面CSS-->
     <link rel="stylesheet" href="Css/bidsPust.css">
     <link rel="stylesheet" href="Css/bootstrap-select.css">
@@ -22,82 +20,86 @@
 </head>
 
 <body>
-    <!--   头部导航-->
-    <nav>
-        <div id="Ndiv">
-            <ul>
-                <li><a href="login.html">登录</a></li>
-                <li><a href="register.html">免费注册</a></li>
-                <li>
-                    <ol><a href="invite.html">我的招标</a></ol>
-                </li>
-                <li>
-                    <ol><a href="tender.html">我的投标</a></ol>
-                </li>
-                <li>
-                    <ol><a href="tender.html">综合管理</a></ol>
-                </li>
-                <li>
-                    <ol><a href="about.html">关于我们</a></ol>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!--    搜索-->
-    <article class="articleNav">
-        <div id="search">
-            <div id="logo">
-                <a href="#"></a>
-            </div>
-            <div id="f-search">
-                <form>
-                    <input type="text" value="请输入你要查找的标底名称" id="inputBids">
-                    <input type="submit" value="搜索" class="seaBids"> <span class="spanMaybe">或者</span> <a href="bidsPust.html" class="bidsPust" rel="next">免费发布招标</a> </form>
-            </div>
-            <div id="hot-search">
+    <div class="wrap">
+        <!--      顶部导航-->
+        <div class="header self">
+            <div class="hdTitle self">
                 <ul>
-                    <li><a href="#">食品</a></li>
-                    <li><a href="#">饮料</a></li>
-                    <li><a href="#">服装</a></li>
-                    <li><a href="#">纺织</a></li>
-                    <li><a href="#">皮革</a></li>
-                    <li><a href="#">木材加工</a></li>
-                    <li><a href="#">家具具</a></li>
-                    <li><a href="#">印刷具</a></li>
-                    <li><a href="#">印刷具</a></li>
+                    <li><a href="#">网站导航</a></li>
+                    <li><a href="#">关注我们</a></li>
+                    <li><a href="#">我的招标</a></li>
+                    <li><a href="#">我的投标</a></li>
+                    <li><a href="#">免费注册</a></li>
+                    <li><a href="#">登录</a></li>
                 </ul>
             </div>
         </div>
-    </article>
-    <!--    End 搜索-->
-    <!--        内容导航-->
-    <article id="cpNav">
-        <div id="navCenter">
-            <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="#">物资采购</a></li>
-                <li><a href="#">工程项目</a></li>
-                <li><a href="#">延期公告</a></li>
-                <li><a href="#">中标公告</a></li>
-                <li><a href="#">法律法规</a></li>
-                <li><a href="#">关于我们</a></li>
-            </ul>
+        <!--        End 顶部导航-->
+        <!--        搜索栏-->
+        <div class="search self">
+            <div id="serch" class="hdTitle self">
+                <!--               logo-->
+                <div class="logo left self">
+                    <a href="index.html"></a>
+                </div>
+                <!--                搜索-->
+                <div class="cast left">
+                    <form id="formSerch" action="get">
+                        <input type="text" value="请输入您所需要查找的内容或标底" id="inputBids">
+                        <input type="submit" value="搜索">
+                        <span>或者</span>
+                        <a href="#">免费发布招标</a>
+                    </form>
+                </div>
+                <div class="hotSerch self">
+                    <ul>
+                        <li><a href="#">食品</a></li>
+                        <li><a href="#">饮料</a></li>
+                        <li><a href="#">服装</a></li>
+                        <li><a href="#">木材加工</a></li>
+                        <li><a href="#">家具</a></li>
+                        <li><a href="#">磨具机</a></li>
+                        <li><a href="#">磨具机</a></li>
+                        <li><a href="#">家具</a></li>
+                        <li><a href="#">磨具机</a></li>
+                        <li><a href="#">磨具机</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </article>
-    <!--    End 内容导航-->
-    <!--    重要通知-->
-    <article id="cpMessage" style="display: none;">
-        <div id="messageTitle">重要通知</div>
-        <div id="messageList">
-            <ul>
-                <li><a href="#">【规则通知】关于圣龙马招标网用户遵守变更通知</a></li>
-                <li><a href="#">【重要通知】8月部分企业履约纠纷处理公告</a></li>
-                <li><a href="#">【重要通知】关于2017年招标通收费通知</a></li>
-            </ul>
+        <!--        End 搜索栏-->
+        <!--        网站导航-->
+        <div class="Navigate self">
+            <div class="hdTitle self">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="#">物资采购</a></li>
+                    <li><a href="#">工程项目</a></li>
+                    <li><a href="#">延期招标</a></li>
+                    <li><a href="#">中标公告</a></li>
+                    <li><a href="#">招标规则</a></li>
+                    <li><a href="#">重要通知</a></li>
+                </ul>
+            </div>
         </div>
-    </article>
-    <article class="bidsConter">
-        <div id="bidsPust">
+        <!--        End 网站导航-->
+        <!--       重要通知-->
+        <div class="notify self" style="display: none;">
+            <div class="hdTitle self">
+                <div class="messageTitle">重要通知</div>
+                <div class="messageList">
+                    <ul>
+                        <li><a href="#">【重要通知】关于2017年招标通收费通知</a></li>
+                        <li><a href="#">【重要通知】8月部分企业履约纠纷处理公告</a></li>
+                        <li><a href="#">【规则通知】关于圣龙马招标网用户遵守变更通知</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--        End 重要内容-->
+        <!--        核心内容-->
+        <div class="container self">
+            <!--            <div id="bidsPust">-->
             <p class="bpTitle" style="width:200px;"><a href="#">免费发布招标信息<img src="images/qu.png"></a></p>
             <form action="post" class="formStyle">
                 <div class="basicBids">
@@ -222,59 +224,47 @@
                     <button type="button" class="btn btn-success">提交</button>
                 </div>
             </form>
+            <!--            </div>-->
         </div>
-    </article>
-    <footer>
-        <div class="divFoot">
-            <div class="footLogo"> <img src="./images/logo.png" alt="圣龙马招标">
-                <p>圣龙马，服务于中小企业！</p>
+        <!--        End 核心内容-->
+        <!--        尾部-->
+        <div class="footer self">
+            <div class="bidFoot hdTitle">
+                <div class="footLogo"> <img src="./images/logo.png" alt="圣龙马招标">
+                    <p>圣龙马，专注于中小企业招标</p>
+                </div>
+                <div class="footContent">
+                    <dl> <dt>网站导航</dt>
+                        <dd><a href="#">物资采购</a></dd>
+                        <dd><a href="#">工程项目</a></dd>
+                        <dd><a href="#">延期公告</a></dd>
+                        <dd><a href="#">中标公告</a></dd>
+                    </dl>
+                    <dl> <dt>招标法规则</dt>
+                        <dd><a href="#">用户协议</a></dd>
+                        <dd><a href="#">用户协议</a></dd>
+                        <dd><a href="#">保险法规</a></dd>
+                        <dd><a href="#">履约协议</a></dd>
+                    </dl>
+                    <dl> <dt>其他</dt>
+                        <dd><a href="#">关于我们</a></dd>
+                        <dd><a href="#">使用指南</a></dd>
+                        <dd><a href="#">加入我们</a></dd>
+                        <dd><a href="#">联系我们</a></dd>
+                    </dl>
+                </div>
+                <div class="serve">
+                    <p>服务热线：<strong>0573-88787878</strong></p> <img src="./images/Qcode.png" alt="#"> </div>
             </div>
-            <div class="footContent">
-                <dl> <dt>网站导航</dt>
-                    <dd><a href="#">物资采购</a></dd>
-                    <dd><a href="#">工程项目</a></dd>
-                    <dd><a href="#">延期公告</a></dd>
-                    <dd><a href="#">中标公告</a></dd>
-                </dl>
-                <dl> <dt>招标法规则</dt>
-                    <dd><a href="#">用户协议</a></dd>
-                    <dd><a href="#">用户协议</a></dd>
-                    <dd><a href="#">保险法规</a></dd>
-                    <dd><a href="#">履约协议</a></dd>
-                </dl>
-                <dl> <dt>其他</dt>
-                    <dd><a href="#">关于我们</a></dd>
-                    <dd><a href="#">使用指南</a></dd>
-                    <dd><a href="#">加入我们</a></dd>
-                    <dd><a href="#">联系我们</a></dd>
-                </dl>
+            <div class="copyRight hdTitle">
+                <p>Copyright &#169; 2013-2016
+                    <a href="https://www.slm168.com">slm168.com</a> All Rights Reversed. 浙ICP备11018032号-8 浙公网安备11010802020210
+                </p>
             </div>
-            <div class="serve">
-                <p>服务热线：<strong>0573-88787878</strong></p> <img src="./images/Qcode.png" alt="#"> </div>
         </div>
-        <div class="copyRight"> Copyright &#169; 2013-2016 <a href="https://www.slm168.com">slm168.com</a>All Rights Reversed. 浙ICP备11018032号-8 浙公网安备11010802020210 </div>
-    </footer>
+    </div>
     <script>
-        $(function () {
-            $("#scBids").click(function () {
-                $("#pjBids").removeClass("showCard-foucs");
-                $("#pjBids>div").addClass("pjBidsFoucs");
-                $("#pjBids>p").removeClass("pFoucs");
-                $("#scBids").addClass("showCard-foucs");
-                $("#scBids>div").removeClass("scBidsFoucs");
-                $("#scBids>p").removeClass("pFoucsD");
-                $("#ciList").html("物资采购");
-            });
-            $("#pjBids").click(function () {
-                $("#pjBids").addClass("showCard-foucs");
-                $("#pjBids>div").removeClass("pjBidsFoucs");
-                $("#pjBids>p").removeClass("pFoucsD");
-                $("#scBids").removeClass("showCard-foucs");
-                $("#scBids>div").addClass("scBidsFoucs");
-                $("#scBids>p").addClass("pFoucsD");
-                $("#ciList").html("工程项目");
-            })
-        })
+       
     </script>
 </body>
 <script src="Js/bootstrap-datetimepicker.js"></script>
@@ -282,34 +272,34 @@
 <script type="text/javascript">
     $('.form_datetime').datetimepicker({
         //language:  'fr',
-        weekStart: 1
-        , todayBtn: 1
-        , autoclose: 1
-        , todayHighlight: 1
-        , startView: 2
-        , forceParse: 0
-        , showMeridian: 1
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
     });
     $('.form_date').datetimepicker({
-        language: 'fr'
-        , weekStart: 1
-        , todayBtn: 1
-        , autoclose: 1
-        , todayHighlight: 1
-        , startView: 2
-        , minView: 2
-        , forceParse: 0
+        language: 'fr',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
     });
     $('.form_time').datetimepicker({
-        language: 'fr'
-        , weekStart: 1
-        , todayBtn: 1
-        , autoclose: 1
-        , todayHighlight: 1
-        , startView: 1
-        , minView: 0
-        , maxView: 1
-        , forceParse: 0
+        language: 'fr',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 1,
+        minView: 0,
+        maxView: 1,
+        forceParse: 0
     });
 </script>
 
