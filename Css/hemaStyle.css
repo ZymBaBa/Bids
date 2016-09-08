@@ -1,129 +1,136 @@
-                        @charset "UTF-8";
-                        /**
+@charset "UTF-8";
+/**
 * @file:      hemaStyle.css V1.0
 * @author:    禾码
 * @update:    2016-09-05 09:33;
 * @copyright: 基于 normalize.css | MIT License
 */
-                        /* ==========================================================================
- 禾码工作室
- ========================================================================== */
-                        
-                        body,
-                        dl,
-                        dd,
-                        ul,
-                        ol,
-                        h1,
-                        h2,
-                        h3,
-                        h4,
-                        h5,
-                        h6,
-                        pre,
-                        form,
-                        fieldset,
-                        legend,
-                        input,
-                        textarea,
-                        optgroup,
-                        p,
-                        blockquote,
-                        figure,
-                        hr,
-                        menu,
-                        dir,
-                        thead,
-                        tbody,
-                        tfoot,
-                        th,
-                        td {
-                            margin: 0;
-                            padding: 0;
-                        }
-                        
-                        body {
-                            min-width: 1210px;
-                        }
-                        /**
+/* ==========================================================================
+禾码工作室
+========================================================================== */
+
+body,
+dl,
+dd,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+legend,
+input,
+textarea,
+optgroup,
+p,
+blockquote,
+figure,
+hr,
+menu,
+dir,
+thead,
+tbody,
+tfoot,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 1210px;
+}
+
+/**
 * 非大面积文字排版网站通常不需要列表项，如果需要可单独设置
 */
-                        
-                        ul,
-                        ol {
-                            list-style-type: none;
-                            list-style-image: none;
-                        }
-                        /* ==========================================================================
- 链接
- ========================================================================== */
-                        /**
+
+ul,
+ol {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+链接
+========================================================================== */
+/**
 * 去除链接默认的下划线，提高文字可读性
 */
-                        
-                        a,
-                        a:hover,
-                        a:visited,
-                        a:link {
-                            text-decoration: none;
-                        }
-                        /**
+
+a,
+a:hover,
+a:visited,
+a:link {
+    text-decoration: none;
+}
+
+/**
 * 去掉 IE 10+ 点击链接时的灰色背景
 */
-                        
-                        a:active {
-                            background-color: transparent;
-                        }
-                        /**
+
+a:active {
+    background-color: transparent;
+}
+
+/**
 * 去掉点击时的焦点框，同时保证使用键盘可以显示焦点框
 */
-                        
-                        a:active {
-                            outline: 0 none;
-                            text-decoration: none;
-                        }
-                        
-                        a {
-                            color: #434a54;
-                        }
-                        /**
+
+a:active {
+    outline: 0 none;
+    text-decoration: none;
+}
+
+a {
+    color: #434a54;
+}
+
+/**
 * 统一 Chrome 和 Safari 的焦点框样式
 * Chrome 中 thin 关键字放大页面后焦点框不会放大 http://jsbin.com/ehakom/1
 * Firefox 中 box-shadow 会导致焦点框位置偏移，需用「outline-offset」修正
 *
 */
-                        
-                        a:focus {
-                            outline: 1px dotted;
-                        }
-                        /* ==========================================================================
- 字体和基础排版
- ========================================================================== */
-                        /**
+
+a:focus {
+    outline: 1px dotted;
+}
+
+/* ==========================================================================
+字体和基础排版
+========================================================================== */
+/**
 * 1.防止 iOS 横屏字号放大，同时保证在PC上 zoom 功能正常
 */
-                        
-                        html {
-                            -webkit-text-size-adjust: 100%;
-                            -ms-text-size-adjust: 100%;
-                            text-size-adjust: 100%;
-                            /* 1 */
-                            font-size: 62.5%;
-                            /* 10/16=62.5% */
-                        }
-                        
-                        body {
-                            font-size: 14px;
-                            line-height: 1.8;
-                        }
-                        /**
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    /* 1 */
+    font-size: 62.5%;
+    /* 10/16=62.5% */
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/**
 * 所有 font-family 小写，存在空格的字体名加单引号
 * @default-font: 'helvetica neue', tahoma, \5B8B\4F53, sans-serif;
 * @heading-font: 'helvetica neue', tahoma, 'hiragino sans gb', stheiti,
-  \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, 'wenquanyi micro hei', sans-serif;
+\5FAE\8F6F\96C5\9ED1, \5B8B\4F53, 'wenquanyi micro hei', sans-serif;
 * @code-font: monaco, menlo, consolas, monospace;
 */
-                        /**
+/**
 * 中文优先使用冬青黑体简体(OS X)、微软雅黑(Windows)和文泉驿微米黑(Linux)
 * 西文使用 tahoma
 * 1. 防止元素中「font-family」不能继承
@@ -131,107 +138,119 @@
 * 3. Opera 12.1 之前版本不支持中文字体的英文名称
 * 4. 微软雅黑「\5FAE\8F6F\96C5\9ED1」,中易宋体「\5B8B\4F53」
 */
-                        
-                        body,
-                        button,
-                        input,
-                        select,
-                        textarea {
-                            font-family: 'helvetica neue', arial, 'hiragino sans gb', stheiti, 'wenquanyi micro hei', \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
-                            -ms-text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis;
-                            /* 5 */
-                            text-spacing: ideograph-alpha ideograph-numeric ideograph-parenthesis;
-                            /* 5 */
-                        }
-                        /**
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: 'helvetica neue', arial, 'hiragino sans gb', stheiti, 'wenquanyi micro hei', \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+    -ms-text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis;
+    /* 5 */
+    text-spacing: ideograph-alpha ideograph-numeric ideograph-parenthesis;
+    /* 5 */
+}
+
+/*去掉input获取焦点时的边框 */
+
+input:focus {
+outline: none;
+}
+/**
 * 中文小于 12px 可读性很差
 * 1. 统一 IE 6-7 中字体大小
 * 2. 统一 Firefox 4+，Safari 5 和 Chrome 中「section」和「article」内的字体大小
 */
-                        
-                        h1,
-                        h2,
-                        h3,
-                        h4,
-                        h5,
-                        h6 {
-                            font-weight: normal;
-                        }
-                        
-                        h1 {
-                            font-size: 36px;
-                        }
-                        
-                        h2 {
-                            font-size: 30px;
-                        }
-                        
-                        h3 {
-                            font-size: 22px;
-                        }
-                        
-                        h4 {
-                            font-size: 18px;
-                        }
-                        
-                        h5 {
-                            font-size: 14px;
-                        }
-                        
-                        h6 {
-                            font-size: 12px;
-                        }
-                        /**
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+/**
 * 修正「abbr」元素在 Firefox 外其他浏览器没有下划线的问题
 * 添加问号光标，明确语义
 */
-                        
-                        abbr,
-                        acronym {
-                            border-bottom: 1px dotted;
-                            /* 1 */
-                            cursor: help;
-                            /* 2 */
-                        }
-                        /**
+
+abbr,
+acronym {
+    border-bottom: 1px dotted;
+    /* 1 */
+    cursor: help;
+    /* 2 */
+}
+
+/**
 * Firefox3+，Safari4/5 和 Chrome 中统一设置为粗体
 */
-                        
-                        b,
-                        strong {
-                            font-weight: bold;
-                        }
-                        /**
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
 * 修正 Safari5 和 Chrome 中没有样式的问题
 */
-                        
-                        dfn {
-                            font-style: italic;
-                        }
-                        /**
+
+dfn {
+    font-style: italic;
+}
+
+/**
 * 修正 Firefox 和其他浏览器之间的差异
 */
-                        
-                        hr {
-                            -webkit-box-sizing: content-box;
-                            box-sizing: content-box;
-                            height: 0;
-                        }
-                        /**
+
+hr {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
 * 网页标记，荧光笔
 * 修正 IE6-11 中没有样式的问题
 */
-                        
-                        mark {
-                            background-color: #D2E5FF;
-                            color: #000;
-                        }
-                        
-                        mark {
-                            background-color: #D2E5FF;
-                            color: #000;
-                        }
-                        /**
+
+mark {
+    background-color: #D2E5FF;
+    color: #000;
+}
+
+mark {
+    background-color: #D2E5FF;
+    color: #000;
+}
+
+/**
 * 统一代码的字体设置
 * 字体要能明确区分数字 0 和字母 o
 * Mac 优先使用 Monaco，Windows 优先使用 Consolas
@@ -239,492 +258,528 @@
 * Windows 7开始自带的 Consolas
 * Mac上自带的Monaco，Osaka-Mono
 */
-                        
-                        code,
-                        kbd,
-                        pre,
-                        samp {
-                            font-family: monaco, menlo, consolas, 'courier new', courier, monospace;
-                        }
-                        /**
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monaco, menlo, consolas, 'courier new', courier, monospace;
+}
+
+/**
 * 增强所有浏览器中 pre 标签中文本的可读性
 * 1. IE 6-7 不支持 pre-wrap
 * 2. pre 标签应当包含滚溢出
 */
-                        
-                        pre {
-                            white-space: pre;
-                            white-space: pre-wrap;
-                            /* 1 */
-                            word-wrap: break-word;
-                            overflow: auto;
-                        }
-                        /**
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    /* 1 */
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+/**
 * 行内引用
 * IE 6-7 不支持 quotes 属性
 * 现代浏览器去除 quotes 内容
 */
-                        
-                        q {
-                            quotes: none;
-                        }
-                        /**
+
+q {
+    quotes: none;
+}
+
+/**
 * Safari 4 不支持<q>标签
 */
-                        
-                        q:before,
-                        q:after {
-                            content: '';
-                            content: none;
-                        }
-                        /**
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/**
 * 中文网页<small>元素字号小于 12px 不易阅读
 */
-                        
-                        small {
-                            font-size: 62.5%;
-                            /* 10/16=0.625 */
-                        }
-                        /**
+
+small {
+    font-size: 62.5%;
+    /* 10/16=0.625 */
+}
+
+/**
 * 防止所有浏览器中的<sub>和<sup>影响行高
 * http://jsbin.com/usoyal/1/edit
 */
-                        
-                        sub,
-                        sup {
-                            font-size: 75%;
-                            line-height: 0;
-                            position: relative;
-                            vertical-align: baseline;
-                        }
-                        
-                        sup {
-                            top: -0.5em;
-                        }
-                        
-                        sub {
-                            bottom: -0.25em;
-                        }
-                        /* ==========================================================================
- 表格
- ========================================================================== */
-                        /**
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+表格
+========================================================================== */
+/**
 * 合并单元格边框
 */
-                        
-                        table {
-                            border-collapse: collapse;
-                            border-spacing: 0;
-                        }
-                        /**
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/**
 * 修复 IE 中 th 不能继承 text-align 的问题并统一左对齐
 * http://jsbin.com/evoxif/2/edit
 */
-                        
-                        th {
-                            text-align: left;
-                        }
-                        /**
+
+th {
+    text-align: left;
+}
+
+/**
 * 单元格添加边框
 */
-                        
-                        table th,
-                        table td {
-                            border: 1px solid #ddd;
-                            padding: 8px 10px;
-                        }
-                        /**
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+}
+
+/**
 * 表头底部边框
 */
-                        
-                        table th {
-                            font-weight: inherit;
-                            border-bottom-width: 2px;
-                            border-bottom-color: #ccc;
-                        }
-                        /* ==========================================================================
- 嵌入元素
- ========================================================================== */
-                        /**
+
+table th {
+    font-weight: inherit;
+    border-bottom-width: 2px;
+    border-bottom-color: #ccc;
+}
+
+/* ==========================================================================
+嵌入元素
+========================================================================== */
+/**
 * 1. 去除 IE6-9 和 Firefox 3 中 a 内部 img 元素默认的边框
 * 2. 修正 IE8 图片消失bug
 * 3. 防止 img 指定「height」时图片高度不能按照宽度等比缩放，导致图片变形
-    http://jsbin.com/aJoTUca/2
+http://jsbin.com/aJoTUca/2
 * 4. 让图片支持响应式
 * 5. 去除现代浏览器图片底部的空隙
 * 6. 修复 IE7 图片缩放失真
 */
-                        
-                        img {
-                            border: 0 none;
-                            /* 1 */
-                            width: auto\9;
-                            /* 2 */
-                            height: auto;
-                            /* 3 */
-                            max-width: 100%;
-                            /* 4 */
-                            vertical-align: top;
-                            /* 5 */
-                            -ms-interpolation-mode: bicubic;
-                            /* 6 */
-                        }
-                        /**
+
+img {
+    border: 0 none;
+    /* 1 */
+    width: auto \9;
+    /* 2 */
+    height: auto;
+    /* 3 */
+    max-width: 100%;
+    /* 4 */
+    vertical-align: top;
+    /* 5 */
+    -ms-interpolation-mode: bicubic;
+    /* 6 */
+}
+
+/**
 * 修复 IE9 中的「overflow」的怪异表现
 */
-                        
-                        svg:not(:root) {
-                            overflow: hidden;
-                        }
-                        /* ==========================================================================
- 表单
- ========================================================================== */
-                        /**
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+表单
+========================================================================== */
+/**
 * 定义一致的边框、外边距和内边距
 */
-                        
-                        fieldset {
-                            border: 1px solid #c0c0c0;
-                            margin: 0 2px;
-                            padding: 0.35em 0.625em 0.75em;
-                        }
-                        /**
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
 * 1. 修正 IE 6-9 中颜色不能继承的问题
 * 2. 修正 Firefox3 中文字不换行的问题
 * 3. 修正 IE6-7 中怪异的对齐方式
 */
-                        
-                        legend {
-                            border: 0 none;
-                            /* 1 */
-                            white-space: normal;
-                            /* 2 */
-                            *margin-left: -7px;
-                            /* 3 */
-                        }
-                        /**
+
+legend {
+    border: 0 none;
+    /* 1 */
+    white-space: normal;
+    /* 2 */
+    *margin-left: -7px;
+    /* 3 */
+}
+
+/**
 * 1. 修正所有浏览器中字体不继承的问题
 * 2. 修正所有浏览器中字号不继承的问题
 * 3. 修正 Firefox 3+， Safari5 和 Chrome 中外边距不同的问题
 * 4. 改善在所有浏览器下的垂直对齐方式
 */
-                        
-                        button,
-                        input,
-                        select,
-                        textarea {
-                            font-family: inherit;
-                            /* 1 */
-                            font-size: 100%;
-                            /* 2 */
-                            margin: 0;
-                            /* 3 */
-                            vertical-align: baseline;
-                            /* 4 */
-                            *vertical-align: middle;
-                            /* 4 */
-                        }
-                        /**
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 2 */
+    margin: 0;
+    /* 3 */
+    vertical-align: baseline;
+    /* 4 */
+    *vertical-align: middle;
+    /* 4 */
+}
+
+/**
 * 修正 IE7 随着字数增加边距不断增加的问题
 */
-                        
-                        input,
-                        button {
-                            *overflow: visible;
-                        }
-                        /**
+
+input,
+button {
+    *overflow: visible;
+}
+
+/**
 * 统一各浏览器「text-transform」不会继承的问题
 * http://jsbin.com/iqecic/1/edit
 * http://tjvantoll.com/2012/07/10/default-browser-handling-of-the-css-text-transform-property/
 */
-                        
-                        button,
-                        select {
-                            text-transform: none;
-                        }
-                        /**
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
 * 1. 避免 Android 4.0.* 中的 WebKit bug ，该bug会破坏原生的
- 「audio」 和「video」的控制器
+「audio」 和「video」的控制器
 * 2. 更正 iOS 中无法设置可点击的「input」的问题
 * 3. 统一其他类型的「input」的光标样式
 */
-                        
-                        button,
-                        html input[type="button"],
-                        input[type="reset"],
-                        input[type="submit"] {
-                            -webkit-appearance: button;
-                            /* 2 */
-                            cursor: pointer;
-                            /* 3 */
-                        }
-                        /**
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */
+    cursor: pointer;
+    /* 3 */
+}
+
+/**
 * 重置按钮禁用时光标样式
 */
-                        
-                        button[disabled],
-                        input[disabled] {
-                            cursor: default;
-                        }
-                        /**
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+/**
 * 1. 修正 IE 8/9 box-sizing 被设置为「content-box」的问题
 * 2. 移除 IE 8/9 中多余的内边距
 * 3. 移除 IE7 中多余的内边距(IE6 中任然存在)
 */
-                        
-                        input[type="checkbox"],
-                        input[type="radio"] {
-                            -webkit-box-sizing: border-box;
-                            box-sizing: border-box;
-                            /* 1 */
-                            padding: 0;
-                            /* 2 */
-                            *height: 13px;
-                            /* 3 */
-                            *width: 13px;
-                            /* 3 */
-                        }
-                        /**
+
+input[type="checkbox"],
+input[type="radio"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+    *height: 13px;
+    /* 3 */
+    *width: 13px;
+    /* 3 */
+}
+
+/**
 * 1. 修正 Safari 5 和 Chrome 中「appearance」被设置为「searchfield」的问题
 * 2. 修正 Safari 5 和 Chrome 中「box-sizing」被设置为 「border-box」的问题
 */
-                        
-                        input[type="search"] {
-                            -webkit-appearance: textfield;
-                            /* 1 */
-                            -webkit-box-sizing: content-box;
-                            box-sizing: content-box;
-                        }
-                        /**
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/**
 * 1.移除 OS X 中 Safari5 和 Chrome 搜索框内侧的左边距
 * 2.如果需要隐藏清除按钮需要加上
- input[type="search"]::-webkit-search-cancel-button
+input[type="search"]::-webkit-search-cancel-button
 */
-                        
-                        input[type="search"]::-webkit-search-decoration {
-                            -webkit-appearance: none;
-                        }
-                        
-                        button::-moz-focus-inner,
-                        input::-moz-focus-inner {
-                            border: 0;
-                            padding: 0;
-                        }
-                        /**
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
 * 修正 Chrome 中 input [type="number"] 在特定高度和 font-size 时,
 * 下面一个箭头光标变成「cursor: text」
 * @demo: http://jsfiddle.net/FFXEc/
 * 动画演示：http://gtms04.alicdn.com/tps/i4/T18kd8FCtaXXc_FhcF-330-350.gif
 */
-                        
-                        input[type="number"]::-webkit-inner-spin-button,
-                        input[type="number"]::-webkit-outer-spin-button {
-                            height: auto;
-                        }
-                        /**
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
 * 1. 移除 IE6-11 中默认的垂直滚动条
 * 2. 禁止水平拖动，防止破坏布局
 */
-                        
-                        textarea {
-                            overflow: auto;
-                            /* 1 */
-                            resize: vertical;
-                            /* 2 */
-                        }
-                        /**
+
+textarea {
+    overflow: auto;
+    /* 1 */
+    resize: vertical;
+    /* 2 */
+}
+
+/**
 * 修正 Chrome 30- option 中文字无法显示的问题
 * http://jsbin.com/avujas/1/edit
 */
-                        
-                        select:disabled option:checked,
-                        option:disabled:checked {
-                            color: #D2D2D2;
-                        }
-                        /**
+
+select:disabled option:checked,
+option:disabled:checked {
+    color: #D2D2D2;
+}
+
+/**
 * 修正 Safari 3+, Chrome 1+ Placeholder 居中问题
 */
-                        
-                        @media screen and (-webkit-min-device-pixel-ratio: 0) {
-                            input {
-                                line-height: normal !important;
-                            }
-                        }
-                        /**
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    input {
+        line-height: normal !important;
+    }
+}
+
+/**
 * 修正 Firefox 19+ Placeholder 设置了opacity 的问题
 */
-                        
-                        input::-moz-placeholder,
-                        textarea::-moz-placeholder {
-                            color: darkGray;
-                            opacity: 1;
-                        }
-                        /**
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: darkGray;
+    opacity: 1;
+}
+
+/**
 * label 元素给予手型，暗示此处可点击
 */
-                        
-                        label {
-                            cursor: pointer;
-                        }
-                        /**
+
+label {
+    cursor: pointer;
+}
+
+/**
 * 统一 select 样式, Firefox 中有 padding:1px 0
 * http://jsbin.com/avujas/1/edit
 */
-                        
-                        select[size],
-                        select[multiple],
-                        select[size][multiple] {
-                            border: 1px solid #AAA;
-                            padding: 0;
-                        }
-                        /* ==========================================================================
- HTML5 元素
- ========================================================================== */
-                        /**
+
+select[size],
+select[multiple],
+select[size][multiple] {
+    border: 1px solid #AAA;
+    padding: 0;
+}
+
+/* ==========================================================================
+HTML5 元素
+========================================================================== */
+/**
 * 修正未定义为「block」的元素
 */
-                        
-                        article,
-                        aside,
-                        details,
-                        figcaption,
-                        figure,
-                        footer,
-                        header,
-                        hgroup,
-                        main,
-                        nav,
-                        section,
-                        summary {
-                            display: block;
-                        }
-                        /**
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
 * 1. 修正未定义为「inline-block」的元素
 * 2. 修正 Chrome、Firefox、Opera 中 「progress」元素 vertical-align 默认值不一致
 */
-                        
-                        audio,
-                        canvas,
-                        video,
-                        progress {
-                            display: inline-block;
-                            /* 1 */
-                            vertical-align: baseline;
-                            /* 2 */
-                        }
-                        /**
+
+audio,
+canvas,
+video,
+progress {
+    display: inline-block;
+    /* 1 */
+    vertical-align: baseline;
+    /* 2 */
+}
+
+/**
 * 1.防止现代浏览器将没有「controls」属性的 「audio」元素显示出来
 * 2.去掉 iOS 5 中多余的高度
 */
-                        
-                        audio:not([controls]) {
-                            display: none;
-                            /* 1 */
-                            height: 0;
-                            /* 2 */
-                        }
-                        /**
+
+audio:not([controls]) {
+    display: none;
+    /* 1 */
+    height: 0;
+    /* 2 */
+}
+
+/**
 * 修复 IE 7/8/9，Firefox 3 和 Safari 4 中 「hidden」属性不起作用的问题
 * 在IE、Safari、Firefox 22- 中隐藏「template」元素
 */
-                        
-                        [hidden],
-                        template {
-                            display: none;
-                        }
-                        /**
+
+[hidden],
+template {
+    display: none;
+}
+
+/**
 * 为可拖动元素添加拖动的光标
 * http://jsbin.com/apavod/1/edit
 */
-                        
-                        [draggable] {
-                            cursor: move;
-                        }
-                        /**
+
+[draggable] {
+    cursor: move;
+}
+
+/**
 * 居中 HTML5 dialog 元素
 * Chrome 31 支持，需开启 chrome://flags/#enable-experimental-web-platform-features
 * Chrome 28 之前、Firefox 中不支持 height:fit-content;
- https://src.chromium.org/viewvc/blink?revision=148314&view=revision
+https://src.chromium.org/viewvc/blink?revision=148314&view=revision
 * ::backdrop 定义遮罩样式
 * @demo: http://jsbin.com/iPACab/1
 */
-                        
-                        dialog {
-                            border: 1px solid;
-                            padding: 0;
-                            margin: auto;
-                            position: absolute;
-                            left: 0;
-                            right: 0;
-                            top: 0;
-                            bottom: 0;
-                            width: -webkit-fit-content;
-                            width: -moz-fit-content;
-                            width: fit-content;
-                            height: -webkit-fit-content;
-                            height: -moz-fit-content;
-                            height: fit-content;
-                        }
-                        
-                        dialog::-webkit-backdrop {
-                            position: fixed;
-                            top: 0;
-                            bottom: 0;
-                            left: 0;
-                            right: 0;
-                            background-color: rgba(0, 0, 0, 0.3);
-                        }
-                        
-                        dialog::backdrop {
-                            position: fixed;
-                            top: 0;
-                            bottom: 0;
-                            left: 0;
-                            right: 0;
-                            background-color: rgba(0, 0, 0, 0.3);
-                        }
-                        /*
+
+dialog {
+    border: 1px solid;
+    padding: 0;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+dialog::-webkit-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*
 * 基础布局
 * @ Name:        layout.css V1.0.0
 * @ Author:      一丝
 * @ Update:      2013-9-30 15:39:51;
 * @ Copyright:   MIT License
 */
-                        /*
+/*
 *@ Name:       inline-block 组件
 *@ Author:     一丝
 *@ Update:     2013-9-29 16:05:04
 *@ Usage:      清除空隙需在外层容器加上 dib-box，dib 可单独使用
 */
-                        
-                        .dib {
-                            display: inline-block;
-                            *display: inline;
-                            *zoom: 1;
-                        }
-                        
-                        .dib-box {
-                            font-size: 0;
-                            /* 所有浏览器 */
-                            *word-spacing: -1px;
-                            /* IE6/7 */
-                        }
-                        
-                        @media (-webkit-min-device-pixel-ratio: 0) {
-                            .dib-box {
-                                letter-spacing: -5px;
-                                /* Safari 5- 等不支持 font-size: 0 的浏览器*/
-                            }
-                        }
-                        
-                        .dib-box .dib {
-                            vertical-align: top;
-                            font-size: 12px;
-                            letter-spacing: normal;
-                            word-spacing: normal;
-                            line-height: inherit;
-                        }
-                        /*
+
+.dib {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.dib-box {
+    font-size: 0;
+    /* 所有浏览器 */
+    *word-spacing: -1px;
+    /* IE6/7 */
+}
+
+@media (-webkit-min-device-pixel-ratio: 0) {
+    .dib-box {
+        letter-spacing: -5px;
+        /* Safari 5- 等不支持 font-size: 0 的浏览器*/
+    }
+}
+
+.dib-box .dib {
+    vertical-align: top;
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: inherit;
+}
+
+/*
 *@ Name:        自适应两端对齐组件
 *@ Author:      一丝
 *@ Update:      2013-9-29 16:05:04
@@ -732,1067 +787,1115 @@
 *@ Usage:       外层加上 justify，内部需要两端对齐的元素都加上 dib,dib 与 justify 不要同时出现
 *@ Demo:        http://jsbin.com/OsEcOMA/1/
 */
-                        /**
+/**
 * 防止行高增大
 * 尽量不要在父元素上设置行高
 */
-                        
-                        .justify,
-                        .dib-box .justify {
-                            font-size: 0;
-                            line-height: inherit;
-                        }
-                        
-                        .justify {
-                            text-align: justify;
-                            text-justify: inter-ideograph;
-                            /* IE 6-7 */
-                            *zoom: 1;
-                            /* IE 6-7 触发 hasLayout 使一行也能两端对齐 */
-                            -moz-text-align-last: justify;
-                            text-align-last: justify;
-                            /* IE 8+ */
-                        }
-                        /**
+
+.justify,
+.dib-box .justify {
+    font-size: 0;
+    line-height: inherit;
+}
+
+.justify {
+    text-align: justify;
+    text-justify: inter-ideograph;
+    /* IE 6-7 */
+    *zoom: 1;
+    /* IE 6-7 触发 hasLayout 使一行也能两端对齐 */
+    -moz-text-align-last: justify;
+    text-align-last: justify;
+    /* IE 8+ */
+}
+
+/**
 * 不支持 text-align-last 的浏览器用伪元素模拟
 * 1. margin-left:100% 仅 WebKit 支持
 */
-                        
-                        .justify:after {
-                            content: "";
-                            display: inline-block;
-                            width: 100%;
-                            /* 1 */
-                        }
-                        /* 子元素取消两端对齐 */
-                        
-                        .justify .dib {
-                            -moz-text-align-last: auto;
-                            text-align-last: auto;
-                            text-justify: auto;
-                            text-align: left;
-                            font-size: 12px;
-                            letter-spacing: normal;
-                            word-spacing: normal;
-                        }
-                        /*
+
+.justify:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    /* 1 */
+}
+
+/* 子元素取消两端对齐 */
+
+.justify .dib {
+    -moz-text-align-last: auto;
+    text-align-last: auto;
+    text-justify: auto;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+/*
 *@ Name:       CSS 三角形组件
 *@ Author:     一丝
 *@ Update:     2013-9-29 16:05:04
 *@ Usage:
 */
-                        
-                        .arrow {
-                            font-size: 0;
-                            width: 0;
-                            height: 0;
-                            line-height: 0;
-                            display: inline-block;
-                            *display: inline;
-                            *zoom: 1;
-                            vertical-align: -2px;
-                            border: 0 dashed transparent;
-                            border-width: 6px;
-                        }
-                        
-                        .arrow-top {
-                            border-bottom-style: solid;
-                            border-bottom-color: #2AB2DF;
-                        }
-                        
-                        .arrow-bottom {
-                            border-top-style: solid;
-                            border-top-color: #2AB2DF;
-                        }
-                        
-                        .arrow-left {
-                            border-right-style: solid;
-                            border-right-color: #2AB2DF;
-                        }
-                        
-                        .arrow-right {
-                            border-left-style: solid;
-                            border-left-color: #2AB2DF;
-                        }
-                        /* ◤左上角 */
-                        
-                        .arrow-left-top {
-                            border-top-style: solid;
-                            border-top-color: #2AB2DF;
-                            border-left-width: 0 !important;
-                        }
-                        /* ◥右上角 */
-                        
-                        .arrow-right-top {
-                            border-top-style: solid;
-                            border-top-color: #2AB2DF;
-                            border-right-width: 0 !important;
-                        }
-                        /* ◣左下角 */
-                        
-                        .arrow-left-bottom {
-                            border-bottom-style: solid;
-                            border-bottom-color: #2AB2DF;
-                            border-left-width: 0 !important;
-                        }
-                        /* ◢右下角 */
-                        
-                        .arrow-right-bottom {
-                            border-bottom-style: solid;
-                            border-bottom-color: #2AB2DF;
-                            border-right-width: 0 !important;
-                        }
-                        /*
+
+.arrow {
+    font-size: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: -2px;
+    border: 0 dashed transparent;
+    border-width: 6px;
+}
+
+.arrow-top {
+    border-bottom-style: solid;
+    border-bottom-color: #2AB2DF;
+}
+
+.arrow-bottom {
+    border-top-style: solid;
+    border-top-color: #2AB2DF;
+}
+
+.arrow-left {
+    border-right-style: solid;
+    border-right-color: #2AB2DF;
+}
+
+.arrow-right {
+    border-left-style: solid;
+    border-left-color: #2AB2DF;
+}
+
+/* ◤左上角 */
+
+.arrow-left-top {
+    border-top-style: solid;
+    border-top-color: #2AB2DF;
+    border-left-width: 0 !important;
+}
+
+/* ◥右上角 */
+
+.arrow-right-top {
+    border-top-style: solid;
+    border-top-color: #2AB2DF;
+    border-right-width: 0 !important;
+}
+
+/* ◣左下角 */
+
+.arrow-left-bottom {
+    border-bottom-style: solid;
+    border-bottom-color: #2AB2DF;
+    border-left-width: 0 !important;
+}
+
+/* ◢右下角 */
+
+.arrow-right-bottom {
+    border-bottom-style: solid;
+    border-bottom-color: #2AB2DF;
+    border-right-width: 0 !important;
+}
+
+/*
 *@ Name:       替换元素等比缩放组件
 *@ Author:     一丝
 *@ Update:     2013-9-29 16:05:04
 *@ Usage:      不同的视频网站由于控制栏高度不同，需要JS配合添加对应的 class
 */
-                        
-                        .fluid-media {
-                            position: relative;
-                        }
-                        /* 容器 */
-                        
-                        .fluid-media div,
-                        .fluid-media video,
-                        .fluid-media embed,
-                        .fluid-media object,
-                        .fluid-media iframe {
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            left: 0;
-                            top: 0;
-                        }
-                        /* 常见的视频比例 */
-                        
-                        .widescreen {
-                            padding-bottom: 56.25%;
-                            /* 宽屏 16:9=56.25% */
-                        }
-                        
-                        .narrowscreen {
-                            padding-bottom: 75%;
-                            /* 窄屏 4:3=75% */
-                        }
-                        /* 播放器控制栏的高度，更多网站按需扩展 */
-                        
-                        .youku {
-                            padding-top: 40px;
-                            /* 优酷 */
-                        }
-                        
-                        .wole {
-                            padding-top: 40px;
-                            /* 我乐 56.com */
-                        }
-                        
-                        .tudou {
-                            padding-top: 50px;
-                            /* 土豆 */
-                        }
-                        
-                        .iqiyi {
-                            padding-top: 45px;
-                            /* 爱奇艺 */
-                        }
-                        
-                        .youtube {
-                            padding-top: 30px;
-                            /* Youtube */
-                        }
-                        /*
+
+.fluid-media {
+    position: relative;
+}
+
+/* 容器 */
+
+.fluid-media div,
+.fluid-media video,
+.fluid-media embed,
+.fluid-media object,
+.fluid-media iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+/* 常见的视频比例 */
+
+.widescreen {
+    padding-bottom: 56.25%;
+    /* 宽屏 16:9=56.25% */
+}
+
+.narrowscreen {
+    padding-bottom: 75%;
+    /* 窄屏 4:3=75% */
+}
+
+/* 播放器控制栏的高度，更多网站按需扩展 */
+
+.youku {
+    padding-top: 40px;
+    /* 优酷 */
+}
+
+.wole {
+    padding-top: 40px;
+    /* 我乐 56.com */
+}
+
+.tudou {
+    padding-top: 50px;
+    /* 土豆 */
+}
+
+.iqiyi {
+    padding-top: 45px;
+    /* 爱奇艺 */
+}
+
+.youtube {
+    padding-top: 30px;
+    /* Youtube */
+}
+
+/*
 *@ Name:       未知高度垂直居中组件
 *@ Author:     一丝
 *@ Update:     2013-10-13 17:08:36
 *@ Usage:      支持图片，单行或多行文字，以及图文混排
 */
-                        /* 去除 inline-block 的空隙 */
-                        
-                        .center-box {
-                            font-size: 0;
-                            *word-spacing: -1px;
-                            /* IE6、7 */
-                            height: 100%;
-                            /* 继承父级高度 */
-                        }
-                        /* 修复 Safari 5- inline-block 的空隙 */
-                        
-                        @media (-webkit-min-device-pixel-ratio: 0) {
-                            .center-box {
-                                letter-spacing: -5px;
-                            }
-                        }
-                        /* 使用空标签生成一个高度100%的参照元素 */
-                        
-                        .center-box .center-hack {
-                            display: inline-block;
-                            *display: inline;
-                            *zoom: 1;
-                            font-size: 0;
-                            width: 0;
-                            height: 100%;
-                            vertical-align: middle;
-                        }
-                        
-                        .center-box .center-body {
-                            letter-spacing: normal;
-                            word-spacing: normal;
-                            display: inline-block;
-                            *display: inline;
-                            *zoom: 1;
-                            font-size: 12px;
-                            vertical-align: middle;
-                            /* 保证文字垂直居中 */
-                            padding: 0 !important;
-                            /* 防止设置边距导致居中失效 */
-                            margin: 0 !important;
-                            width: 100%;
-                            /* 保证连续字符也能居中 */
-                            white-space: normal;
-                            /* 保证连续字符换行 */
-                            word-wrap: break-word;
-                        }
-                        
-                        .center-box .center-img {
-                            display: inline-block;
-                            *display: inline;
-                            *zoom: 1;
-                            width: 100%;
-                            text-align: center;
-                            /* 图片默认水平居中 */
-                            vertical-align: middle;
-                            padding: 0 !important;
-                            /* 防止设置边距导致居中失效 */
-                            margin: 0 !important;
-                            font-size: 0;
-                        }
-                        
-                        .center-box img {
-                            vertical-align: middle;
-                            /* 去除现代浏览器 img 底部空隙 */
-                        }
-                        /* ==========================================================================
- 基础工具
- *@ Name:        utils.css V1.0.0
- *@ Author:      一丝
- *@ Update:      2013-9-30 15:39:57;
- *@ Copyright:   MIT License
- ========================================================================== */
-                        /**
+/* 去除 inline-block 的空隙 */
+
+.center-box {
+    font-size: 0;
+    *word-spacing: -1px;
+    /* IE6、7 */
+    height: 100%;
+    /* 继承父级高度 */
+}
+
+/* 修复 Safari 5- inline-block 的空隙 */
+
+@media (-webkit-min-device-pixel-ratio: 0) {
+    .center-box {
+        letter-spacing: -5px;
+    }
+}
+
+/* 使用空标签生成一个高度100%的参照元素 */
+
+.center-box .center-hack {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    font-size: 0;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.center-box .center-body {
+    letter-spacing: normal;
+    word-spacing: normal;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    font-size: 12px;
+    vertical-align: middle;
+    /* 保证文字垂直居中 */
+    padding: 0 !important;
+    /* 防止设置边距导致居中失效 */
+    margin: 0 !important;
+    width: 100%;
+    /* 保证连续字符也能居中 */
+    white-space: normal;
+    /* 保证连续字符换行 */
+    word-wrap: break-word;
+}
+
+.center-box .center-img {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 100%;
+    text-align: center;
+    /* 图片默认水平居中 */
+    vertical-align: middle;
+    padding: 0 !important;
+    /* 防止设置边距导致居中失效 */
+    margin: 0 !important;
+    font-size: 0;
+}
+
+.center-box img {
+    vertical-align: middle;
+    /* 去除现代浏览器 img 底部空隙 */
+}
+
+/* ==========================================================================
+基础工具
+*@ Name:        utils.css V1.0.0
+*@ Author:      一丝
+*@ Update:      2013-9-30 15:39:57;
+*@ Copyright:   MIT License
+========================================================================== */
+/**
 * 闭合浮动
 * @Author: 一丝
 * @Doc: http://nicolasgallagher.com/micro-clearfix-hack/
 */
-                        
-                        .clearfix:before,
-                        .clearfix:after {
-                            content: "";
-                            display: table;
-                        }
-                        
-                        .clearfix:after {
-                            clear: both;
-                        }
-                        
-                        .clearfix {
-                            *zoom: 1;
-                            /* IE6-7 触发 hasLayout */
-                        }
-                        /*
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /* IE6-7 触发 hasLayout */
+}
+
+/*
 *@ Name:       自适应图文混排组件
 *@ Update:     2013-9-29 19:23:27
 *@ Usage:      如果有溢出的内容需要显示请使用 clearcell
 *@ demo:       http://jsbin.com/EMIvoJohU/1/edit
 */
-                        
-                        .clearall {
-                            overflow: hidden;
-                            _overflow: visible;
-                            *zoom: 1;
-                        }
-                        
-                        .clearcell {
-                            display: table-cell;
-                            *zoom: 1;
-                        }
-                        
-                        .clearcell:after {
-                            clear: both;
-                            display: block;
-                            visibility: visible;
-                            overflow: hidden;
-                            height: 0 !important;
-                            line-height: 0;
-                            font-size: xx-large;
-                            content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
-                        }
-                        /* 强制不换行 */
-                        
-                        .nowrap {
-                            white-space: nowrap;
-                            word-wrap: normal;
-                        }
-                        /* 连续字符换行 */
-                        
-                        .wrap {
-                            white-space: normal;
-                            word-wrap: break-word;
-                        }
-                        
-                        .hidden,
-                        .hide {
-                            display: none;
-                        }
-                        /**
+
+.clearall {
+    overflow: hidden;
+    _overflow: visible;
+    *zoom: 1;
+}
+
+.clearcell {
+    display: table-cell;
+    *zoom: 1;
+}
+
+.clearcell:after {
+    clear: both;
+    display: block;
+    visibility: visible;
+    overflow: hidden;
+    height: 0 !important;
+    line-height: 0;
+    font-size: xx-large;
+    content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+}
+
+/* 强制不换行 */
+
+.nowrap {
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+/* 连续字符换行 */
+
+.wrap {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.hidden,
+.hide {
+    display: none;
+}
+
+/**
 * 文字溢出显示省略号
 * 1. Chrome 21+ bug https://bugs.webkit.org/show_bug.cgi?id=121902
 */
-                        
-                        .ellipsis {
-                            display: block;
-                            white-space: nowrap;
-                            word-wrap: normal;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            text-align: left;
-                            /* 2 */
-                        }
-                        /* --------------------------------------------------------------------------
- 图片替换
- -------------------------------------------------------------------------- */
-                        /** 隐藏文字
+
+.ellipsis {
+    display: block;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    /* 2 */
+}
+
+/* --------------------------------------------------------------------------
+图片替换
+-------------------------------------------------------------------------- */
+/** 隐藏文字
 * 1.text-indent:-999em 存在性能问题：
 *   http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
 */
-                        
-                        .text-hide {
-                            text-indent: 100%;
-                            /* 1 */
-                            white-space: nowrap;
-                            overflow: hidden;
-                        }
-                        /**
+
+.text-hide {
+    text-indent: 100%;
+    /* 1 */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/**
 * 裁剪方式隐藏元素
 * 1. IE6-8 有严重漏洞，请勿使用 https://www.hkcert.org/my_url/zh/101104_ms_ie_css_tagparsing_vuln
 * 2. VoiceOver 无法读出宽高为 0 的元素
 */
-                        
-                        .clip-hide {
-                            position: absolute !important;
-                            /*clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-                            clip: rect(1px, 1px, 1px, 1px);
-                            /* 1 */
-                            padding: 0 !important;
-                            border: 0 none !important;
-                            height: 1px !important;
-                            /* 2 */
-                            width: 1px !important;
-                            overflow: hidden;
-                        }
-                        /* img replace，通过定位方式隐藏内容 */
-                        
-                        .ir {
-                            position: relative;
-                            z-index: -1;
-                            overflow: hidden;
-                        }
-                        
-                        .ir-bg {
-                            position: relative;
-                            z-index: 1;
-                        }
-                        /**
+
+.clip-hide {
+    position: absolute !important;
+    /*clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    /* 1 */
+    padding: 0 !important;
+    border: 0 none !important;
+    height: 1px !important;
+    /* 2 */
+    width: 1px !important;
+    overflow: hidden;
+}
+
+/* img replace，通过定位方式隐藏内容 */
+
+.ir {
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.ir-bg {
+    position: relative;
+    z-index: 1;
+}
+
+/**
 * 禁用中文输入法
 * 1. 默认关闭输入法，但用户还可以手动开启，Firefox Linux 版不支持。
 * @note: 仅 IE 5+，Firefox 3+ 支持
 * @doc:  https://developer.mozilla.org/en-US/docs/Web/CSS/ime-mode
 */
-                        
-                        .ime-inactive {
-                            ime-mode: inactive !important;
-                            /* 1 */
-                        }
-                        /**
+
+.ime-inactive {
+    ime-mode: inactive !important;
+    /* 1 */
+}
+
+/**
 * 隐藏<select>元素的下拉箭头
 * 1. 隐藏 WebKit 中的下拉箭头
 * 2. Firefox 存在bug，该属性不完全生效，
-    https://bugzilla.mozilla.org/show_bug.cgi?id=649849
+https://bugzilla.mozilla.org/show_bug.cgi?id=649849
 * 3. 实验数值，Firefox for Android text-indent 需要设置大于 5px
 * @doc: https://gist.github.com/joaocunha/6273016
 * @demo: http://jsbin.com/EdiZuvO/1/edit
 */
-                        
-                        .select-no-appearance {
-                            -webkit-appearance: none;
-                            /* 1 */
-                            -moz-appearance: none;
-                            /* 2 */
-                            appearance: none;
-                            text-overflow: "";
-                            /* 3 */
-                            text-indent: .01px;
-                            /* 3 */
-                        }
-                        /*
+
+.select-no-appearance {
+    -webkit-appearance: none;
+    /* 1 */
+    -moz-appearance: none;
+    /* 2 */
+    appearance: none;
+    text-overflow: "";
+    /* 3 */
+    text-indent: .01px;
+    /* 3 */
+}
+
+/*
 * 1. 防止 OS X 中 Webfont 视觉上看起来变粗
 * 2. Fiefox 25 开始支持「-moz-osx-font-smoothing:auto(默认)|grayscale」
 * Demo: http://jsbin.com/iWItiQe/2
 */
-                        
-                        .antialiased {
-                            -webkit-font-smoothing: antialiased;
-                            /* 1 */
-                            -moz-osx-font-smoothing: grayscale;
-                            /* 2 */
-                        }
-                        /**
+
+.antialiased {
+    -webkit-font-smoothing: antialiased;
+    /* 1 */
+    -moz-osx-font-smoothing: grayscale;
+    /* 2 */
+}
+
+/**
 * 统一用双线显示人民币符号「&yen;(￥)」
 */
-                        
-                        .rmb,
-                        .yuan {
-                            font-family: arial;
-                            font-style: normal;
-                        }
-                        /* 默认按钮样式 */
-                        
-                        @media (max-width: 767px) {
-                            .table-responsive {
-                                width: 100%;
-                                overflow-x: scroll;
-                                overflow-y: hidden;
-                                border-right: 1px solid #ddd;
-                                -ms-overflow-style: -ms-autohiding-scrollbar;
-                                -webkit-overflow-scrolling: touch;
-                            }
-                            .table-responsive table {
-                                margin: 0;
-                            }
-                            .table-responsive th,
-                            .table-responsive td {
-                                white-space: nowrap;
-                            }
-                            .table-responsive .table {
-                                border: 0 none;
-                            }
-                        }
-                        /*@文字颜色*/
-                        /*正常绿色*/
-                        
-                        .type-n {
-                            color: #10ac86;
-                        }
-                        /*鼠标移上文字颜色*/
-                        
-                        .type-h:hover {
-                            color: #06c27a;
-                        }
-                        /*警告文字颜色*/
-                        
-                        .type-w {
-                            color: red;
-                        }
-                        /*强调文字颜色*/
-                        
-                        .type-e {
-                            color: #f27838;
-                        }
-                        /*辅助的文字颜色及大小*/
-                        
-                        .type-a {
-                            color: #aab2bd;
-                            font-size: 12px;
-                        }
-                        /*整体框架模块*/
-                        
-                        html,
-                        body {
-                            height: 100%;
-                            min-height: 800px;
-                        }
-                        
-                        .self {
-                            overflow: hidden;
-                            zoom: 1;
-                        }
-                        
-                        .left {
-                            float: left;
-                        }
-                        
-                        .wrap {
-                            width: 100%;
-                            min-height: 100%;
-                            _height: 100%;
-                            position: relative;
-                        }
-                        
-                        .container {
-                            width: 1200px;
-                            min-width: 1200px;
-                            height: 100%;
-                            margin: 0 auto;
-                            padding-bottom: 220px;
-                        }
-                        
-                        .footer {
-                            position: absolute;
-                            bottom: 0px;
-                            left: 0;
-                            height: 200px;
-                            background: #e4e4e4;
-                            width: 100%;
-                            min-width: 1400px;
-                            border-top: 1px solid rgba(228, 228, 228, 0.3);
-                        }
-                        
-                        .header,
-                        .search {
-                            width: 100%;
-                            min-width: 1400px;
-                            background: #000;
-                        }
-                        
-                        .search {
-                            background: #e4e4e4;
-                            height: 150px;
-                            padding-top: 20px;
-                        }
-                        
-                        .hdTitle,
-                        .contafooter {
-                            width: 1200px;
-                            min-width: 1200px;
-                            margin: 0 auto;
-                        }
-                        /*顶部导航*/
-                        
-                        .header .hdTitle ul li {
-                            float: right;
-                            color: #fff;
-                            line-height: 30px;
-                        }
-                        
-                        .header .hdTitle ul li a {
-                            color: #fff;
-                            margin-left: 20px;
-                        }
-                        
-                        .header .hdTitle ul li a:hover {
-                            color: #06c27a;
-                        }
-                        /*搜索框*/
-                        
-                        #formSerch * {
-                            float: left;
-                        }
-                        
-                        #formSerch input[type="text"] {
-                            width: 500px;
-                            height: 50px;
-                            border: 2px solid #10ac86;
-                            border-right: none;
-                            margin-top: 22px;
-                            font-size: 16px;
-                            outline: 0;
-                            padding: 6px;
-                            color: #aab2bd;
-                        }
-                        
-                        #formSerch input[type="submit"] {
-                            outline: 0;
-                            width: 90px;
-                            height: 50px;
-                            margin-top: 22px;
-                            font-size: 16px;
-                            border: 0;
-                            color: white;
-                            background: #10ac86;
-                            border: none;
-                        }
-                        
-                        #formSerch input[type="submit"]:hover {
-                            background: #06c27a;
-                        }
-                        
-                        #formSerch input[type="submit"]:active {
-                            background: #10ac86;
-                        }
-                        
-                        #formSerch span {
-                            color: #aab2bd;
-                            font-size: 20px;
-                            margin-top: 32px;
-                            margin-left: 30px;
-                            margin-right: 30px;
-                        }
-                        
-                        #formSerch a {
-                            outline: 0;
-                            width: 120px;
-                            height: 50px;
-                            margin-top: 22px;
-                            font-size: 16px;
-                            border: 0;
-                            color: white;
-                            background: #10ac86;
-                            line-height: 50px;
-                            text-align: center;
-                            color: #fff;
-                        }
-                        
-                        #formSerch a:hover {
-                            background: #06c27a;
-                            color: #fff;
-                            text-decoration: none;
-                        }
-                        
-                        #formSerch a:active {
-                            background: #10ac86;
-                            color: #fff;
-                            text-decoration: none;
-                        }
-                        
-                        .logo a {
-                            display: block;
-                            width: 160px;
-                            height: 100px;
-                            background: url("../images/logo.png") no-repeat scroll 0 20px/152px;
-                            /*    margin-right: 30px;*/
-                        }
-                        
-                        .hotSerch {
-                            width: 900px;
-                            padding-left: 40px;
-                            padding-top: 5px;
-                        }
-                        
-                        .hotSerch ul li {
-                            float: left;
-                            margin-right: 20px;
-                        }
-                        
-                        .hotSerch ul li a {
-                            color: #434a54;
-                            font-size: 14px;
-                        }
-                        
-                        .hotSerch ul li a:hover {
-                            color: #06c27a;
-                        }
-                        
-                        .cast {
-                            margin-left: 40px;
-                            width: 900px;
-                        }
-                        /*网站导航*/
-                        
-                        .Navigate {
-                            background: #10ac86;
-                        }
-                        
-                        .Navigate ul li a {
-                            float: left;
-                            color: #fff;
-                            margin-right: 62px;
-                            font-size: 18px;
-                            line-height: 40px;
-                            padding-left: 12px;
-                            padding-right: 12px;
-                        }
-                        
-                        .Navigate ul li a:hover {
-                            background: #06c27a;
-                        }
-                        /*重要通知*/
-                        
-                        .notify .hdTitle div {
-                            float: left;
-                        }
-                        
-                        .notify .hdTitle {
-                            margin-top: 5px;
-                        }
-                        
-                        .messageTitle {
-                            width: 109px;
-                            height: 45px;
-                            text-align: center;
-                            line-height: 45px;
-                            background: #f27838;
-                            color: #fff;
-                            font-weight: bold;
-                            border-top-left-radius: 5px;
-                            border-bottom-left-radius: 5px;
-                            -moz-border-top-left-radius: 5px;
-                            -moz-border-bottom-left-radius: 5px;
-                            -webkit-border-top-left-radius: 5px;
-                            -webkit-border-bottom-left-radius: 5px;
-                            font-size: 14px;
-                            margin-left: 15px;
-                        }
-                        
-                        .messageList {
-                            width: 1070px;
-                            height: 45px;
-                            border: 1px solid #f27838;
-                            border-left: none;
-                            border-top-right-radius: 5px;
-                            border-bottom-right-radius: 5px;
-                            -moz-border-top-right-radius: 5px;
-                            -moz-border-bottom-right-radius: 5px;
-                            -webkit-border-top-right-radius: 5px;
-                            -webkit-border-bottom-right-radius: 5px;
-                        }
-                        
-                        .messageList ul li {
-                            float: left;
-                            list-style: square !important;
-                            margin-left: 40px;
-                            line-height: 45px;
-                            color: #f27838;
-                            width: 310px;
-                        }
-                        
-                        .messageList ul li a {
-                            color: #f27838;
-                            font-size: 14px;
-                            width: 310px;
-                        }
-                        /*广告*/
-                        
-                        .smallB a {
-                            display: block;
-                            float: left;
-                            width: 130px;
-                            height: 130px;
-                            border: 1px solid #10ac86;
-                            margin-right: 11px;
-                            background: url("../images/hema.jpg") no-repeat;
-                        }
-                        
-                        #bigBanner {
-                            width: 850px;
-                            height: auto;
-                        }
-                        /*普通通知、规则*/
-                        
-                        .inform {
-                            width: 330px;
-                        }
-                        
-                        #bigBanner,
-                        .inform {
-                            float: left;
-                        }
-                        
-                        .inform-1 {
-                            border: 1px solid #10ac86;
-                            margin-top: 8px;
-                            height: 190px;
-                        }
-                        
-                        .informTitle {
-                            border-bottom: 1px solid #10ac96;
-                            padding-bottom: 2px;
-                        }
-                        
-                        .informTitle span {
-                            margin-left: 8px;
-                            line-height: 2px;
-                        }
-                        
-                        .informConter ul {
-                            margin-left: 8px;
-                        }
-                        
-                        .informConter ul li a:hover {
-                            color: #10ac86;
-                        }
-                        /*@更多图标*/
-                        
-                        .more {
-                            display: block;
-                            float: right;
-                            text-align: right;
-                            margin-top: 5px;
-                            width: 32px;
-                            height: 32px;
-                            background: url("../images/more0.png") no-repeat scroll 0 0/24px;
-                        }
-                        /*
+
+.rmb,
+.yuan {
+    font-family: arial;
+    font-style: normal;
+}
+
+/* 默认按钮样式 */
+
+@media (max-width: 767px) {
+    .table-responsive {
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        border-right: 1px solid #ddd;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-responsive table {
+        margin: 0;
+    }
+
+    .table-responsive th,
+    .table-responsive td {
+        white-space: nowrap;
+    }
+
+    .table-responsive .table {
+        border: 0 none;
+    }
+}
+
+/*@文字颜色*/
+/*正常绿色*/
+
+.type-n {
+    color: #10ac86;
+}
+
+/*鼠标移上文字颜色*/
+
+.type-h:hover {
+    color: #06c27a;
+}
+
+/*警告文字颜色*/
+
+.type-w {
+    color: red;
+}
+
+/*强调文字颜色*/
+
+.type-e {
+    color: #f27838;
+}
+
+/*辅助的文字颜色及大小*/
+
+.type-a {
+    color: #aab2bd;
+    font-size: 12px;
+}
+
+/*整体框架模块*/
+
+html,
+body {
+    height: 100%;
+    min-height: 800px;
+}
+
+.self {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.left {
+    float: left;
+}
+
+.wrap {
+    width: 100%;
+    min-height: 100%;
+    _height: 100%;
+    position: relative;
+}
+
+.container {
+    width: 1200px;
+    min-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 220px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 200px;
+    background: #f5f5f5;
+    width: 100%;
+    min-width: 1400px;
+    border-top: 1px solid rgba(228, 228, 228, 0.3);
+}
+
+.header,
+.search {
+    width: 100%;
+    min-width: 1400px;
+    background: #000;
+}
+
+.search {
+    background: #f5f5f5;
+    height: 150px;
+    padding-top: 20px;
+}
+
+.hdTitle,
+.contafooter {
+    width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+/*顶部导航*/
+
+.header .hdTitle ul li {
+    float: right;
+    color: #fff;
+    line-height: 30px;
+}
+
+.header .hdTitle ul li a {
+    color: #fff;
+    margin-left: 20px;
+}
+
+.header .hdTitle ul li a:hover {
+    color: #06c27a;
+}
+
+/*搜索框*/
+
+#formSerch * {
+    float: left;
+}
+
+#formSerch input[type="text"] {
+    width: 500px;
+    height: 50px;
+    border: 2px solid #10ac86;
+    border-right: none;
+    margin-top: 22px;
+    font-size: 16px;
+    outline: 0;
+    padding: 6px;
+    color: #aab2bd;
+}
+
+#formSerch input[type="submit"] {
+    outline: 0;
+    width: 90px;
+    height: 50px;
+    margin-top: 22px;
+    font-size: 16px;
+    border: 0;
+    color: white;
+    background: #10ac86;
+    border: none;
+}
+
+#formSerch input[type="submit"]:hover {
+    background: #06c27a;
+}
+
+#formSerch input[type="submit"]:active {
+    background: #10ac86;
+}
+
+#formSerch span {
+    color: #aab2bd;
+    font-size: 20px;
+    margin-top: 32px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#formSerch a {
+    outline: 0;
+    width: 120px;
+    height: 50px;
+    margin-top: 22px;
+    font-size: 16px;
+    border: 0;
+    color: white;
+    background: #10ac86;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+#formSerch a:hover {
+    background: #06c27a;
+    color: #fff;
+    text-decoration: none;
+}
+
+#formSerch a:active {
+    background: #10ac86;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo a {
+    display: block;
+    width: 160px;
+    height: 100px;
+    background: url("../images/logo.png") no-repeat scroll 0 20px/152px;
+    /*    margin-right: 30px;*/
+}
+
+.hotSerch {
+    width: 900px;
+    padding-left: 80px;
+    padding-top: 5px;
+}
+
+.hotSerch ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.hotSerch ul li a {
+    color: #434a54;
+    font-size: 14px;
+}
+
+.hotSerch ul li a:hover {
+    color: #06c27a;
+}
+
+.cast {
+    margin-left: 80px;
+    width: 900px;
+}
+
+/*网站导航*/
+
+.Navigate {
+    background: #10ac86;
+}
+
+.Navigate ul li a {
+    float: left;
+    color: #fff;
+    margin-right: 62px;
+    font-size: 18px;
+    line-height: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.Navigate ul li a:hover {
+    background: #06c27a;
+}
+
+/*重要通知*/
+
+.notify .hdTitle div {
+    float: left;
+}
+
+.notify .hdTitle {
+    margin-top: 5px;
+}
+
+.messageTitle {
+    width: 109px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    background: #f27838;
+    color: #fff;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    font-size: 14px;
+}
+
+.messageList {
+    width: 1070px;
+    height: 45px;
+    border: 1px solid #f27838;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+
+.messageList ul li {
+    float: left;
+    list-style: square !important;
+    margin-left: 40px;
+    line-height: 45px;
+    color: #f27838;
+    width: 310px;
+}
+
+.messageList ul li a {
+    color: #f27838;
+    font-size: 14px;
+    width: 310px;
+}
+
+/*广告*/
+
+.smallB a {
+    display: block;
+    float: left;
+    width: 130px;
+    height: 130px;
+    border: 1px solid #10ac86;
+    margin-right: 11px;
+    background: url("../images/hema.jpg") no-repeat;
+}
+
+#bigBanner {
+    width: 850px;
+    height: auto;
+}
+
+/*普通通知、规则*/
+
+.inform {
+    width: 330px;
+}
+
+#bigBanner,
+.inform {
+    float: left;
+}
+
+.inform-1 {
+    border: 1px solid #10ac86;
+    margin-top: 8px;
+    height: 190px;
+}
+
+.informTitle {
+    border-bottom: 1px solid #10ac96;
+    padding-bottom: 2px;
+}
+
+.informTitle span {
+    margin-left: 8px;
+    line-height: 2px;
+}
+
+.informConter ul {
+    margin-left: 8px;
+}
+
+.informConter ul li a:hover {
+    color: #10ac86;
+}
+
+/*@更多图标*/
+
+.more {
+    display: block;
+    float: right;
+    text-align: right;
+    margin-top: 5px;
+    width: 32px;
+    height: 32px;
+    background: url("../images/more0.png") no-repeat scroll 0 0/24px;
+}
+
+/*
 @物资采购
 @工程项目
 @包含了延期公告的defer,Title
 @修订日期：2016年9月7日13:12:38
 */
-                        
-                        .Bide,
-                        .defer,
-                        .won {
-                            margin-top: 20px;
-                        }
-                        
-                        .BideTtile img,
-                        .dfTitle img {
-                            margin-right: 10px;
-                        }
-                        
-                        .BideTtile a,
-                        .dfTitle a {
-                            font-size: 16px;
-                            font-weight: 600;
-                            color: #10ac86;
-                        }
-                        
-                        .dfTitle {
-                            border-bottom: 2px solid #10ac86;
-                            padding-bottom: 5px;
-                        }
-                        
-                        .BideConter {
-                            margin-top: 5px;
-                        }
-                        
-                        .BCLeft,
-                        .BCRigth {
-                            float: left;
-                            height: 480px;
-                        }
-                        
-                        .BCL-min,
-                        .BCR-min {
-                            height: 280px;
-                        }
-                        
-                        .BCRigth {
-                            margin-left: 10px;
-                            border: 1px solid rgba(135, 213, 194, 0.5);
-                            width: 840px;
-                        }
-                        
-                        .BCLeft {
-                            border-top: 2px solid #10ac86;
-                            padding-top: 5px;
-                            width: 330px;
-                        }
-                        
-                        .BCLTop {
-                            background: rgba(135, 213, 194, 0.3);
-                            height: 165px;
-                        }
-                        
-                        .BCLT-min {
-                            height: 90px;
-                        }
-                        
-                        .BCLDown {
-                            background: rgba(170, 178, 189, 0.2);
-                            height: 315px;
-                        }
-                        
-                        .BCLDown-min {
-                            height: 180px;
-                        }
-                        
-                        .BCLTop ul li {
-                            display: block;
-                            margin-left: 8px;
-                            float: left;
-                            text-align: center;
-                            padding: 8px;
-                        }
-                        
-                        .BCLDown ul li {
-                            display: block;
-                            margin-left: 6px;
-                            float: left;
-                            text-align: center;
-                            padding: 6px;
-                        }
-                        
-                        .BCLTop ul li a:hover,
-                        .BCLDown ul li a:hover {
-                            color: #10ac86;
-                        }
-                        
-                        .BCRTop {
-                            padding-top: 5px;
-                            padding-bottom: 5px;
-                            border-bottom: 1px solid rgba(135, 213, 194, 0.5);
-                        }
-                        
-                        .BCRTop span {
-                            margin-left: 15px;
-                        }
-                        
-                        .BCRDown ul {
-                            margin-left: 15px;
-                        }
-                        
-                        .BCRDown ul li {
-                            display: block;
-                            float: left;
-                            width: 390px;
-                            padding-left: 10px;
-                            padding-right: 20px;
-                            border-bottom: 1px solid #e6e9ed;
-                            padding-bottom: 6px;
-                            padding-top: 6px;
-                        }
-                        
-                        .BCRDown ul li:last-child,
-                        .BCRDown ul li:nth-last-child(2) {
-                            border-bottom: none;
-                        }
-                        
-                        .BCRDown ul li a {
-                            float: left;
-                            width: 410px;
-                        }
-                        
-                        .BCRDown ul li a:first-child:hover {
-                            color: #10ac86;
-                        }
-                        /*
+
+.Bide,
+.defer,
+.won {
+    margin-top: 20px;
+}
+
+.BideTtile img,
+.dfTitle img {
+    margin-right: 10px;
+}
+
+.BideTtile a,
+.dfTitle a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #10ac86;
+}
+
+.dfTitle {
+    border-bottom: 2px solid #10ac86;
+    padding-bottom: 5px;
+}
+
+.BideConter {
+    margin-top: 5px;
+}
+
+.BCLeft,
+.BCRigth {
+    float: left;
+    height: 480px;
+}
+
+.BCL-min,
+.BCR-min {
+    height: 280px;
+}
+
+.BCRigth {
+    margin-left: 10px;
+    border: 1px solid rgba(135, 213, 194, 0.5);
+    width: 840px;
+}
+
+.BCLeft {
+    border-top: 2px solid #10ac86;
+    padding-top: 5px;
+    width: 330px;
+}
+
+.BCLTop {
+    background: rgba(135, 213, 194, 0.3);
+    height: 165px;
+}
+
+.BCLT-min {
+    height: 90px;
+}
+
+.BCLDown {
+    background: rgba(170, 178, 189, 0.2);
+    height: 315px;
+}
+
+.BCLDown-min {
+    height: 180px;
+}
+
+.BCLTop ul li {
+    display: block;
+    margin-left: 8px;
+    float: left;
+    text-align: center;
+    padding: 8px;
+}
+
+.BCLDown ul li {
+    display: block;
+    margin-left: 6px;
+    float: left;
+    text-align: center;
+    padding: 6px;
+}
+
+.BCLTop ul li a:hover,
+.BCLDown ul li a:hover {
+    color: #10ac86;
+}
+
+.BCRTop {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(135, 213, 194, 0.5);
+}
+
+.BCRTop span {
+    margin-left: 15px;
+}
+
+.BCRDown ul {
+    margin-left: 15px;
+}
+
+.BCRDown ul li {
+    display: block;
+    float: left;
+    width: 390px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-bottom: 1px solid #e6e9ed;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+.BCRDown ul li:last-child,
+.BCRDown ul li:nth-last-child(2) {
+    border-bottom: none;
+}
+
+.BCRDown ul li a {
+    float: left;
+    width: 410px;
+}
+
+.BCRDown ul li a:first-child:hover {
+    color: #10ac86;
+}
+
+/*
 @招标延期公告
 @修订时间：2016年9月7日13:13:00
 */
-                        
-                        .dfConter ul {
-                            margin-top: 10px;
-                        }
-                        
-                        .dfConter ul li {
-                            /*    width: 1150px;*/
-                            border-bottom: 1px dashed #10ac86;
-                            height: 32px;
-                        }
-                        
-                        .dfConter ul li:last-child {
-                            border-bottom: none;
-                        }
-                        
-                        .dfConter ul li a {
-                            display: block;
-                            width: 585px;
-                            margin-right: 15px;
-                            float: left;
-                        }
-                        
-                        .dfConter ul li a:hover {
-                            color: #10ac86;
-                        }
-                        
-                        .dfConter ul li span {
-                            margin-right: 5px;
-                        }
-                        /*
+
+.dfConter ul {
+    margin-top: 10px;
+}
+
+.dfConter ul li {
+    /*    width: 1150px;*/
+    border-bottom: 1px dashed #10ac86;
+    height: 32px;
+}
+
+.dfConter ul li:last-child {
+    border-bottom: none;
+}
+
+.dfConter ul li a {
+    display: block;
+    width: 585px;
+    margin-right: 15px;
+    float: left;
+}
+
+.dfConter ul li a:hover {
+    color: #10ac86;
+}
+
+.dfConter ul li span {
+    margin-right: 5px;
+}
+
+/*
 @中标公告
 @修订时间：2016年9月7日13:32:11
 */
-                        
-                        .wonConter ul {
-                            margin-top: 10px;
-                        }
-                        
-                        .wonConter ul li {
-                            /*    width: 1150px;*/
-                            border-bottom: 1px dashed #10ac86;
-                            height: 32px;
-                        }
-                        
-                        .wonConter ul li:last-child {
-                            border-bottom: none;
-                        }
-                        
-                        .wonConter ul li a {
-                            display: block;
-                            width: 585px;
-                            margin-right: 15px;
-                            float: left;
-                        }
-                        
-                        .wonConter ul li a:hover {
-                            color: #10ac86;
-                        }
-                        
-                        .wonConter ul li span {
-                            margin-right: 5px;
-                        }
-                        /*@尾部
+
+.wonConter ul {
+    margin-top: 10px;
+}
+
+.wonConter ul li {
+    /*    width: 1150px;*/
+    border-bottom: 1px dashed #10ac86;
+    height: 32px;
+}
+
+.wonConter ul li:last-child {
+    border-bottom: none;
+}
+
+.wonConter ul li a {
+    display: block;
+    width: 585px;
+    margin-right: 15px;
+    float: left;
+}
+
+.wonConter ul li a:hover {
+    color: #10ac86;
+}
+
+.wonConter ul li span {
+    margin-right: 5px;
+}
+
+/*@尾部
 @修订时间：2016年9月7日14:11:01*/
-                        
-                        .bidFoot {
-                            margin-top: 5px;
-                        }
-                        
-                        .bidFoot dl {
-                            float: left;
-                            display: block;
-                            height: 150px;
-                            width: 180px;
-                            margin-top: 10px;
-                        }
-                        
-                        .footLogo p {
-                            color: #999;
-                            font-size: 16px;
-                            margin-top: 15px;
-                        }
-                        
-                        .footContent {
-                            float: left;
-                            height: 165px;
-                            width: 600px;
-                        }
-                        
-                        .footLogo {
-                            float: left;
-                            width: 300px;
-                            height: 165px;
-                        }
-                        
-                        .footContent dl dt {
-                            font-size: 14px;
-                            line-height: 30px;
-                            color: #808080;
-                            font-weight: 500;
-                        }
-                        
-                        .footContent dd a {
-                            font-size: 12px;
-                            color: #808080;
-                            line-height: 30px;
-                        }
-                        
-                        .footContent dd a:hover {
-                            color: #10ac86;
-                        }
-                        
-                        .serve p {
-                            line-height: 30px;
-                        }
-                        
-                        .serve img {
-                            width: 120px;
-                            height: auto;
-                            margin-left: 30px;
-                            margin-top: 10px;
-                        }
-                        
-                        .footer p,
-                        .footer dl,
-                        .footer dd,
-                        .footer div {
-                            font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
-                        }
-                        
-                        .copyRight {
-                            margin-top: 10px;
-                            text-align: center;
-                            border-top: 1px solid rgba(170, 178, 189, 0.5);
-                            color: #aab2bd;
-                        }
+
+.bidFoot {
+    margin-top: 5px;
+}
+
+.bidFoot dl {
+    float: left;
+    display: block;
+    height: 150px;
+    width: 180px;
+    margin-top: 10px;
+}
+
+.footLogo p {
+    color: #999;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.footContent {
+    float: left;
+    height: 165px;
+    width: 600px;
+}
+
+.footLogo {
+    float: left;
+    width: 300px;
+    height: 165px;
+}
+
+.footContent dl dt {
+    font-size: 14px;
+    line-height: 30px;
+    color: #808080;
+    font-weight: 500;
+}
+
+.footContent dd a {
+    font-size: 12px;
+    color: #808080;
+    line-height: 30px;
+}
+
+.footContent dd a:hover {
+    color: #10ac86;
+}
+
+.serve p {
+    line-height: 30px;
+}
+
+.serve img {
+    width: 120px;
+    height: auto;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.footer p,
+.footer dl,
+.footer dd,
+.footer div {
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+.copyRight {
+    margin-top: 10px;
+    text-align: center;
+    border-top: 1px solid rgba(170, 178, 189, 0.5);
+    color: #aab2bd;
+}
