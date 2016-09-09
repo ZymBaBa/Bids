@@ -2,7 +2,7 @@
 @用户中心-左则部分
 */
 .userLeft {
-    border: 1px solid #10ac86;
+    /*border: 1px solid #10ac86;*/
     float: left;
     position: relative;
     margin-top: 10px;
@@ -16,16 +16,18 @@
     font-size: 12px;
     color: #434a54;
 }
+.userLeft ul li a:hover{
+    color: #06c27a;
+}
+.userLeft ul li {
+    padding-top: 5px;
+}
 
 /*左则大标签的颜色*/
 .userLeft ul li span {
     color: #aab2bd;
 }
 
-/*左则列表鼠标移过效果*/
-.userLeft ul li a:hover {
-    color: #06c27a;
-}
 
 /*左则列表内容向左移动*/
 .uslBids {
@@ -119,7 +121,7 @@
     margin-top: 10px;
 }
 
-.cdContent ul li a:hover, .cdContent ul li a:link {
+.cdContent ul li a:hover {
     color: #06c27a;
 }
 
@@ -158,20 +160,23 @@
     width: 730px;
     margin-left: 18px;
     margin-right: 18px;
+    padding-bottom: 40px;
     /*height: 200px;*/
 }
 
 /*中间部分-头部企业信息*/
-.userContent .userCTop {
+.userCTop, .userCScreen, .userCRecommend {
     width: 100%;
-    min-height: 190px;
+    min-height: 90px;
+    height: auto;
     border: 2px solid #e4eaee;
     border-bottom: none;
+    margin-bottom: 10px;
 }
 
 .userContent .userCTop .uctTitle {
     width: 100%;
-    min-height: 70px;
+    min-height: 120px;
     border-bottom: 1px solid #e4eaee;
     background: #f5f8fa;
 }
@@ -203,13 +208,15 @@
     height: 25px;
     border-right: 1px solid #e4e4e4;
 }
-.userCTop .uctBids ul li:last-child{
+
+.userCTop .uctBids ul li:last-child {
     border-right: none;
 }
 
 .userCTop .uctBids ul li a:hover {
     color: #06c27a;
 }
+
 /*数字提醒*/
 .userCTop .uctBids ul li span {
     background: #f27838;
@@ -219,5 +226,265 @@
     color: #ffffff;
     padding: 1px;
     font-size: 10px;
-    margin-left:2px;
+    margin-left: 2px;
+}
+
+/*基本企业信息*/
+/*头像信息*/
+.uctTIcon {
+    float: left;
+    margin-top: 30px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.uctTIcon .s-avatar {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.s-avatar img {
+    position: absolute;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+/*Logo编辑文字*/
+.s-avatar .icoEditor {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    line-height: 57px;
+    z-index: 2;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+    font-weight: bold;
+    display: none;
+}
+
+/*企业名称,企业认证*/
+.uctEii {
+    float: left;
+    display: block;
+    margin-top: 36px;
+    margin-left: 15px;
+    height: auto;
+    width: 280px;
+}
+
+.uctEii .uctName {
+    display: block;
+    font-size: 16px;
+}
+
+.uctEii .uctName:hover {
+    color: #06c27a;
+}
+
+/*未认证*/
+.uctEii .uctEApprove-F {
+    padding: 3px;
+    font-size: 12px;
+    color: #ffffff;
+    background: rgba(242, 120, 56, 1);
+    border-radius: 15%;
+}
+
+/*已认证*/
+.uctEii .uctEApprove-T {
+    padding: 3px;
+    font-size: 12px;
+    color: #ffffff;
+    background: rgba(16, 172, 134, 1);
+    border-radius: 15%;
+}
+
+/*未开通投标通*/
+.uctEii .uctECorporate-F {
+    font-size: 12px;
+    padding: 5px;
+    background: rgba(242, 120, 56, 1);
+    color: #ffffff;
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/*已开通投标通*/
+.uctEii .uctECorporate-T {
+    font-size: 12px;
+    padding: 5px;
+    background: rgba(16, 172, 134, 1);
+    color: #ffffff;
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+}
+.uctEii .uctECorporate-T:hover{
+    color: #ffffff !important;
+    background:#06c27a;
+}
+
+/*钱包模块*/
+.uctEMoney {
+    float: right;
+    display: -webkit-flex; /*让下面的a标签在这个对象中平均分布*/
+    height: 100px;
+    width: 300px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background: #ffffff;
+    border: 1px solid #e4e4e4;
+}
+
+.uctEMoney a {
+    -webkit-flex: 1; /* display: -webkit-flex;，根据上面这个平分*/
+}
+.uctEMoney a:hover{
+    color: #434a54 !important;
+}
+.uctEMCash, .uctEWallet {
+    font-size: 12px;
+    /*margin-top: 3px;*/
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.uctEMCash {
+    border-right: 1px solid #e4e4e4;
+}
+
+.uctEMCash p, .uctEWallet p {
+    padding-top: 3px;
+}
+
+.uctEMCash span, .uctEWallet span {
+    padding-left: 10px;
+    color: #06c27a;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*投标审核*/
+.userCSTitle, .userCRTitle {
+    display: block;
+    margin-top: 3px;
+    border-bottom: 1px solid #e4eaee;
+    padding-bottom: 2px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+/*加条线*/
+.bottomLin {
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.userCSNoContent a {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    width: 120px;
+    height: 40px;
+    background: #10ac86;
+    border-radius: 20px;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.userCSNoContent a:hover{
+    background: #06c27a;
+    color: #ffffff !important;
+}
+/*招标信息审核*/
+.userCSContent,.userCRList{
+    padding-bottom: 10px;
+}
+.userCSContent ul li,.userCRList ul li{
+    margin-top: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid rgba(67,74,84,0.1);
+}
+
+/*去掉最后一个LI的下边框线*/
+.userCSContent ul li:last-child,.userCRList ul li:last-child{
+    border-bottom: none;
+}
+.StateLink{
+    margin-right: 30px;
+    margin-left: 10px;
+}
+.StateLink:hover{
+    color: #10ac86;
+}
+/*招标信息审核中状态*/
+.State-T {
+    background: #10ac86;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    color: #ffffff;
+    margin: 5px;
+}
+.State-F{
+    background: #f27838;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    color: #ffffff;
+    margin: 5px;
+}
+/*投票信息审核失败后的编辑、删除按钮*/
+.StateOperate{
+    float: right;
+}
+.userCSContent .StateOperate a{
+    margin-left: 5px;
+    margin-right:5px;
+    padding: 3px;
+    color: #ffffff;
+    border-radius: 2px;
+}
+.userCSContent .StateOperate a:hover{
+    color: #ffffff !important;
+}
+.userCSContent .StateOperate a:first-child{
+    margin-left: 5px;
+    margin-right:5px;
+    color: #ffffff;
+    background: #10ac86;
+}
+.userCSContent .StateOperate a:first-child:hover{
+   background: #06c27a;
+}
+.userCSContent .StateOperate a:last-child{
+    margin-left: 5px;
+    margin-right:5px;
+    color: #ffffff;
+    background: #f27838;
+}
+.userCSContent .StateOperate a:last-child:hover{
+    background: rgba(231,37,32,1);
+}
+.userCRLTime{
+    float: right;
+    color: #aab2bd;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.userCRList .StateLink:hover{
+    color: #f27838;
+}
+.userCRList .StateLink span{
+    color: #f27838;
 }
