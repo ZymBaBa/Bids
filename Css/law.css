@@ -1,0 +1,35 @@
+/*
+@法规中心-左则部分
+*/
+.userLeft {
+    border: 1px solid #10ac86;
+    float: left;
+    position: relative;
+    margin-top: 10px;
+    width: 130px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*法规中心左则部分内容 CSS*/
+.userLeft ul li span, .userLeft ul li a {
+    font-size: 12px;
+    color: #434a54;
+}
+.userLeft ul li a:hover{
+    color: #06c27a;
+}
+.userLeft ul li {
+    padding-top: 5px;
+}
+
+/*左则大标签的颜色*/
+.userLeft ul li span {
+    color: #aab2bd;
+}
+
+
+/*左则列表内容向左移动*/
+.uslBids {
+    margin-left: 10px;
+}
