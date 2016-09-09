@@ -14,6 +14,8 @@
     <!--核心JS-->
     <script src="../Js/jquery-3.1.0.js"></script>
     <script src="../Js/bootstrap.js"></script>
+    <!--页面JS效果-->
+    <script src="../Js/style.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -23,9 +25,9 @@
             <ul>
                 <li><a href="#">网站导航</a></li>
                 <li><a href="#">关注我们</a></li>
-                <li><a href="#">法规中心</a></li>
-                <li><a href="#">我的招标</a></li>
-                <li><a href="#">我的投标</a></li>
+                <li><a href="../law/law.html">法规中心</a></li>
+                <li><a href="../bidsPust.html">我的招标</a></li>
+                <li><a href="../bidsPust.html">我的投标</a></li>
                 <li><a href="../sign.html">免费注册</a></li>
                 <li><a href="#">登录</a></li>
             </ul>
@@ -70,7 +72,7 @@
         <!--用户中心左则部分-->
         <div class="userLeft">
             <ul>
-                <li><a href="../User/User.html">我的首页</a></li>
+                <li class="Selected"><span class="Bikini"></span><a href="../User/User.html">我的首页</a></li>
                 <li><span>招标管理</span>
                     <ul class="uslBids">
                         <li><a href="#">综合招标</a></li>
@@ -119,13 +121,13 @@
                         <a href="#" class="uctECorporate-T">投标通会员</a>
                     </div>
                     <div class="uctEMoney">
-                        <a href="#" class="uctEMCash">
+                        <a href="../Wallet/Wallet.html" target="_blank"  class="uctEMCash" >
                             <p>已交保证金</p>
                             <span>200000</span>
                             <p>待退保证金</p>
                             <span>200000</span>
                         </a>
-                        <a href="#" class="uctEWallet">
+                        <a href="../Wallet/Wallet.html" target="_blank"   class="uctEWallet"  >
                             <p>我的钱包</p>
                             <span>600000</span>
                         </a>
