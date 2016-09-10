@@ -1,0 +1,245 @@
+/*
+@用户中心-左则部分
+*/
+.userLeft {
+    /*border: 1px solid #10ac86;*/
+    float: left;
+    position: relative;
+    margin-top: 10px;
+    width: 130px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*用户中心左则部分内容 CSS*/
+.userLeft ul li span, .userLeft ul li a {
+    font-size: 14px;
+    color: #434a54;
+}
+
+.userLeft ul li a:hover {
+    color: #06c27a;
+}
+
+.userLeft ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+/*左则大标签的颜色*/
+.userLeft ul li span {
+    color: #aab2bd;
+}
+
+/*左则标签选中效果*/
+.userLeft .Selected {
+    background: #f5f5f5;
+}
+
+.userLeft .Selected a {
+    color: #10ac86;
+}
+
+.userLeft .Selected a:hover {
+    color: #06c27a;
+}
+
+/*左则标签选中的左边效果*/
+.userLeft .Selected .Bikini {
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 35px;
+    background: rgba(16, 172, 134, 0.6);
+    top: 0;
+    left: 0;
+}
+
+/*左则列表内容向左移动*/
+.uslBids {
+    margin-left: 10px;
+}
+
+/*
+@用户中心-右测部分
+*/
+.userRight {
+    /*border: 1px solid #10ac86;*/
+    float: left;
+    position: relative;
+    margin-top: 10px;
+    width: 300px;
+    /*height: 200px;*/
+}
+
+/*招标日期外框 */
+.calendar {
+    min-height: 300px;
+    border: 1px solid rgba(6, 194, 122, 0.5);
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+/*招标日期头部部分*/
+.cdTop {
+    background: #10ac86;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+/*招标日期头部图片*/
+.cdTop img {
+    float: left;
+    display: block;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+/*招标日期日期显示部分*/
+.cdDate {
+    height: 150px;
+    background: rgba(6, 194, 122, 0.1);
+    border-bottom: 1px solid #10ac86;
+    text-align: center;
+}
+
+.cdDate span, .cdDate em {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.cdDate em {
+    height: 80px;
+    font-size: 60px;
+    color: #10ac86;
+    margin-bottom: 10px;
+}
+
+.cdDate span {
+    color: #06c27a;
+    font-size: 15px;
+    margin-bottom: -8px;
+}
+
+/*招标日期内容部分*/
+/*无内容显示*/
+.cdContent .cdBlank {
+    display: none;
+    text-align: center;
+    line-height: 170px;
+    color: #aab2bd;
+    font-size: 38px;
+}
+
+/*有内容列表*/
+.cdContent ul {
+    display: block;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.cdContent ul li {
+    margin-top: 10px;
+}
+
+.cdContent ul li a:hover {
+    color: #06c27a;
+}
+
+/*紧急提醒，正常提醒外框大小*/
+.cdContent .cdUrgency, .cdContent .cdNormal {
+    float: left;
+    display: block;
+    color: #ffffff;
+    width: 50px;
+    height: 24px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*紧急通知背景色*/
+.cdContent .cdUrgency {
+    background: #f27838;
+}
+
+/*正常提醒背景色*/
+.cdContent .cdNormal {
+    background: #10ac86;
+}
+
+/*
+@中间框架
+*/
+.userContent {
+    /*border: 1px solid #10ac86;*/
+    float: left;
+    position: relative;
+    margin-top: 10px;
+    width: 730px;
+    margin-left: 18px;
+    margin-right: 18px;
+    padding-bottom: 40px;
+    height: 200px;
+}
+
+/*
+@中间-筛选
+*/
+.userCScreen {
+    width: 730px;
+    height: auto;
+    border: 1px solid #10ac86;
+    float: left;
+    padding-bottom: 3px;
+    background: rgba(245, 245, 245, 0.4);
+}
+
+
+.userCScreen div{
+    height: 40px;
+}
+.userCSList{
+    padding-top: 5px;
+}
+.userCScreen .userCSList span{
+    float: left;
+    display: block;
+    margin-left: 20px;
+}
+.userCScreen .userCSList ul li{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 60px;
+    margin-left: 5px;
+    margin-right:5px;
+}
+.userCScreen .userCSList ul li a:hover{
+    color: #06c27a;
+}
+
+/*@分类选中的效果*/
+.listSelected{
+    background: #10ac86;
+    padding: 1px;
+    border-radius: 2px;
+}
+.listSelected a{
+    color: #ffffff;
+}
+.listSelected a:hover{
+    color: #ffffff !important;
+}
+/*@分类列表*/
+.userCSContent{
+
+}
