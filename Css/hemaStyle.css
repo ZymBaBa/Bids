@@ -44,6 +44,9 @@ td {
 
 body {
     min-width: 1210px;
+    font-size: 14px;
+    line-height: 1.8;
+    background: #ffffff;
 }
 
 /**
@@ -118,11 +121,6 @@ html {
     /* 10/16=62.5% */
 }
 
-body {
-    font-size: 14px;
-    line-height: 1.8;
-}
-
 /**
 * 所有 font-family 小写，存在空格的字体名加单引号
 * @default-font: 'helvetica neue', tahoma, \5B8B\4F53, sans-serif;
@@ -154,8 +152,9 @@ textarea {
 /*去掉input获取焦点时的边框 */
 
 input:focus {
-outline: none;
+    outline: none;
 }
+
 /**
 * 中文小于 12px 可读性很差
 * 1. 统一 IE 6-7 中字体大小
@@ -1832,6 +1831,10 @@ body {
     margin-top: 5px;
 }
 
+.footer {
+    background: #f5f5f5;
+}
+
 .bidFoot dl {
     float: left;
     display: block;
@@ -1898,4 +1901,84 @@ body {
     text-align: center;
     border-top: 1px solid rgba(170, 178, 189, 0.5);
     color: #aab2bd;
+}
+
+/*招标信息审核中状态*/
+.State-T {
+    background: #10ac86;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    color: #ffffff;
+    margin: 5px;
+}
+
+.State-F {
+    background: #f27838;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    color: #ffffff;
+    margin: 5px;
+}
+
+/*物资、项目、综合、竞价 图标*/
+
+/*.sort-ico1 {*/
+    /*display: inline-block;*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*background: #06c27a;*/
+    /*color: #ffffff;*/
+    /*text-align: center;*/
+    /*line-height: 20px;*/
+    /*border-radius: 4px;*/
+    /*margin-left: 1px;*/
+    /*margin-right: 1px;*/
+/*}*/
+/*!*综合和竞价的背景色，上面的公共样式*!*/
+/*.sort-ico2{*/
+    /*background: #f27838;*/
+/*}*/
+
+/*Btn*/
+.StateOperate {
+    float: right;
+}
+
+.StateOperate a {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 4px;
+    color: #ffffff;
+    border-radius: 2px;
+}
+
+.StateOperate a:hover {
+    color: #ffffff !important;
+}
+
+.StateOperate a:first-child {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #ffffff;
+    background: #10ac86;
+}
+
+.StateOperate a:first-child:hover {
+    background: #06c27a;
+}
+
+.StateOperate a:last-child {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #ffffff;
+    background: #f27838;
+}
+
+.StateOperate a:last-child:hover {
+    background: rgba(231, 37, 32, 1);
+}
+.uscBids a:first-child:hover{
+    color: #06c27a;
 }

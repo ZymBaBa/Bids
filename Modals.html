@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Css/layer.css">
+    <script src="Js/jquery-3.1.0.js"></script>
+    <script src="Js/layer.js"></script>
+    <style>
+        #baoJia{
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<span id="daKai">询问框</span>
+<div id="baoJia" style="display: none;">
+    <span>价格：</span> <input type="text" style="width: 300px;">
+</div>
+</body>
+<script>
+    $(function () {
+        function ku() {
+            layer.open({
+                title:'查看报价',
+                type: 1,
+                closeBtn: 1, //不显示关闭按钮
+                shift: 2,
+                move: '.mine-move',
+                shadeClose: true, //开启遮罩关闭
+                content: $("#baoJia"),
+                area: ['600px', '300px'],
+                btn: ['yes', 'NO'],
+                closeBtn:1,
+            });
+        }
+        $("#daKai").bind("click",ku);
+    })
+</script>
+</html>
