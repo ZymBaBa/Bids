@@ -330,47 +330,6 @@ sub {
 }
 
 /* ==========================================================================
-表格
-========================================================================== */
-/**
-* 合并单元格边框
-*/
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/**
-* 修复 IE 中 th 不能继承 text-align 的问题并统一左对齐
-* http://jsbin.com/evoxif/2/edit
-*/
-
-th {
-    text-align: left;
-}
-
-/**
-* 单元格添加边框
-*/
-
-table th,
-table td {
-    border: 1px solid #ddd;
-    padding: 8px 10px;
-}
-
-/**
-* 表头底部边框
-*/
-
-table th {
-    font-weight: inherit;
-    border-bottom-width: 2px;
-    border-bottom-color: #ccc;
-}
-
-/* ==========================================================================
 嵌入元素
 ========================================================================== */
 /**
@@ -1979,6 +1938,31 @@ body {
 .StateOperate a:last-child:hover {
     background: rgba(231, 37, 32, 1);
 }
-.uscBids a:first-child:hover{
+.uscBidsContent a:first-child:hover{
     color: #06c27a;
+}
+
+/*对话框样式*/
+.deferConter{
+    margin: 20px 20px;
+}
+.DialogP{
+    color: #f27838;
+    font-size: 12px;
+    margin-top: 3px;
+}
+.DialogInput{
+    border: none;
+    border-bottom: 1px solid #aab2bd;
+    padding-bottom: 5px;
+    width: 300px;
+    height: auto;
+    position: relative;
+    margin-right: 3px;
+}
+.DialogInput:visited{
+    border: 1px solid #06c27a;
+}
+.DialogInput:focus{
+    border-bottom: 1px solid #10ac86;
 }

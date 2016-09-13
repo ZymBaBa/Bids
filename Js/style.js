@@ -31,4 +31,9 @@ $(function () {
         $("#scBids>p").addClass("pFoucsD");
         $("#ciList").html("工程项目");
     })
-})
+});
+
+
+$(document).ready(function () {
+    $("#calendar1").bootstrapDatepickr({date_format: "Y-m-d"});
+});
