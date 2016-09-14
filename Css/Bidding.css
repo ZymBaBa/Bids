@@ -33,9 +33,11 @@
     float: left;
     margin-top: 10px;
 }
-.bidsContent div:last-child{
+
+.bidsContent div:last-child {
     border-bottom: none;
 }
+
 .userCScreen div {
     height: 40px;
 }
@@ -103,7 +105,7 @@
     height: 24px;
     text-align: center;
     line-height: 24px;
-    border-radius:2px;
+    border-radius: 2px;
     color: #ffffff;
     margin-left: 3px;
 }
@@ -126,9 +128,10 @@
     margin-right: 10px;
 }
 
-.uscBidsContent a:hover{
+.uscBidsContent a:hover {
     color: #06c27a;
 }
+
 .uscBidsContent p {
     font-size: 12px;
     color: #aab2bd;
@@ -148,12 +151,12 @@
 }
 
 .uscBidsContent p span {
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 /*操作按钮*/
 .uscBidsHandle {
-    width: 14%;
+    width: 15%;
     float: left;
 }
 
@@ -161,7 +164,7 @@
     display: inline-block;
     color: #ffffff;
     border-radius: 2px;
-    min-width:45px;
+    min-width: 45px;
     width: auto;
     text-align: center;
     margin-left: 3px;
@@ -170,12 +173,13 @@
 }
 
 /*绿色*/
-.btn-less-focus{
+.btn-less-focus {
     background: #10ac86;
 }
+
 .btn-less-focus:hover {
     background: #06c27a;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 /*橙色*/
@@ -185,14 +189,69 @@
 
 .btn-less-focus-e:hover {
     background: rgba(231, 37, 32, 1);
-    cursor:pointer;
+    cursor: pointer;
 }
 
 /*灰色*/
 .btn-less-focus-c {
     background: #aab2bd;
 }
-#calendar1{
+
+#calendar1 {
     margin-bottom: 5px;
 }
 
+/*@Tender.html*/
+/*已报名*/
+.appList {
+    background: #87d5c2;
+    cursor: pointer;
+}
+.bidsColor{
+    color: #f85043 !important;
+}
+.CostOne{
+    margin-bottom: 10px;
+}
+.CostOneInput{
+    border: 0;
+    border-bottom: 1px solid #aab2bd;
+    line-height: 20px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    width: 100px;
+}
+.CostOneInput:hover{
+    border-bottom: 1px solid #10ac86;
+}
+.CostOneUp{
+    background: #10ac86;
+    border-radius: 2px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 10px;
+    width: 40px;
+    text-align: center;
+}
+.CostOneUp:hover{
+    background: #06c27a;
+}
+.CostOneWait{
+    background: #87d5c2;
+    color: #ffffff;
+    padding: 3px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.CostP{
+    color: #f27838;
+    font-size: 15px;
+    text-align: center;
+    background: #e4e4e4;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+}
