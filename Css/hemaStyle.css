@@ -1248,7 +1248,9 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=649849
 }
 
 /*辅助的文字颜色及大小*/
-
+.type-a1{
+    color: #aab2bd;
+}
 .type-a {
     color: #aab2bd;
     font-size: 12px;

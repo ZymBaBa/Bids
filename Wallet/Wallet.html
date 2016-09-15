@@ -36,15 +36,110 @@
     <div class="header self headerNav">
         <div class="signNav">
             <div class="logo">
-                <a href="index.html"></a>
+                <a href="../index.html"></a>
             </div>
             <div class="logo-title">钱 包</div>
+        </div>
+    </div>
+    <div class="header self approve">
+        <div class="approveHeard">
+            <!--企业Logo-->
+            <div class="ahLogo"></div>
+            <!--企业信息-->
+            <div class="ahName">
+                <p>欢迎您，<span>嘉兴禾码科技服务有限公司</span></p>
+                <p>手机号：<span class="ahTel">13967314931</span> 上次登录时间：<span class="ahTime">2016-9-15 14:32:56</span></p>
+            </div>
         </div>
     </div>
     <!--        End 重要内容-->
     <!--        核心内容-->
     <div class="container self">
-
+        <!--余额、银行卡管理-->
+        <div class="WTBalance">
+            <!--余额管理-->
+            <div class="WTBOne">
+                <p style="font-size: 14px;color: #434a54;font-weight: 500;">账户明细</p>
+                <p class="GoldGroup">
+                    <span class="type-n fontSiz">800000</span><span class="type-n">元</span>
+                    <span class="type-a1 fontSiz">600000</span><span class="type-a1">元（冻结余额）</span>
+                </p>
+                <p class="btnGroup">
+                    <span class="btnSuccess">提现</span>
+                    <span class="btnSuccess"> <a href="../Wallet/PayPassword.html">修改支付/提现密码</a></span>
+                    <span class="btnSuccess">充值</span>
+                </p>
+            </div>
+            <!--银行卡管理-->
+            <div class="WTBTwo">
+                <p style="font-size: 14px;color: #434a54;font-weight: 500;">银行卡管理</p>
+                <p>银行卡：<span>0张</span> <span class="type-n">管理</span></p>
+            </div>
+        </div>
+        <!--交易记录-->
+        <div class="WTRecord">
+            <p style="font-size: 14px;color: #434a54;font-weight: 500;margin-left: 10px;">交易记录</p>
+            <!--时间选择-->
+            <div class="WTRTime">
+                <ul>
+                    <li class="type-n">近三个月收支明细</li>
+                    <li>三个月前收支明细</li>
+                </ul>
+            </div>
+            <!--标签列-->
+            <div class="WTRHeader">
+                <div class="row WTBSeat">
+                    <div class="col-md-2 text-center">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                全部
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">存入</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">支出</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">时间</div>
+                    <div class="col-md-3 text-center">金额</div>
+                    <div class="col-md-4 text-center">备注</div>
+                </div>
+            </div>
+            <!--内容列-->
+            <div class="WTRList">
+                <div class="deferConter" >
+                    <table class="table table-striped">
+                        <tbody>
+                        <tr>
+                            <td style="width: 25%;">1</td>
+                            <td style="width: 25%">2016-9-15 16:06</td>
+                            <td  style="width: 25%">200000</td>
+                            <td  style="width: 25%">【提现】</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2016-9-15 16:08</td>
+                            <td>300000</td>
+                            <td>【充值】</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>2016-9-15 17:08</td>
+                            <td>300000</td>
+                            <td>【保证金-支出】</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>2016-9-15 18:08</td>
+                            <td>300000</td>
+                            <td>【保证金-退回】</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
     <!--        End 核心内容-->
     <!--        尾部-->
