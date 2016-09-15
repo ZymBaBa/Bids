@@ -175,7 +175,97 @@ $(function () {
                 });
         });
     }
-
     $(".btn-biddingDelete").bind("click", biddingDelete);
 });
+//Performance.html
+//上传合同
+$(function () {
+    function upPact() {
+        layer.open({
+            title: '上传合同',
+            type: 1,
+            closeBtn: 0, //不显示关闭按钮
+            shift: 2,
+            move: '.mine-move',
+            shadeClose: true, //开启遮罩关闭
+            content: $("#upPact"),
+            area: '400px',//这样设置的话高度自增的
+            btn: ['确认', '取消'],
+        });
+    }
+    $("#btn-upPact").bind("click", upPact);
+});
+//确认验收
+$(function () {
+    function upCheckYes() {
+        layer.confirm('是否完成验收？', {
+            title:'履约验收',
+            closeBtn:0,
+            shadeClose:true,
+            btn: ['确认验收', '取消'] //按钮
+        }, function () {
+            layer.msg('验收完成',
+                {
+                    icon: 6,
+                    time: 1500,
+                });
+        });
+    }
+    $("#btn-checkYes").bind("click", upCheckYes);
+});
+//驳回验收
+$(function () {
+    function upCheckNo() {
+        layer.confirm('是否驳回验收？', {
+            title:'驳回验收',
+            closeBtn:0,
+            shadeClose:true,
+            btn: ['驳回', '取消'] //按钮
+        }, function () {
+            layer.msg('已经驳回',
+                {
+                    icon: 5,
+                    time: 1500,
+                });
+        });
+    }
+    $("#btn-checkNo").bind("click", upCheckNo);
+});
 
+
+//投标方-确认合同
+$(function () {
+    function upPact() {
+        layer.confirm('是否确认此份合同？', {
+            title:'合同确认',
+            closeBtn:0,
+            shadeClose:true,
+            btn: ['签约', '驳回'] //按钮
+        }, function () {
+            layer.msg('在线签约完成',
+                {
+                    icon: 1,
+                    time: 1500,
+                });
+        });
+    }
+    $("#btn-affPact").bind("click", upPact);
+});
+//申请验收
+$(function () {
+    function askCheck() {
+        layer.confirm('是否向招标方申请验收？', {
+            title:'申请验收',
+            closeBtn:0,
+            shadeClose:true,
+            btn: ['申请', '取消'] //按钮
+        }, function () {
+            layer.msg('申请已提交，请耐心等待',
+                {
+                    icon: 1,
+                    time: 1500,
+                });
+        });
+    }
+    $("#btn-askCheck").bind("click", askCheck);
+});

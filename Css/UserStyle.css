@@ -183,3 +183,17 @@
     overflow:hidden;
     text-overflow:ellipsis;
 }
+
+/*中间部分*/
+.userContent {
+    /*border: 1px solid #10ac86;*/
+    float: left;
+    position: relative;
+    margin-top: 10px;
+    width: 730px;
+    min-width: 730px;
+    margin-left: 18px;
+    margin-right: 18px;
+    padding-bottom: 40px;
+    height: auto;
+}

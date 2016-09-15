@@ -1261,7 +1261,10 @@ body {
     height: 100%;
     min-height: 800px;
 }
-
+/*div{*/
+    /*overflow: hidden;*/
+    /*zoom: 1;*/
+/*}*/
 .self {
     overflow: hidden;
     zoom: 1;
