@@ -78,15 +78,17 @@
 
 .btnSuccess{
     background: #10ac86;
-    margin-right: 10px;
     padding: 5px 8px;
-    color: #ffffff;
     border-radius: 3px;
     cursor: pointer;
+    margin-left: 10px;
 }
 .btnSuccess:hover{
     background: #06c27a;
     border: none;
+}
+.btnSuccess a{
+    color: #ffffff;
 }
 .fontSiz{
     font-size: 24px;
@@ -132,10 +134,10 @@
 }
 
 /*PayPassword.html 支付密码设置和修改*/
-.setPP P,.alterPP p{
+.setPP{
     font-size: 16px;
     color: #10ac86;
-    border-bottom: 1px solid #10ac86;
+    border-bottom: 2px solid #10ac86;
     padding-bottom: 5px;
     padding-left: 10px;
     font-weight: 500;
@@ -154,7 +156,7 @@
 }
 .setPContent .setSpan{
     float: left;
-    width: 140px;
+    width: 165px;
     height: 52px;
     line-height: 52px;
     padding-left: 20px;
@@ -192,3 +194,60 @@
     float: left;
     margin: 0 auto;
 }
+
+/*Withdrawals.html*/
+.setPContent .select{
+    width: 280px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-top: 5px;
+    z-index: 100;
+    border-radius: 5px;
+}
+/*BackCard.html*/
+.setBack .setBC{
+    float: left;
+    border: 2px solid #06c27a;
+    width: 260px;
+    height: 120px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.setBC p{
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.setBC p:last-child span{
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    color: #aab2bd;
+}
+.setBC p:last-child span:hover{
+    color: #06c27a;
+}
+.addBack{
+    background: #10ac86;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 45px;
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+}
+.addBack img{
+    margin-top: 8px;
+    margin-right: 5px;
+}
+.addBack:hover{
+    background: #06c27a;
+    color: #ffffff;
+}
+

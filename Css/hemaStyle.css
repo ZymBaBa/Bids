@@ -1226,30 +1226,30 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=649849
 /*正常绿色*/
 
 .type-n {
-    color: #10ac86;
+    color: #10ac86 !important;
 }
 
 /*鼠标移上文字颜色*/
 
 .type-h:hover {
-    color: #06c27a;
+    color: #06c27a !important;
 }
 
 /*警告文字颜色*/
 
 .type-w {
-    color: red;
+    color: red !important;
 }
 
 /*强调文字颜色*/
 
 .type-e {
-    color: #f27838;
+    color: #f27838 !important;
 }
 
 /*辅助的文字颜色及大小*/
 .type-a1{
-    color: #aab2bd;
+    color: #aab2bd !important;
 }
 .type-a {
     color: #aab2bd;
