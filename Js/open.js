@@ -269,3 +269,88 @@ $(function () {
     }
     $("#btn-askCheck").bind("click", askCheck);
 });
+//accounts.html
+//修改密码
+$(function () {
+    function revamp() {
+        layer.open({
+            title: '修改密码',
+            type: 1,
+            closeBtn: 0, //不显示关闭按钮
+            shift: 2,
+            move: '.mine-move',
+            shadeClose: true, //开启遮罩关闭
+            content: $("#revamp"),
+            area: '350px',//这样设置的话高度自增的
+            btn: ['修改', '取消'],
+        });
+    }
+    $("#btn-revamp").bind("click", revamp);
+});
+//修改手机号
+$(function () {
+    function revampTel() {
+        layer.open({
+            title: '旧手机号码验证',
+            type: 1,
+            closeBtn: 0, //不显示关闭按钮
+            shift: 2,
+            move: '.mine-move',
+            shadeClose: true, //开启遮罩关闭
+            content: $("#revampTel"),
+            area: '350px',//这样设置的话高度自增的
+            btn: ['验证', '取消'],
+            btn1:function (index) {
+                layer.close(index);
+                layer.open({
+                    title: '新手机号码验证',
+                    type: 1,
+                    closeBtn: 0, //不显示关闭按钮
+                    shift: 2,
+                    move: '.mine-move',
+                    shadeClose: true, //开启遮罩关闭
+                    content: $("#revampTelNew"),
+                    area: '350px',//这样设置的话高度自增的
+                    btn: ['确认修改', '取消'],
+                    });
+            }
+        });
+    }
+    $("#btn-revampTel").bind("click", revampTel);
+});
+
+//设置选标密码
+$(function () {
+    function setBidsPwFist() {
+        layer.open({
+            title: '选标密码',
+            type: 1,
+            closeBtn: 0, //不显示关闭按钮
+            shift: 2,
+            move: '.mine-move',
+            shadeClose: true, //开启遮罩关闭
+            content: $("#setBidsPwFist"),
+            area: '350px',//这样设置的话高度自增的
+            btn: ['设置', '取消'],
+        });
+    }
+    $("#btn-setBidsPw").bind("click", setBidsPwFist);
+});
+
+//niche.html 商机管理
+$(function () {
+    function addKeyword() {
+        layer.open({
+            title: '设置关键字',
+            type: 1,
+            closeBtn: 0, //不显示关闭按钮
+            shift: 2,
+            move: '.mine-move',
+            shadeClose: true, //开启遮罩关闭
+            content: $("#addKeyword"),
+            area: '240px',//这样设置的话高度自增的
+            btn: ['设置', '取消'],
+        });
+    }
+    $("#btn-addKeyword").bind("click", addKeyword);
+});

@@ -165,10 +165,12 @@
 .btn-less-focus {
     background: #10ac86;
 }
-.btn-less-focus a{
+
+.btn-less-focus a {
     color: #ffffff;
     display: inline-block;
 }
+
 .btn-less-focus:hover {
     background: #06c27a;
     cursor: pointer;
@@ -192,35 +194,23 @@
 #calendar1 {
     margin-bottom: 5px;
 }
-.userContentTop{
-    padding-left: 20px;
-    color: #434a54;
-    font-weight: 400;
-    background:  rgba(245, 245, 245, 1);
-    margin-bottom: 10px;
-    height: 50px;
-    -moz-box-shadow: 2px 3px 5px #aab2bd;
-    -webkit-box-shadow: 2px 3px 5px #aab2bd;
-    box-shadow: 2px 3px 5px #aab2bd;
-}
-.userContentTop h3{
-    line-height: 50px;
-    font-size: 16px;
-    text-shadow:3px 3px 3px #aab2bd;
-}
+
 /*@Tender.html*/
 /*已报名*/
 .appList {
     background: #87d5c2;
     cursor: pointer;
 }
-.bidsColor{
+
+.bidsColor {
     color: #f85043 !important;
 }
-.CostOne{
+
+.CostOne {
     margin-bottom: 10px;
 }
-.CostOneInput{
+
+.CostOneInput {
     border: 0;
     border-bottom: 1px solid #aab2bd;
     line-height: 20px;
@@ -228,10 +218,12 @@
     padding-left: 5px;
     width: 100px;
 }
-.CostOneInput:hover{
+
+.CostOneInput:hover {
     border-bottom: 1px solid #10ac86;
 }
-.CostOneUp{
+
+.CostOneUp {
     background: #10ac86;
     border-radius: 2px;
     color: #ffffff;
@@ -242,17 +234,20 @@
     width: 40px;
     text-align: center;
 }
-.CostOneUp:hover{
+
+.CostOneUp:hover {
     background: #06c27a;
 }
-.CostOneWait{
+
+.CostOneWait {
     background: #87d5c2;
     color: #ffffff;
     padding: 3px;
     border-radius: 2px;
     cursor: pointer;
 }
-.CostP{
+
+.CostP {
     color: #f27838;
     font-size: 15px;
     text-align: center;
@@ -261,4 +256,136 @@
     border-radius: 5px;
     height: 40px;
     line-height: 40px;
+}
+
+/*accounts.html*/
+.accContent ul li {
+    width: 730px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    border-bottom: 1px solid #dddddd;
+}
+
+.accContent .lastSpan {
+    float: right;
+}
+
+.lastSpan span {
+    float: left;
+    display: block;
+    width: 50px;
+    height: 16px;
+    line-height: 40px;
+}
+
+.lastSpan span:first-child {
+    color: #10ac86;
+}
+
+.lastSpan span:last-child {
+    color: #f27838;
+    cursor: pointer;
+}
+/*登录密码修改*/
+.revampSpan{
+    display: block;
+    float: left;
+    width: 100px;
+    text-align: right;
+}
+
+.revampInput{
+    width: 210px;
+    height: 24px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    border: 0 none;
+    font-size: 12px;
+    border-bottom: 1px solid #aab2bd;
+}
+.revampInput:focus{
+    border-bottom: 1px solid #06c27a;
+}
+/*手机验证码修改*/
+.revampTelSpan{
+    display: block;
+    float: left;
+    width: 100px;
+    text-align: right;
+}
+.revampTelInput{
+    width: 210px;
+    height: 24px;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 0 none;
+    font-size: 16px;
+    border-bottom: 1px solid #aab2bd;
+}
+.revampTelInput:focus{
+    border-bottom: 1px solid #06c27a;
+}
+.getCode{
+    position: absolute;
+    right: 36px;
+    top: 36px;
+    width: 80px;
+    height: 32px;
+    border: none;
+    background: #f2f2f2;
+    color: #333;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+}
+/*Collection.html*/
+.cllContent div:last-child,.footprintContent div:first-child{
+    border-bottom: none;
+}
+/*niche.html 商机管理*/
+.userContentTopRight{
+    display: block;
+    float: left;
+    height: 50px;
+}
+
+.userContentTopRight a{
+    display: block;
+    float: left;
+    background: #f27838;
+    margin-right: 10px;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 14px;
+}
+.uCTRSpan{
+    display: block;
+    float: left;
+    background: #10ac86;
+    margin-left: 15px;
+    font-size: 14px;
+    margin-top: 14px;
+    padding: 0 5px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.uCTRSpanClear{
+    background: #87d5c2;
+}
+.userContentTopRight a img{
+    margin-top: 4px;
+    margin-right: 3px;
+}
+#addKeyword{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#addKeyword input{
+    width: 220px;
+    margin-bottom: 5px;
 }

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>圣龙马(slm1688.com)-综合招标网-履约管理</title>
+    <title>圣龙马(slm1688.com)-综合招标网-履约维权</title>
     <meta name="keywords" content="圣龙马，招标网,物资采购,工程项目">
     <meta name="description" content="圣龙马，招标网致力于中小企业采购招标！">
     <!--核心CSS-->
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../Css/hemaStyle.css">
     <!--当前页面CSS-->
     <link rel="stylesheet" href="../Css/UserStyle.css">
-    <link rel="stylesheet" href="../Css/Performance.css">
+    <link rel="stylesheet" href="../Css/Bidding.css">
     <!--核心JS-->
     <script src="../Js/jquery-3.1.0.js"></script>
     <script src="../Js/bootstrap.js"></script>
@@ -81,7 +81,7 @@
                     <ul class="uslBids">
                         <li><a href="../User/Bidding.html">我的招标</a></li>
                         <li><a href="../User/Tender.html">我的投标</a></li>
-                        <li class="Selected"><span class="Bikini"></span><a href="../User/Contract.html">合同管理</a></li>
+                        <li><a href="../User/Contract.html">合同管理</a></li>
                     </ul>
                 </li>
                 <li><span>公共管理</span>
@@ -90,93 +90,19 @@
                         <li><a href="../Publicmodules/Collection.html">标的收藏</a></li>
                         <li><a href="../Publicmodules/footprint.html">我的足迹</a></li>
                         <li><a href="../Publicmodules/invoice.html">发票管理</a></li>
-                        <li><a href="../Publicmodules/Performance.html">履约维权</a></li>
-                        <li><a href="../Publicmodules/accounts.html">账号安全</a></li>
+                        <li class="Selected"><span class="Bikini"></span><a href="../Publicmodules/Performance.html">履约维权</a></li>
+                        <li ><a href="../Publicmodules/accounts.html">账号安全</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
-        <!--合同履约--招标方-->
+        <!--我的招标中间部分-->
         <div class="userContent self">
-                <div class="PFHead">
-                    <div class="row">
-                        <div class="col-md-2 col-xs-2"><span class="PFHeadSpan">待签约</span></div>
-                        <div class="col-md-7 col-xs-7 col-md-pull-1 col-xs-pull-1 contraction">
-                            <a href="#" class="PFHeadA">独山子区城投大厦工程旋转楼梯发光玻璃项目招独山子区城投大厦工程旋转楼梯发光玻璃项目招独山子区城投大厦工程旋转楼梯发光玻璃项目招独山子区城投大厦工程旋转楼梯发光玻璃项目招</a></div>
-                        <div class="col-md-3 col-xs-3"> <span class="PFHeadSpan">物资采购</span><span class="PFHeadSpan">综合招标</span></div>
-                    </div>
-                </div>
-                <div class="PFContent">
-                    <div class="PFCList">
-                        <div class="PFCLInExecution">中标</div>
-                        <div class="PFCLLine" style="height: 80px;"></div>
-                        <div class="PFCLInExecution">签约</div>
-                        <div class="PFCLLine  PFCListClear" style="height: 100px;"></div>
-                        <div class="PFCLInExecution PFCLUnExecuted">验收</div>
-                    </div>
-                    <div class="PFCRight">
-                        <div class="PFCRBids" style="height: 100px;">
-                            <p><span class="spanAssist">您选择了服务商：</span><span class="spanMajor">嘉兴禾码科技服务有限公司</span><span class="spanAssist">2016-9-15 10:48:08</span></p>
-                            <p class="spanAssist">联系服务商：</p>
-                            <p><img src="../images/head.png"><span class="spanMajor">周佳缘</span> <img src="../images/tel.png"><span class="spanMajor">13967314931</span></p>
-                        </div>
-                        <div class="PFCRBids" style="height: 120px;">
-                            <p class="spanMajor">由您最终确认合同，并上传，上传后我们会以免费短信的方式通知服务商。</p>
-                            <span class="pactName"><span class="spanMajor">项目合同.doc</span><span class="spanAssist">2016年9月15日11:08:45</span></span>
-                            <span class="upPact" id="btn-upPact">上传合同</span>
-                            <div id="upPact" style="display: none">
-                                <div class="deferConter">
-                                    <input type="file" class="file">
-                                    <p class="DialogP">*请尽可能上传和服务商确认的最终合同以保证双方的合法权益。</p>
-                                </div>
-                            </div>
-                            <span class="pactAff">等待服务商确认</span>
-                        </div>
-                        <div class="PFCRBids" style="height:90px;">
-                            <p class="spanAssist">由服务商在完成服务或供货后，申请验收，您验收完成后，我们将退还服务商保证金！</p>
-                            <span class="upCheck upCheckYes" id="btn-checkYes">确认验收</span>
-                            <span class="upCheck upCheckNo" id="btn-checkNo">驳回验收</span>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        <!--合同履约--投标方-->
-        <div class="userContent self" style="display: none;">
-            <div class="PFHead">
-                <div class="row">
-                    <div class="col-md-2 col-xs-2"><span class="PFHeadSpan">待签约</span></div>
-                    <div class="col-md-7 col-xs-7 col-md-pull-1 col-xs-pull-1 contraction">
-                        <a href="#" class="PFHeadA">独山子区城投大厦工程旋转楼梯发光玻璃项目招独山子区城投大厦工程旋转楼梯发光玻璃项目招独山子区城投大厦工程旋转楼梯发光玻璃项目招独山子区城投大厦工程旋转楼梯发光玻璃项目招</a></div>
-                    <div class="col-md-3 col-xs-3"> <span class="PFHeadSpan">物资采购</span><span class="PFHeadSpan">综合招标</span></div>
-                </div>
+            <!--头部-->
+            <div class="userContentTop">
+                <h3>履约维权</h3>
             </div>
-            <div class="PFContent">
-                <div class="PFCList">
-                    <div class="PFCLInExecution">中标</div>
-                    <div class="PFCLLine" style="height: 80px;"></div>
-                    <div class="PFCLInExecution">签约</div>
-                    <div class="PFCLLine  PFCListClear" style="height: 100px;"></div>
-                    <div class="PFCLInExecution PFCLUnExecuted">验收</div>
-                </div>
-                <div class="PFCRight">
-                    <div class="PFCRBids" style="height: 100px;">
-                        <p><span class="spanAssist">招标方：</span><span class="spanMajor">上海讯科自动化科技服务有限公司</span><span class="spanAssist">2016-9-15 10:48:08</span></p>
-                        <p class="spanAssist">联系招标方：</p>
-                        <p><img src="../images/head.png"><span class="spanMajor">尹宏章</span> <img src="../images/tel.png"><span class="spanMajor">13505739295</span></p>
-                    </div>
-                    <div class="PFCRBids" style="height: 120px;">
-                        <p class="spanMajor">由招标方上传合作合同，上传后我们将以短信的方式提醒您进行在线签约。</p>
-                        <span class="pactName"><span class="spanMajor">项目合同.doc</span><span class="spanAssist">2016年9月15日11:08:45</span></span>
-                        <span class="upPact" id="btn-affPact">确认合同</span>
-                        <span class="pactAff">等待服务商确认</span>
-                    </div>
-                    <div class="PFCRBids" style="height:90px;">
-                        <p class="spanAssist">招标方申请验收完成后，我们将退还您的投标保证金！</p>
-                        <span class="askCheck" id="btn-askCheck">申请验收</span>
-                        <span class="askCheck waitCheck">等待验收</span>
-                    </div>
-                </div>
-            </div>
+            <!--履约维权-->
         </div>
         <!--我的招标右则部分-->
         <div class="userRight self">
