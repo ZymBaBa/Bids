@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>圣龙马(slm1688.com)-综合招标网-发票管理</title>
+    <title>圣龙马(slm1688.com)-综合招标网-发票信息</title>
     <meta name="keywords" content="圣龙马，招标网,物资采购,工程项目">
     <meta name="description" content="圣龙马，招标网致力于中小企业采购招标！">
     <!--核心CSS-->
@@ -89,110 +89,104 @@
                         <li><a href="../Publicmodules/niche.html">商机管理</a></li>
                         <li><a href="../Publicmodules/Collection.html">标的收藏</a></li>
                         <li><a href="../Publicmodules/footprint.html">我的足迹</a></li>
-                        <li class="Selected"><span class="Bikini"></span><a href="../Publicmodules/invoice.html">发票管理</a></li>
+                        <li class="Selected"><span class="Bikini"></span><a
+                                href="../Publicmodules/invoice.html">发票管理</a></li>
                         <li><a href="../Publicmodules/Performance.html">履约维权</a></li>
                         <li><a href="../Publicmodules/accounts.html">账号安全</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
-        <!--我的招标中间部分-->
+        <!--发票设置中间部分-->
         <div class="userContent self">
             <!--头部-->
             <div class="userContentTop">
-                <h3>发票管理</h3>
+                <h3>索取发票</h3>
             </div>
-            <div class="invoiceTips">
-                <div class="iTips">
-                    <span>注意！您尚未设置有效的开票信息，无法开具发票。</span>
-                    <a class="btn-iTipsSet" href="../Publicmodules/iTispsSet.html">立即设置</a>
-                </div>
-                <div class="iTips">
-                    <span>您的发票信息正在审核中，无法开具发票，请您耐心等待。</span>
-                    <a class="btn-iTipsView">查看</a>
-                </div>
-                <div class="iTips">
-                    <span>您的发票信息审核未通过，请修改后重新上传</span>
-                    <a class="btn-iTipsView">查看</a>
-                </div>
-                <div class="iTips">
-                    <span>您的发票信息已经审核通过，可以正常开具发票。</span>
-                    <a class="btn-iTipsView" href="../Publicmodules/iTispsView.html">查看</a>
-                </div>
+            <div class="deferConter" >
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>订单编号</th>
+                        <th>服务名称</th>
+                        <th>实付金额</th>
+                        <th>可开票金额</th>
+                        <th>订单支付时间</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>HY1606001</td>
+                        <td>投票通</td>
+                        <td>20000</td>
+                        <td>20000</td>
+                        <td>2016-9-20</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="invoiceContent">
-                <div class="invoiceCategory">
-                    <span class="inVspan inShover">未开发票</span>
-                    <span class="inVspan">已开发票</span>
-                </div>
-                <!--未开发票-->
-                <div class="deferConter" >
-                    <table class="table table-hover">
-                        <thead>
-                        <tr>
-                            <th>订单编号</th>
-                            <th>服务名称</th>
-                            <th>实付金额</th>
-                            <th>可开票金额</th>
-                            <th>订单支付时间</th>
-                            <th>操作</th>
+            <!--发票信息-->
+            <div class="iTipsSet">
+                <form action="#">
+                    <div class="iTipsTop">
+                        <p class="APPTp">发票信息</p>
+                        <table>
+                            <tr>
+                                <td>名称</td>
+                                <td>嘉兴禾码科技服务有限公司</td>
+                            </tr>
+                            <tr>
+                                <td>纳税人识别号</td>
+                                <td>91330401MA28A51531</td>
+                            </tr>
+                            <tr>
+                                <td>地址、电话</td>
+                                <td> <span>嘉兴市秀州区智富中心22幢208-C5室 13967314931</span></td>
+                            </tr>
+                            <tr>
+                                <td>开户行及账号</td>
+                                <td> <span>中国工商银行股份有限公司嘉兴运河新区支行 120468609888024475</span></td>
+                            </tr>
+                            <tr>
+                                <td>发票类型</td>
+                                <td> <span>增值税专用发票</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--邮寄地址-->
+                    <div class="iTipsContent">
+                        <p class="APPTp">邮寄地址</p>
+                        <table>
+                            <tr>
+                                <td>收件地址</td>
+                                <td>浙江省嘉兴市海盐塘路464号</td>
+                            </tr>
+                            <tr>
+                                <td>收件人</td>
+                                <td>周佳缘</td>
+                            </tr>
+                            <tr>
+                            <td>联系电话</td>
+                            <td>13967314931</td>
                         </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>HY1606001</td>
-                            <td>投票通</td>
-                            <td>20000</td>
-                            <td>20000</td>
-                            <td>2016-9-20</td>
-                            <td><a href="../Publicmodules/AppTickets.html">索取发票</a></td>
-                        </tr>
-                        <tr>
-                            <td>HY1606002</td>
-                            <td>投票通</td>
-                            <td>20000</td>
-                            <td>20000</td>
-                            <td>2016-9-22</td>
-                            <td><a href="../Publicmodules/AppTickets.html">索取发票</a></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!--已开发票-->
-                <div class="deferConter" >
-                    <table class="table table-hover">
-                        <thead>
-                        <tr>
-                            <th>订单编号</th>
-                            <th>服务名称</th>
-                            <th>实付金额</th>
-                            <th>可开票金额</th>
-                            <th>申请时间</th>
-                            <th>状态</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>HY1606001</td>
-                            <td>投票通</td>
-                            <td>20000</td>
-                            <td>20000</td>
-                            <td>2016-9-20</td>
-                            <td><a href="../Publicmodules/AppTicketsRe.html">开票中</a></td>
-                        </tr>
-                        <tr>
-                            <td>HY1606002</td>
-                            <td>投票通</td>
-                            <td>20000</td>
-                            <td>20000</td>
-                            <td>2016-9-22</td>
-                            <td><a href="../Publicmodules/AppTicketsRe.html">已开票</a></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+                            <tr>
+                                <td>物流公司</td>
+                                <td>顺风速递</td>
+                            </tr>
+                            <tr>
+                                <td>快递单号</td>
+                                <td>1181095014307</td>
+                            </tr>
+                            <tr>
+                                <td>快递日期</td>
+                                <td>2016年9月20日</td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
             </div>
-            <!--发票管理-->
+            <!--发票设置-->
         </div>
         <!--我的招标右则部分-->
         <div class="userRight self">

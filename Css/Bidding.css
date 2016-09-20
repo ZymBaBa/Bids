@@ -287,15 +287,16 @@
     color: #f27838;
     cursor: pointer;
 }
+
 /*登录密码修改*/
-.revampSpan{
+.revampSpan {
     display: block;
     float: left;
     width: 100px;
     text-align: right;
 }
 
-.revampInput{
+.revampInput {
     width: 210px;
     height: 24px;
     padding-left: 10px;
@@ -304,17 +305,20 @@
     font-size: 12px;
     border-bottom: 1px solid #aab2bd;
 }
-.revampInput:focus{
+
+.revampInput:focus {
     border-bottom: 1px solid #06c27a;
 }
+
 /*手机验证码修改*/
-.revampTelSpan{
+.revampTelSpan {
     display: block;
     float: left;
     width: 100px;
     text-align: right;
 }
-.revampTelInput{
+
+.revampTelInput {
     width: 210px;
     height: 24px;
     padding-left: 10px;
@@ -324,10 +328,12 @@
     font-size: 16px;
     border-bottom: 1px solid #aab2bd;
 }
-.revampTelInput:focus{
+
+.revampTelInput:focus {
     border-bottom: 1px solid #06c27a;
 }
-.getCode{
+
+.getCode {
     position: absolute;
     right: 36px;
     top: 36px;
@@ -340,18 +346,20 @@
     cursor: pointer;
     text-align: center;
 }
+
 /*Collection.html*/
-.cllContent div:last-child,.footprintContent div:first-child{
+.cllContent div:last-child, .footprintContent div:first-child {
     border-bottom: none;
 }
+
 /*niche.html 商机管理*/
-.userContentTopRight{
+.userContentTopRight {
     display: block;
     float: left;
     height: 50px;
 }
 
-.userContentTopRight a{
+.userContentTopRight a {
     display: block;
     float: left;
     background: #f27838;
@@ -362,7 +370,8 @@
     font-size: 14px;
     margin-top: 14px;
 }
-.uCTRSpan{
+
+.uCTRSpan {
     display: block;
     float: left;
     background: #10ac86;
@@ -374,18 +383,153 @@
     color: #fff;
     cursor: pointer;
 }
-.uCTRSpanClear{
+
+.uCTRSpanClear {
     background: #87d5c2;
 }
-.userContentTopRight a img{
+
+.userContentTopRight a img {
     margin-top: 4px;
     margin-right: 3px;
 }
-#addKeyword{
+
+#addKeyword {
     margin-top: 10px;
     margin-left: 10px;
 }
-#addKeyword input{
+
+#addKeyword input {
     width: 220px;
     margin-bottom: 5px;
+}
+
+/*invoice.html 发票管理*/
+.invoiceTips {
+    margin-bottom: 10px;
+}
+
+.iTips {
+    width: 100%;
+    height: 40px;
+    background: #f27838;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.iTips span:first-child {
+    color: #ffffff;
+    margin-left: 10px;
+    line-height: 40px;
+    font-size: 12px;
+}
+
+.btn-iTipsSet, .btn-iTipsView {
+    background: #10ac86;
+    padding: 3px 3px;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-iTipsSet:hover, .btn-iTipsView:hover {
+    color: #fff;
+    background: #06c27a;
+}
+
+/*iTispsSet.html 发票设置*/
+.iTipsTop table, .iTipsContent table {
+    width: 100%;
+}
+
+.iTipsTop table tr td:first-child,
+.iTipsContent table tr td:first-child {
+    width: 28%;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.tdContent {
+    vertical-align: top;
+    height: 70px;
+}
+
+.iTipsContent table tr td p {
+    font-size: 12px;
+}
+
+/*设置Input*/
+.iTipsTop table tr td input[type='text'],
+.iTipsContent table tr td input[type='text'] {
+    width: 350px;
+    border: none;
+    border-bottom: 1px solid #aab2bd;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    line-height: 5px;
+}
+
+.iTipsTop table tr td input[type='text']:focus,
+.iTipsContent table tr td input[type='text']:focus {
+    border-bottom: 1px solid #06c27a;
+    color: #10ac86;
+    font-size: 16px;
+}
+
+.iTipsTop table tr,
+.iTipsContent table tr {
+    height: 40px;
+}
+
+.btn-TipsSet {
+    display: block;
+    background: #10ac86;
+    border: none;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.inVspan {
+    display: block;
+    float: left;
+    background: #10ac86;
+    cursor: pointer;
+    color: #ffffff;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #10ac86;
+}
+
+.inVspan:hover {
+    background: #06c27a;
+    color: #ffffff;
+    border: 1px solid #06c27a;
+}
+
+.invoiceCategory span:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.invoiceCategory span:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.inShover {
+    color: #10ac86;
+    background: #ffffff;
+}
+
+.APPTp {
+border-bottom: 1px solid #aab2bd;
+    padding-bottom: 3px;
+    color: #aab2bd;
+    padding-left: 5px;
 }
