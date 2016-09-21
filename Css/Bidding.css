@@ -494,7 +494,9 @@
     border-radius: 5px;
     font-size: 16px;
 }
-
+.btn-TipsSet:hover{
+    background: #06c27a;
+}
 .inVspan {
     display: block;
     float: left;
@@ -528,8 +530,101 @@
 }
 
 .APPTp {
-border-bottom: 1px solid #aab2bd;
+    border-bottom: 1px solid #aab2bd;
     padding-bottom: 3px;
     color: #aab2bd;
     padding-left: 5px;
+}
+
+.deferConter a:hover {
+    color: #06c27a;
+}
+
+/*Performance.html 履约维权*/
+.pf-head{
+    padding-top: 6px;
+}
+
+.pfh-span {
+    display: block;
+    float: left;
+    padding: 0 5px;
+    cursor: pointer;
+    background: #10ac86;
+    border: 1px solid #10ac86;
+    color: #ffffff;
+}
+
+.pfh-span:hover { /*鼠标经过的效果*/
+    color: #06c27a;
+    background: #ffffff;
+    border: 1px solid #06c27a;
+}
+
+.spanL { /*左边的圆角*/
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none;
+}
+
+.spanR { /*右边的圆角*/
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: none;
+}
+
+.spanB { /*选中的效果*/
+    color: #06c27a;
+    background: #ffffff;
+    border: 1px solid #06c27a;
+}
+.pf-content table tbody tr td:first-child{ /*设定第一个TD的宽度用来限制下面*/
+    width: 60%;
+}
+.pf-content table tbody tr td:first-child span{ /*限制文字*/
+    float: left;
+    width:430px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pf-content table tbody tr td:last-child a:hover{  /*限制文字*/
+    color: #06c27a;
+}
+
+/*PerfComplaints.html 提交申诉*/
+.pfC-head{
+    padding-bottom: 10px;
+}
+/*面包屑导航*/
+.breadHd {
+    list-style: none;
+    display: -webkit-flex;
+    padding-left: 15px;
+}
+.bredLi {
+    float: left;
+    -webkit-flex: 1;
+    display: block;
+    border: 1px solid #f27838;
+    color: #f27838;
+    background: #fff;
+    text-decoration: none;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px 0 5px;
+    text-align: center;
+    margin-right: 23px;
+}
+.bredLiSet{
+    color: #fff;
+    background: #f27838;
+}
+.pfc-border{
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+.pfc-border input{
+    margin-bottom: 10px;
 }
