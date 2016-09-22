@@ -155,13 +155,34 @@ p.loginList a:hover{
 .have a:hover{
     color: #06c27a;
 }
-.loginListUser label{
+.loginListTel label{
     position: absolute;
     left: 2px;
     top: 10px;
     width: 24px;
     height: 24px;
-    background: url('../images/user.png') no-repeat;
+    background: url('../images/ytel.png') no-repeat;
+}
+
+.loginListCode label{
+    position: absolute;
+    left: 2px;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    background: url('../images/code.png') no-repeat;
+}
+.loginListCode span{
+    position: absolute;
+    padding: 0 5px;
+    display: block;
+    right: 2px;
+    top: 4px;
+    width: 80px;
+    background: #f5f5f5;
+    text-align: center;
+    cursor: pointer;
+
 }
 .loginListPwd label{
     position: absolute;
