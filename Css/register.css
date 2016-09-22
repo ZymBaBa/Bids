@@ -1,0 +1,173 @@
+.loginWrapper {
+    width: 100%;
+    min-width: 1200px;
+    height: 100%;
+    min-height: 500px;
+    font-size: 14px;
+    color: #909090;
+}
+
+.banWrapper {
+    float: left;
+    background: #10ac86;
+    position: relative;
+    width: 60%;
+    height: 100%;
+}
+
+.loginMain {
+    float: left;
+    background: #ffffff;
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+
+.loginWidth {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -200px;
+}
+
+.banContent {
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -350px;
+}
+
+.banContent a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.banContent a img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.loginLogoDiv {
+    width: 310px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.loginLogo {
+    display: block;
+    width: 280px;
+    height: 75px;
+    background: url('../images/logo2.png') no-repeat;
+}
+
+.loginWidth form {
+    width: 310px;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+.loginList{
+    position: relative;
+    height: 38px;
+    line-height: 38px;
+    width: 260px;
+    padding: 2px 18px 2px 32px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.loginText{
+    height: 24px;
+    line-height: 24px;
+    padding: 7px 0;
+    width: 260px;
+    color: #606060;
+    border: 0 none;
+}
+.sysError{
+    color: #fe514a;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    top: -5px;
+}
+.sysError i{
+    padding: 0 9px;
+    line-height: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.sysError em{
+    font-style: normal;
+    line-height: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+p.loginList{
+    text-align: right;
+    width: 100%;
+    padding: 0;
+    font-size: 13px;
+    margin-bottom: 0;
+    height: 16px;
+    line-height: 16px;
+    border: 0 none;
+}
+p.loginList a{
+    color: #10ac86;
+}
+p.loginList a:hover{
+    color: #06c27a;
+}
+.loginBtn{
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    margin-top: 20px;
+    background: #10ac86;
+    border-radius: 2px;
+    color: #fff;
+    border: 0 none;
+    letter-spacing: 4px;
+    font-size: 16px;
+}
+.loginBtn:hover{
+    background: #06c27a;
+}
+.have{
+    text-align: right;
+    height: 20px;
+    line-height: 20px;
+    padding-top: 16px;
+}
+.have a{
+    color: #10ac86;
+}
+.have a:hover{
+    color: #06c27a;
+}
+.loginListUser label{
+    position: absolute;
+    left: 2px;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    background: url('../images/user.png') no-repeat;
+}
+.loginListPwd label{
+    position: absolute;
+    left: 2px;
+    top: 10px;
+    width: 20px;
+    height: 24px;
+    background: url('../images/pwd.png') no-repeat;
+}
