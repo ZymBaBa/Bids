@@ -14,520 +14,799 @@
     <script src="Js/style.js"></script>
 </head>
 <body>
-    <div class="wrap">
-        <!--      顶部导航-->
-        <div class="header self">
-            <div class="hdTitle self">
+<div class="wrap">
+    <!--      顶部导航-->
+    <div class="header self">
+        <div class="hdTitle self">
+            <ul>
+                <li><a href="#">关注我们</a></li>
+                <li><a href="./law/law.html">法规中心</a></li>
+                <li><a href="./User/User.html">我的招标</a></li>
+                <li><a href="./User/User.html">我的投标</a></li>
+                <li><a href="sign.html">免费注册</a></li>
+                <li><a href="register.html">登录</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--        搜索栏-->
+    <div class="search self">
+        <div id="serch" class="hdTitle self">
+            <!--               logo-->
+            <div class="logo left self">
+                <a href="index.html"></a>
+            </div>
+            <!--                搜索-->
+            <div class="cast left">
+                <form id="formSerch" action="get">
+                    <input type="text" value="请输入您所需要查找的内容或标底" id="inputBids">
+                    <input type="submit" value="搜索">
+                    <span>或者</span>
+                    <a href="bidsPust.html">免费发布招标</a>
+                </form>
+            </div>
+            <div class="hotSerch self">
                 <ul>
-                    <li><a href="#">关注我们</a></li>
-                    <li><a href="./law/law.html">法规中心</a></li>
-                    <li><a href="./User/User.html">我的招标</a></li>
-                    <li><a href="./User/User.html">我的投标</a></li>
-                    <li><a href="sign.html">免费注册</a></li>
-                    <li><a href="register.html">登录</a></li>
+                    <li><a href="#">食品</a></li>
+                    <li><a href="#">饮料</a></li>
+                    <li><a href="#">服装</a></li>
+                    <li><a href="#">木材加工</a></li>
+                    <li><a href="#">家具</a></li>
+                    <li><a href="#">磨具机</a></li>
+                    <li><a href="#">磨具机</a></li>
+                    <li><a href="#">家具</a></li>
+                    <li><a href="#">磨具机</a></li>
+                    <li><a href="#">磨具机</a></li>
                 </ul>
-            </div>
-        </div>
-        <!--        搜索栏-->
-        <div class="search self">
-            <div id="serch" class="hdTitle self">
-                <!--               logo-->
-                <div class="logo left self">
-                    <a href="index.html"></a>
-                </div>
-                <!--                搜索-->
-                <div class="cast left">
-                    <form id="formSerch" action="get">
-                        <input type="text" value="请输入您所需要查找的内容或标底" id="inputBids">
-                        <input type="submit" value="搜索">
-                        <span>或者</span>
-                        <a href="bidsPust.html">免费发布招标</a>
-                    </form>
-                </div>
-                <div class="hotSerch self">
-                    <ul>
-                        <li><a href="#">食品</a></li>
-                        <li><a href="#">饮料</a></li>
-                        <li><a href="#">服装</a></li>
-                        <li><a href="#">木材加工</a></li>
-                        <li><a href="#">家具</a></li>
-                        <li><a href="#">磨具机</a></li>
-                        <li><a href="#">磨具机</a></li>
-                        <li><a href="#">家具</a></li>
-                        <li><a href="#">磨具机</a></li>
-                        <li><a href="#">磨具机</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--        网站导航-->
-        <div class="Navigate self">
-            <div class="hdTitle self">
-                <ul>
-                    <li><a href="index.html">首页</a></li>
-                    <li><a href="#">物资采购</a></li>
-                    <li><a href="#">工程项目</a></li>
-                    <li><a href="#">延期招标</a></li>
-                    <li><a href="#">中标公告</a></li>
-                    <li><a href="#">招标规则</a></li>
-                    <li><a href="#">重要通知</a></li>
-                </ul>
-            </div>
-        </div>
-        <!--       重要通知-->
-        <div class="notify self">
-            <div class="hdTitle self">
-                <div class="messageTitle">重要通知</div>
-                <div class="messageList">
-                    <ul>
-                        <li><a href="#">【重要通知】关于2017年招标通收费通知</a></li>
-                        <li><a href="#">【重要通知】8月部分企业履约纠纷处理公告</a></li>
-                        <li><a href="#">【规则通知】关于圣龙马招标网用户遵守变更通知</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--        核心内容-->
-        <div class="container self">
-            <!--           广告、通知、规则-->
-            <div class="banner self hdTitle">
-                <!--               广告-->
-                <div id="bigBanner" class="self">
-                    <div id="rt-showcase-surround">
-                        <div id="rt-showcase" class="slider-container rt-overlay-dark">
-                            <div class="rt-container slider-container">
-                                <div class="rt-grid-12 rt-alpha rt-omega">
-                                    <div class="csslider1 autoplay">
-                                        <input name="cs_anchor1" autocomplete="off" id="cs_slide1_0" type="radio" class="cs_anchor slide">
-                                        <input name="cs_anchor1" autocomplete="off" id="cs_slide1_1" type="radio" class="cs_anchor slide">
-                                        <input name="cs_anchor1" autocomplete="off" id="cs_slide1_2" type="radio" class="cs_anchor slide">
-                                        <input name="cs_anchor1" autocomplete="off" id="cs_play1" type="radio" class="cs_anchor" checked>
-                                        <input name="cs_anchor1" autocomplete="off" id="cs_pause1" type="radio" class="cs_anchor">
-                                        <ul>
-                                            <div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;"> <img src="images/1.jpg" style="width: 100%;"> </div>
-                                            <li class="num0 img"> <img src="images/1.jpg" alt="Clouds" title="Clouds" /> </li>
-                                            <li class="num1 img"> <img src="images/2.jpg" alt="Typewriter" title="Typewriter" /> </li>
-                                            <li class="num2 img"> <img src="images/3.jpg" alt="Bicycle" title="Bicycle" /> </li>
-                                        </ul>
-                                        <div class="cs_arrowprev">
-                                            <label class="num0" for="cs_slide1_0"></label>
-                                            <label class="num1" for="cs_slide1_1"></label>
-                                            <label class="num2" for="cs_slide1_2"></label>
-                                        </div>
-                                        <div class="cs_arrownext">
-                                            <label class="num0" for="cs_slide1_0"></label>
-                                            <label class="num1" for="cs_slide1_1"></label>
-                                            <label class="num2" for="cs_slide1_2"></label>
-                                        </div>
-                                        <div class="cs_bullets">
-                                            <label class="num0" for="cs_slide1_0"> <span class="cs_point"></span> </label>
-                                            <label class="num1" for="cs_slide1_1"> <span class="cs_point"></span> </label>
-                                            <label class="num2" for="cs_slide1_2"> <span class="cs_point"></span> </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="smallB">
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                    </div>
-                </div>
-                <!--                通知、规则-->
-                <div class="inform">
-                    <div class="inform-1">
-                        <div class="informTitle"><span>通知公告</span>
-                            <a href="#" class="more"></a>
-                        </div>
-                        <div class="informConter">
-                            <ul>
-                                <li><a href="#"><span class="type-e">【重要】</span>关于2017年平台服务费调整通知</a></li>
-                                <li><a href="#"><span class="type-n">【普通】</span>关于2017年平台用户服务协调整通知</a></li>
-                                <li><a href="#"><span class="type-n">【普通】</span>履约协议更新通知</a></li>
-                                <li><a href="#"><span class="type-n">【普通】</span>保险协议更新通知</a></li>
-                                <li><a href="#"><span class="type-n">【普通】</span>保险协议更新通知</a></li>
-                                <li><a href="#"><span class="type-w">【通告】</span>2017年履约违约用户通告</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="inform-1">
-                        <div class="informTitle"><span>招标规则|法规</span>
-                            <a href="#" class="more"></a>
-                        </div>
-                        <div class="informConter">
-                            <ul>
-                                <li><a href="#"><span class="type-e">【重要】</span>关于2017年平台服务费调整通知</a></li>
-                                <li><a href="#"><span class="type-e">【重要】</span>关于2017年平台用户服务协调整通知</a></li>
-                                <li><a href="#"><span class="type-e">【重要】</span>履约协议更新通知</a></li>
-                                <li><a href="#"><span class="type-e">【重要】</span>保险协议更新通知</a></li>
-                                <li><a href="#"><span class="type-e">【重要】</span>保险协议更新通知</a></li>
-                                <li><a href="#"><span class="type-e">【重要】</span>保险协议更新通知</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--            物资采购-->
-            <div class="Bide self hdTitle">
-                <div class="BideTtile">
-                    <a href="#"><img src="images/procure.png" alt="物资采购">物资采购</a>
-                </div>
-                <div class="BideConter">
-                    <div class="BCLeft">
-                        <div class="BCLTop">
-                            <ul>
-                                <li><a href="#">教育产品</a></li>
-                                <li><a href="#">体育器材</a></li>
-                                <li><a href="#">办公家具</a></li>
-                                <li><a href="#">医疗设备</a></li>
-                                <li><a href="#">医用器材</a></li>
-                                <li><a href="#">医疗医药</a></li>
-                                <li><a href="#">医疗设备</a></li>
-                                <li><a href="#">医用器材</a></li>
-                                <li><a href="#">安防设备</a></li>
-                                <li><a href="#">警用装备</a></li>
-                                <li><a href="#">通信设置</a></li>
-                                <li><a href="#">汽车配件</a></li>
-                                <li><a href="#">农业机械</a></li>
-                                <li><a href="#">畜牧设备</a></li>
-                                <li><a href="#">运输设备</a></li>
-                                <li><a href="#">道路标志</a></li>
-                            </ul>
-                        </div>
-                        <div class="BCLDown">
-                            <ul>
-                                <li><a href="#">电子白板</a></li>
-                                <li><a href="#">多媒体</a></li>
-                                <li><a href="#">教育产品</a></li>
-                                <li><a href="#">图书</a></li>
-                                <li><a href="#">课桌椅</a></li>
-                                <li><a href="#">蓝球架</a></li>
-                                <li><a href="#">乒乓球桌</a></li>
-                                <li><a href="#">健身器材</a></li>
-                                <li><a href="#">会议桌</a></li>
-                                <li><a href="#">办公桌</a></li>
-                                <li><a href="#">沙发</a></li>
-                                <li><a href="#">电脑桌</a></li>
-                                <li><a href="#">办公椅</a></li>
-                                <li><a href="#">对讲机</a></li>
-                                <li><a href="#">电子巡更</a></li>
-                                <li><a href="#">消防设备</a></li>
-                                <li><a href="#">电子白板</a></li>
-                                <li><a href="#">多媒体</a></li>
-                                <li><a href="#">教育产品</a></li>
-                                <li><a href="#">图书</a></li>
-                                <li><a href="#">课桌椅</a></li>
-                                <li><a href="#">蓝球架</a></li>
-                                <li><a href="#">乒乓球桌</a></li>
-                                <li><a href="#">健身器材</a></li>
-                                <li><a href="#">会议桌</a></li>
-                                <li><a href="#">办公桌</a></li>
-                                <li><a href="#">沙发</a></li>
-                                <li><a href="#">电脑桌</a></li>
-                                <li><a href="#">办公椅</a></li>
-                                <li><a href="#">对讲机</a></li>
-                                <li><a href="#">电子巡更</a></li>
-                                <li><a href="#">消防设备</a></li>
-                                <li><a href="#">电脑桌</a></li>
-                                <li><a href="#">办公椅</a></li>
-                                <li><a href="#">对讲机</a></li>
-                                <li><a href="#">电子巡更</a></li>
-                                <li><a href="#">消防设备</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="BCRigth">
-                        <div class="BCRTop">
-                            <span>最新招标</span>
-                            <a href="#" class="more"></a>
-                        </div>
-                        <div class="BCRDown">
-                            <ul>
-                                <li> <a href="#">潍坊市长松路和玉清街绿地养护招标公告 <span class="type-n">（综合招标）</span>
-                                <p>
-                                   <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                                    <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                                    <span>保证金：</span><span>2</span><span>万</span>
-                                </p>
-                                </a>
-                                </li>
-                                <li> <a href="#">潍坊市救助管理站消防配套设施建设工程招标公告 <span class="type-n">（竞价招标）</span><p>
-                              <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span>
-                        </p></a> </li>
-                                <li> <a href="#">广饶县大王镇吕庄村巷道硬化施工 <span class="type-n">（竞价招标）</span><p><span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                                <li> <a href="#">广饶县气象局新址业务用房建设项目施工及监理 <span class="type-n">（竞价招标）</span><p>   <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                                <li> <a href="#">峄城区榴园镇肖庄南道路工程招标公告 <span class="type-n">（竞价招标）</span><p> <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                                <li> <a href="#">潍坊市长松路和玉清街绿地养护招标公告 <span class="type-n">（综合招标）</span><p><span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                                <li> <a href="#">潍坊市救助管理站消防配套设施建设工程招标公告 <span class="type-n">（竞价招标）</span><p><span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                                <li> <a href="#">广饶县大王镇吕庄村巷道硬化施工 <span class="type-n">（竞价招标）</span><p><span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                                <li> <a href="#">广饶县气象局新址业务用房建设项目施工及监理 <span class="type-n">（竞价招标）</span><p><span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                                <li> <a href="#">峄城区榴园镇肖庄南道路工程招标公告 <span class="type-n">（竞价招标）</span><p> <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                                <li> <a href="#">潍坊市长松路和玉清街绿地养护招标公告 <span class="type-n">（综合招标）</span><p> <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                                <li> <a href="#">潍坊市救助管理站消防配套设施建设工程招标公告 <span class="type-n">（竞价招标）</span><p>  <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                                <li> <a href="#">潍坊市长松路和玉清街绿地养护招标公告 <span class="type-n">（综合招标）</span><p> <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                                <li> <a href="#">潍坊市救助管理站消防配套设施建设工程招标公告 <span class="type-n">（竞价招标）</span><p>   <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--            工程项目-->
-            <div class="Bide self hdTitle">
-                <div class="BideTtile">
-                    <a href="#"><img src="images/project.png" alt="工程项目">工程项目</a>
-                </div>
-                <div class="BideConter">
-                    <div class="BCLeft BCLT-min">
-                        <div class="BCLTop BCLT-min">
-                            <ul>
-                                <li><a href="#">教育产品</a></li>
-                                <li><a href="#">体育器材</a></li>
-                                <li><a href="#">办公家具</a></li>
-                                <li><a href="#">医疗设备</a></li>
-                                <li><a href="#">医用器材</a></li>
-                                <li><a href="#">医疗医药</a></li>
-                                <li><a href="#">医疗设备</a></li>
-                                <li><a href="#">医用器材</a></li>
-                            </ul>
-                        </div>
-                        <div class="BCLDown BCLDown-min">
-                            <ul>
-                                <li><a href="#">电子白板</a></li>
-                                <li><a href="#">多媒体</a></li>
-                                <li><a href="#">教育产品</a></li>
-                                <li><a href="#">图书</a></li>
-                                <li><a href="#">课桌椅</a></li>
-                                <li><a href="#">蓝球架</a></li>
-                                <li><a href="#">乒乓球桌</a></li>
-                                <li><a href="#">健身器材</a></li>
-                                <li><a href="#">会议桌</a></li>
-                                <li><a href="#">办公桌</a></li>
-                                <li><a href="#">沙发</a></li>
-                                <li><a href="#">电脑桌</a></li>
-                                <li><a href="#">办公椅</a></li>
-                                <li><a href="#">对讲机</a></li>
-                                <li><a href="#">电子巡更</a></li>
-                                <li><a href="#">消防设备</a></li>
-                                <li><a href="#">电子白板</a></li>
-                                <li><a href="#">多媒体</a></li>
-                                <li><a href="#">教育产品</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="BCRigth BCR-min">
-                        <div class="BCRTop">
-                            <span>最新招标</span>
-                            <a href="#" class="more"></a>
-                        </div>
-                        <div class="BCRDown">
-                            <ul>
-                                <li> <a href="#">潍坊市长松路和玉清街绿地养护招标公告
-                                <p>
-                                   <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                                    <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                                    <span>保证金：</span><span>2</span><span>万</span>
-                                </p>
-                                </a>
-                                </li>
-                                <li> <a href="#">潍坊市救助管理站消防配套设施建设工程招标公告 <p>
-                              <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span>
-                        </p></a> </li>
-                                <li> <a href="#">广饶县大王镇吕庄村巷道硬化施工 <p><span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                                <li> <a href="#">广饶县气象局新址业务用房建设项目施工及监理 <p>   <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                                <li> <a href="#">峄城区榴园镇肖庄南道路工程招标公告 <p> <span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                                <li> <a href="#">潍坊市长松路和玉清街绿地养护招标公告 <p><span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                                <li> <a href="#">潍坊市救助管理站消防配套设施建设工程招标公告 <p><span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                                <li> <a href="#">广饶县大王镇吕庄村巷道硬化施工<p><span>阶段：</span><span>招标报名</span>&nbsp;&nbsp;
-                            <span>截止：</span><span>2016-09-20</span>&nbsp;&nbsp;
-                            <span>保证金：</span><span>2</span><span>万</span></p></a> </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--            招标延期公告-->
-            <div class="defer self hdTitle">
-                <div class="dfTitle">
-                    <a href="#"><img src="./images/delay.png" alt="招标延期公告">
-                        <span>招标延期公告</span></a>
-                </div>
-                <div class="dfConter">
-                    <ul>
-                        <li> <a href="#">独山子区城投大厦工程旋转楼梯发光玻璃及钢化玻璃踏步采购项目招</a>
-                            <a href="#">
-                                <span class="type-n">物资采购（竞价招标）</span>
-                                <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
-                                <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u class="type-e">2016年09月14日</u></span>
-                            </a>
-                        </li>
-                        <li> <a href="#">天津市安定医院移动售饭车服务项目招标公告</a>
-                            <a href="#">
-                                <span class="type-n">物资采购（竞价招标）</span>
-                                <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
-                                <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u class="type-e">2016年09月14日</u></span>
-                            </a>
-                        </li>
-                        <li> <a href="#">2014年六运湖农场保障性安居工程配套基础设施-亮化工程</a>
-                            <a href="#">
-                                <span class="type-n">物资采购（竞价招标）</span>
-                                <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
-                                <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u class="type-e">2016年09月14日</u></span>
-                            </a>
-                        </li>
-                        <li> <a href="#">九三集团天津大豆科技有限公司精炼车间高压锅炉炉体安装项目</a>
-                            <a href="#">
-                                <span class="type-n">物资采购（竞价招标）</span>
-                                <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
-                                <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u class="type-e">2016年09月14日</u></span>
-                            </a>
-                        </li>
-                        <li> <a href="#">西青区2016年度农业综合开发精武镇闫庄子村100亩设施蔬菜</a>
-                            <a href="#">
-                                <span class="type-n">物资采购（竞价招标）</span>
-                                <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
-                                <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u class="type-e">2016年09月14日</u></span>
-                            </a>
-                        </li>
-                        <li> <a href="#">中新天津生态城中部片区生活垃圾收集运输（气力输送）工程87#</a>
-                            <a href="#">
-                                <span class="type-n">物资采购（竞价招标）</span>
-                                <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
-                                <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u class="type-e">2016年09月14日</u></span>
-                            </a>
-                        </li>
-                        <li> <a href="#">2015年滨海新区大港供热老旧管网改造-振业里单户循环改造工</a>
-                            <a href="#">
-                                <span class="type-n">物资采购（竞价招标）</span>
-                                <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
-                                <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u class="type-e">2016年09月14日</u></span>
-                            </a>
-                        </li>
-                        <li> <a href="#">山西省阳泉盂县辰通煤业有限公司副斜井液压可摘挂抱索器架空乘人</a>
-                            <a href="#">
-                                <span class="type-n">物资采购（竞价招标）</span>
-                                <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
-                                <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u class="type-e">2016年09月14日</u></span>
-                            </a>
-                        </li>
-                        <li> <a href="#">大同县西坪镇坨坊村、上榆涧村2016易地扶贫搬迁和农村住房抗</a>
-                            <a href="#">
-                                <span class="type-n">物资采购（竞价招标）</span>
-                                <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
-                                <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u class="type-e">2016年09月14日</u></span>
-                            </a>
-                        </li>
-                        <li> <a href="#">中资博洋环保科技研发推广中心项目招标公告 </a>
-                            <a href="#">
-                                <span class="type-n">物资采购（竞价招标）</span>
-                                <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
-                                <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u class="type-e">2016年09月14日</u></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--       中标公告-->
-            <div class="won sel hdTitle">
-                <div class="dfTitle">
-                    <a href="#"><img src="./images/bid.png" alt="中标公告">
-                        <span>中标公告</span></a>
-                </div>
-                <div class="wonConter">
-                    <ul>
-                        <li> <a href="#">中宁县公安局徐套派出所业务用房及附属设施工程</a> <a href="#"><span class="type-n" style="margin-right:20px;">中标公司</span><u class="type-e">嘉兴禾码科技服务有限公司</u><span class="type-a" style="margin-left:15px;">2016年9月2日</span></a> </li>
-                        <li> <a href="#">中宁县市民休闲森林公园项目供水工程调蓄水池招标公告</a> <a href="#"><span class="type-n" style="margin-right:20px;">中标公司</span><u class="type-e">上海讯科自动化科技有限公司</u><span class="type-a" style="margin-left:15px;">2016年9月2日</span></a> </li>
-                        <li> <a href="#">沙坡头区东园镇卫生院扩建业务用房及附属设施项目监理开标时间变</a> <a href="#"><span class="type-n" style="margin-right:20px;">中标公司</span><u class="type-e">浙江圣龙马网络科技有限公司</u><span class="cl-assist fz-assist" style="margin-left:15px;">2016年9月2日</span></a> </li>
-                        <li> <a href="#">固原市棚户区改造（旧城改造安置房建设）-西湖路片区建设项目施</a> <a href="#"><span class="type-n" style="margin-right:20px;">中标公司</span><u class="type-e">嘉兴禾码科技服务有限公司</u><span class="type-a" style="margin-left:15px;">2016年9月2日</span></a> </li>
-                        <li> <a href="#">彭阳县罗洼乡独立工矿区改造项目一期工程施工及监理招标公告</a> <a href="#"><span class="type-n" style="margin-right:20px;">中标公司</span><u class="type-e">湖北成龙威专用汽车有限公司销售总公司</u><span class="type-a" style="margin-left:15px;">2016年9月2日</span></a> </li>
-                        <li> <a href="#">固原市原州区头营镇杨郎村高效节水灌溉工程补充通知</a> <a href="#"><span class="type-n" style="margin-right:20px;">中标公司</span><u class="type-e">湖北程力专用汽车股份有限公司市场销售部</u><span class="type-a" style="margin-left:15px;">2016年9月2日</span></a> </li>
-                        <li> <a href="#">东平县斑鸠店镇杨闸村利用扶贫资金家禽养殖场建设采购项目</a> <a href="#"><span class="type-n" style="margin-right:20px;">中标公司</span><u class="type-e">深圳卡车之家物流货运有限公司</u><span class="type-a" style="margin-left:15px;">2016年9月2日</span></a> </li>
-                        <li> <a href="#">威海市学府家园（槐云旧村改造）三期（1）地下车库人防工程监理</a> <a href="#"><span class="type-n" style="margin-right:20px;">中标公司</span><u class="type-e">深圳市宝安达汽车销售有限公司</u><span class="type-a" style="margin-left:15px;">2016年9月2日</span></a> </li>
-                        <li> <a href="#">山东滨州烟草有限公司市到县（区）、县（区）到中队网络线路租赁</a> <a href="#"><span class="type-n" style="margin-right:20px;">中标公司</span><u class="type-e">常州广汇汽车销售服务有限公司</u><span class="type-a" style="margin-left:15px;">2016年9月2日</span></a> </li>
-                        <li> <a href="#">东平县斑鸠店郑沃村利用扶贫资金家禽养殖场建设项目招标公告</a> <a href="#"><span class="type-n" style="margin-right:20px;">中标公司</span><u class="type-e">潍坊皓鸿电动科技有限公司</u><span class="type-a" style="margin-left:15px;">2016年9月2日</span></a> </li>
-                        <li> <a href="#">东营市河口区人力资源和社会保障局档案管理系统硬件设备更正公告</a> <a href="#"><span class="type-n" style="margin-right:20px;">中标公司</span><u class="type-e">常州恒腾汽车配件有限公司</u><span class="type-a" style="margin-left:15px;">2016年9月2日</span></a> </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer self">
-            <div class="bidFoot hdTitle">
-                <div class="footLogo"> <img src="./images/logo.png" alt="圣龙马招标">
-                    <p>圣龙马，专注于中小企业招标</p>
-                </div>
-                <div class="footContent">
-                    <dl> <dt>网站导航</dt>
-                        <dd><a href="#">物资采购</a></dd>
-                        <dd><a href="#">工程项目</a></dd>
-                        <dd><a href="#">延期公告</a></dd>
-                        <dd><a href="#">中标公告</a></dd>
-                    </dl>
-                    <dl> <dt>招标法规则</dt>
-                        <dd><a href="#">用户协议</a></dd>
-                        <dd><a href="#">用户协议</a></dd>
-                        <dd><a href="#">保险法规</a></dd>
-                        <dd><a href="#">履约协议</a></dd>
-                    </dl>
-                    <dl> <dt>其他</dt>
-                        <dd><a href="#">关于我们</a></dd>
-                        <dd><a href="#">使用指南</a></dd>
-                        <dd><a href="#">加入我们</a></dd>
-                        <dd><a href="#">联系我们</a></dd>
-                    </dl>
-                </div>
-                <div class="serve">
-                    <p>服务热线：<strong>0573-88787878</strong></p> <img src="./images/Qcode.png" alt="#"> </div>
-            </div>
-            <div class="copyRight hdTitle">
-                <p>Copyright &#169; 2013-2016
-                    <a href="https://www.slm168.com">slm168.com</a> All Rights Reversed. 浙ICP备11018032号-8 浙公网安备11010802020210
-                </p>
             </div>
         </div>
     </div>
+    <!--        网站导航-->
+    <div class="Navigate self">
+        <div class="hdTitle self">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#">物资采购</a></li>
+                <li><a href="#">工程项目</a></li>
+                <li><a href="#">延期招标</a></li>
+                <li><a href="#">中标公告</a></li>
+                <li><a href="#">招标规则</a></li>
+                <li><a href="#">重要通知</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--       重要通知-->
+    <div class="notify self">
+        <div class="hdTitle self">
+            <div class="messageTitle">重要通知</div>
+            <div class="messageList">
+                <ul>
+                    <li><a href="#">【重要通知】关于2017年招标通收费通知</a></li>
+                    <li><a href="#">【重要通知】8月部分企业履约纠纷处理公告</a></li>
+                    <li><a href="#">【规则通知】关于圣龙马招标网用户遵守变更通知</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--        核心内容-->
+    <div class="container self">
+        <!--           广告、通知、规则-->
+        <div class="banner self hdTitle">
+            <!--               广告-->
+            <div id="bigBanner" class="self">
+                <div id="rt-showcase-surround">
+                    <div id="rt-showcase" class="slider-container rt-overlay-dark">
+                        <div class="rt-container slider-container">
+                            <div class="rt-grid-12 rt-alpha rt-omega">
+                                <div class="csslider1 autoplay">
+                                    <input name="cs_anchor1" autocomplete="off" id="cs_slide1_0" type="radio"
+                                           class="cs_anchor slide">
+                                    <input name="cs_anchor1" autocomplete="off" id="cs_slide1_1" type="radio"
+                                           class="cs_anchor slide">
+                                    <input name="cs_anchor1" autocomplete="off" id="cs_slide1_2" type="radio"
+                                           class="cs_anchor slide">
+                                    <input name="cs_anchor1" autocomplete="off" id="cs_play1" type="radio"
+                                           class="cs_anchor" checked>
+                                    <input name="cs_anchor1" autocomplete="off" id="cs_pause1" type="radio"
+                                           class="cs_anchor">
+                                    <ul>
+                                        <div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
+                                            <img src="images/1.jpg" style="width: 100%;"></div>
+                                        <li class="num0 img"><img src="images/1.jpg" alt="Clouds" title="Clouds"/></li>
+                                        <li class="num1 img"><img src="images/2.jpg" alt="Typewriter"
+                                                                  title="Typewriter"/></li>
+                                        <li class="num2 img"><img src="images/3.jpg" alt="Bicycle" title="Bicycle"/>
+                                        </li>
+                                    </ul>
+                                    <div class="cs_arrowprev">
+                                        <label class="num0" for="cs_slide1_0"></label>
+                                        <label class="num1" for="cs_slide1_1"></label>
+                                        <label class="num2" for="cs_slide1_2"></label>
+                                    </div>
+                                    <div class="cs_arrownext">
+                                        <label class="num0" for="cs_slide1_0"></label>
+                                        <label class="num1" for="cs_slide1_1"></label>
+                                        <label class="num2" for="cs_slide1_2"></label>
+                                    </div>
+                                    <div class="cs_bullets">
+                                        <label class="num0" for="cs_slide1_0"> <span class="cs_point"></span> </label>
+                                        <label class="num1" for="cs_slide1_1"> <span class="cs_point"></span> </label>
+                                        <label class="num2" for="cs_slide1_2"> <span class="cs_point"></span> </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="smallB">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <!--                通知、规则-->
+            <div class="inform">
+                <div class="inform-1">
+                    <div class="informTitle"><span>通知公告</span>
+                        <a href="#" class="more"></a>
+                    </div>
+                    <div class="informConter">
+                        <ul>
+                            <li><a href="#"><span class="type-e">【重要】</span>关于2017年平台服务费调整通知</a></li>
+                            <li><a href="#"><span class="type-n">【普通】</span>关于2017年平台用户服务协调整通知</a></li>
+                            <li><a href="#"><span class="type-n">【普通】</span>履约协议更新通知</a></li>
+                            <li><a href="#"><span class="type-n">【普通】</span>保险协议更新通知</a></li>
+                            <li><a href="#"><span class="type-n">【普通】</span>保险协议更新通知</a></li>
+                            <li><a href="#"><span class="type-w">【通告】</span>2017年履约违约用户通告</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inform-1">
+                    <div class="informTitle"><span>招标规则|法规</span>
+                        <a href="#" class="more"></a>
+                    </div>
+                    <div class="informConter">
+                        <ul>
+                            <li><a href="#"><span class="type-e">【重要】</span>关于2017年平台服务费调整通知</a></li>
+                            <li><a href="#"><span class="type-e">【重要】</span>关于2017年平台用户服务协调整通知</a></li>
+                            <li><a href="#"><span class="type-e">【重要】</span>履约协议更新通知</a></li>
+                            <li><a href="#"><span class="type-e">【重要】</span>保险协议更新通知</a></li>
+                            <li><a href="#"><span class="type-e">【重要】</span>保险协议更新通知</a></li>
+                            <li><a href="#"><span class="type-e">【重要】</span>保险协议更新通知</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--            物资采购-->
+        <div class="Bide self hdTitle">
+            <div class="BideTtile">
+                <a href="#"><img src="images/procure.png" alt="物资采购">物资采购</a>
+            </div>
+            <div class="BideConter">
+                <div class="BCLeft">
+                    <div class="BCLTop">
+                        <ul>
+                            <li><a href="#">教育产品</a></li>
+                            <li><a href="#">体育器材</a></li>
+                            <li><a href="#">办公家具</a></li>
+                            <li><a href="#">医疗设备</a></li>
+                            <li><a href="#">医用器材</a></li>
+                            <li><a href="#">医疗医药</a></li>
+                            <li><a href="#">医疗设备</a></li>
+                            <li><a href="#">医用器材</a></li>
+                            <li><a href="#">安防设备</a></li>
+                            <li><a href="#">警用装备</a></li>
+                            <li><a href="#">通信设置</a></li>
+                            <li><a href="#">汽车配件</a></li>
+                            <li><a href="#">农业机械</a></li>
+                            <li><a href="#">畜牧设备</a></li>
+                            <li><a href="#">运输设备</a></li>
+                            <li><a href="#">道路标志</a></li>
+                        </ul>
+                    </div>
+                    <div class="BCLDown">
+                        <ul>
+                            <li><a href="#">电子白板</a></li>
+                            <li><a href="#">多媒体</a></li>
+                            <li><a href="#">教育产品</a></li>
+                            <li><a href="#">图书</a></li>
+                            <li><a href="#">课桌椅</a></li>
+                            <li><a href="#">蓝球架</a></li>
+                            <li><a href="#">乒乓球桌</a></li>
+                            <li><a href="#">健身器材</a></li>
+                            <li><a href="#">会议桌</a></li>
+                            <li><a href="#">办公桌</a></li>
+                            <li><a href="#">沙发</a></li>
+                            <li><a href="#">电脑桌</a></li>
+                            <li><a href="#">办公椅</a></li>
+                            <li><a href="#">对讲机</a></li>
+                            <li><a href="#">电子巡更</a></li>
+                            <li><a href="#">消防设备</a></li>
+                            <li><a href="#">电子白板</a></li>
+                            <li><a href="#">多媒体</a></li>
+                            <li><a href="#">教育产品</a></li>
+                            <li><a href="#">图书</a></li>
+                            <li><a href="#">课桌椅</a></li>
+                            <li><a href="#">蓝球架</a></li>
+                            <li><a href="#">乒乓球桌</a></li>
+                            <li><a href="#">健身器材</a></li>
+                            <li><a href="#">会议桌</a></li>
+                            <li><a href="#">办公桌</a></li>
+                            <li><a href="#">沙发</a></li>
+                            <li><a href="#">电脑桌</a></li>
+                            <li><a href="#">办公椅</a></li>
+                            <li><a href="#">对讲机</a></li>
+                            <li><a href="#">电子巡更</a></li>
+                            <li><a href="#">消防设备</a></li>
+                            <li><a href="#">电脑桌</a></li>
+                            <li><a href="#">办公椅</a></li>
+                            <li><a href="#">对讲机</a></li>
+                            <li><a href="#">电子巡更</a></li>
+                            <li><a href="#">消防设备</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="BCRigth">
+                    <div class="BCRTop">
+                        <span>最新招标</span>
+                        <a href="#" class="more"></a>
+                    </div>
+                    <div class="BCRDown">
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span1">竞价招标</span>
+                                <span class="span3 spanDel">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3 spanDel">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span1">竞价招标</span>
+                                <span class="span3 spanDel">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span1">竞价招标</span>
+                                <span class="span3 spanDel">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3 spanDel">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span1">竞价招标</span>
+                                <span class="span3 spanDel">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--            工程项目-->
+        <div class="Bide self hdTitle">
+            <div class="BideTtile">
+                <a href="#"><img src="images/project.png" alt="工程项目">工程项目</a>
+            </div>
+            <div class="BideConter">
+                <div class="BCLeft BCLT-min">
+                    <div class="BCLTop BCLT-min">
+                        <ul>
+                            <li><a href="#">教育产品</a></li>
+                            <li><a href="#">体育器材</a></li>
+                            <li><a href="#">办公家具</a></li>
+                            <li><a href="#">医疗设备</a></li>
+                            <li><a href="#">医用器材</a></li>
+                            <li><a href="#">医疗医药</a></li>
+                            <li><a href="#">医疗设备</a></li>
+                            <li><a href="#">医用器材</a></li>
+                        </ul>
+                    </div>
+                    <div class="BCLDown BCLDown-min">
+                        <ul>
+                            <li><a href="#">电子白板</a></li>
+                            <li><a href="#">多媒体</a></li>
+                            <li><a href="#">教育产品</a></li>
+                            <li><a href="#">图书</a></li>
+                            <li><a href="#">课桌椅</a></li>
+                            <li><a href="#">蓝球架</a></li>
+                            <li><a href="#">乒乓球桌</a></li>
+                            <li><a href="#">健身器材</a></li>
+                            <li><a href="#">会议桌</a></li>
+                            <li><a href="#">办公桌</a></li>
+                            <li><a href="#">沙发</a></li>
+                            <li><a href="#">电脑桌</a></li>
+                            <li><a href="#">办公椅</a></li>
+                            <li><a href="#">对讲机</a></li>
+                            <li><a href="#">电子巡更</a></li>
+                            <li><a href="#">消防设备</a></li>
+                            <li><a href="#">电子白板</a></li>
+                            <li><a href="#">多媒体</a></li>
+                            <li><a href="#">教育产品</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="BCRigth BCR-min">
+                    <div class="BCRTop">
+                        <span>最新招标</span>
+                        <a href="#" class="more"></a>
+                    </div>
+                    <div class="BCRDown">
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3 spanDel">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3 spanDel">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3 spanDel">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3 spanDel">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3 spanDel">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3 spanDel">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3 spanDel">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="BCRDList">
+                            <div class="DListIco">
+                                <span class="span2">综合招标</span>
+                                <span class="span3 spanDel">正品险</span>
+                            </div>
+                            <div class="DLisContent">
+                                <p>潍坊市救助管理站消防配套设施建设工程招标公告潍坊市救助管理站消防配套设施建设工程招标公告</p>
+                                <p>
+                                    <span>阶段：<span>招标报名</span></span>&nbsp;&nbsp;
+                                    <span>截止：<span>2016-09-20</span></span>&nbsp;&nbsp;
+                                    <span>保证金：<span>2万</span></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--            招标延期公告-->
+        <div class="defer self hdTitle">
+            <div class="dfTitle">
+                <a href="#"><img src="./images/delay.png" alt="招标延期公告">
+                    <span>招标延期公告</span></a>
+            </div>
+            <div class="dfConter">
+                <ul>
+                    <li><a href="#">独山子区城投大厦工程旋转楼梯发光玻璃及钢化玻璃踏步采购项目招</a>
+                        <a href="#">
+                            <span class="type-n">物资采购（竞价招标）</span>
+                            <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
+                            <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u
+                                class="type-e">2016年09月14日</u></span>
+                        </a>
+                    </li>
+                    <li><a href="#">天津市安定医院移动售饭车服务项目招标公告</a>
+                        <a href="#">
+                            <span class="type-n">物资采购（竞价招标）</span>
+                            <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
+                            <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u
+                                class="type-e">2016年09月14日</u></span>
+                        </a>
+                    </li>
+                    <li><a href="#">2014年六运湖农场保障性安居工程配套基础设施-亮化工程</a>
+                        <a href="#">
+                            <span class="type-n">物资采购（竞价招标）</span>
+                            <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
+                            <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u
+                                class="type-e">2016年09月14日</u></span>
+                        </a>
+                    </li>
+                    <li><a href="#">九三集团天津大豆科技有限公司精炼车间高压锅炉炉体安装项目</a>
+                        <a href="#">
+                            <span class="type-n">物资采购（竞价招标）</span>
+                            <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
+                            <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u
+                                class="type-e">2016年09月14日</u></span>
+                        </a>
+                    </li>
+                    <li><a href="#">西青区2016年度农业综合开发精武镇闫庄子村100亩设施蔬菜</a>
+                        <a href="#">
+                            <span class="type-n">物资采购（竞价招标）</span>
+                            <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
+                            <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u
+                                class="type-e">2016年09月14日</u></span>
+                        </a>
+                    </li>
+                    <li><a href="#">中新天津生态城中部片区生活垃圾收集运输（气力输送）工程87#</a>
+                        <a href="#">
+                            <span class="type-n">物资采购（竞价招标）</span>
+                            <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
+                            <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u
+                                class="type-e">2016年09月14日</u></span>
+                        </a>
+                    </li>
+                    <li><a href="#">2015年滨海新区大港供热老旧管网改造-振业里单户循环改造工</a>
+                        <a href="#">
+                            <span class="type-n">物资采购（竞价招标）</span>
+                            <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
+                            <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u
+                                class="type-e">2016年09月14日</u></span>
+                        </a>
+                    </li>
+                    <li><a href="#">山西省阳泉盂县辰通煤业有限公司副斜井液压可摘挂抱索器架空乘人</a>
+                        <a href="#">
+                            <span class="type-n">物资采购（竞价招标）</span>
+                            <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
+                            <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u
+                                class="type-e">2016年09月14日</u></span>
+                        </a>
+                    </li>
+                    <li><a href="#">大同县西坪镇坨坊村、上榆涧村2016易地扶贫搬迁和农村住房抗</a>
+                        <a href="#">
+                            <span class="type-n">物资采购（竞价招标）</span>
+                            <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
+                            <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u
+                                class="type-e">2016年09月14日</u></span>
+                        </a>
+                    </li>
+                    <li><a href="#">中资博洋环保科技研发推广中心项目招标公告 </a>
+                        <a href="#">
+                            <span class="type-n">物资采购（竞价招标）</span>
+                            <span class="type-n">原报名截止：<u class="type-e">2016年09月02日</u></span>
+                            <span class="type-n">延期：<u class="type-e">12天</u></span> <span class="type-n">现至：<u
+                                class="type-e">2016年09月14日</u></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--       中标公告-->
+        <div class="won sel hdTitle">
+            <div class="dfTitle">
+                <a href="#"><img src="./images/bid.png" alt="中标公告">
+                    <span>中标公告</span></a>
+            </div>
+            <div class="wonConter">
+                <ul>
+                    <li><a href="#">中宁县公安局徐套派出所业务用房及附属设施工程</a> <a href="#"><span class="type-n"
+                                                                                 style="margin-right:20px;">中标公司</span><u
+                            class="type-e">嘉兴禾码科技服务有限公司</u><span class="type-a"
+                                                                 style="margin-left:15px;">2016年9月2日</span></a></li>
+                    <li><a href="#">中宁县市民休闲森林公园项目供水工程调蓄水池招标公告</a> <a href="#"><span class="type-n"
+                                                                                    style="margin-right:20px;">中标公司</span><u
+                            class="type-e">上海讯科自动化科技有限公司</u><span class="type-a"
+                                                                  style="margin-left:15px;">2016年9月2日</span></a></li>
+                    <li><a href="#">沙坡头区东园镇卫生院扩建业务用房及附属设施项目监理开标时间变</a> <a href="#"><span class="type-n"
+                                                                                         style="margin-right:20px;">中标公司</span><u
+                            class="type-e">浙江圣龙马网络科技有限公司</u><span class="cl-assist fz-assist" style="margin-left:15px;">2016年9月2日</span></a>
+                    </li>
+                    <li><a href="#">固原市棚户区改造（旧城改造安置房建设）-西湖路片区建设项目施</a> <a href="#"><span class="type-n"
+                                                                                         style="margin-right:20px;">中标公司</span><u
+                            class="type-e">嘉兴禾码科技服务有限公司</u><span class="type-a"
+                                                                 style="margin-left:15px;">2016年9月2日</span></a></li>
+                    <li><a href="#">彭阳县罗洼乡独立工矿区改造项目一期工程施工及监理招标公告</a> <a href="#"><span class="type-n"
+                                                                                       style="margin-right:20px;">中标公司</span><u
+                            class="type-e">湖北成龙威专用汽车有限公司销售总公司</u><span class="type-a" style="margin-left:15px;">2016年9月2日</span></a>
+                    </li>
+                    <li><a href="#">固原市原州区头营镇杨郎村高效节水灌溉工程补充通知</a> <a href="#"><span class="type-n"
+                                                                                   style="margin-right:20px;">中标公司</span><u
+                            class="type-e">湖北程力专用汽车股份有限公司市场销售部</u><span class="type-a" style="margin-left:15px;">2016年9月2日</span></a>
+                    </li>
+                    <li><a href="#">东平县斑鸠店镇杨闸村利用扶贫资金家禽养殖场建设采购项目</a> <a href="#"><span class="type-n"
+                                                                                      style="margin-right:20px;">中标公司</span><u
+                            class="type-e">深圳卡车之家物流货运有限公司</u><span class="type-a"
+                                                                   style="margin-left:15px;">2016年9月2日</span></a></li>
+                    <li><a href="#">威海市学府家园（槐云旧村改造）三期（1）地下车库人防工程监理</a> <a href="#"><span class="type-n"
+                                                                                         style="margin-right:20px;">中标公司</span><u
+                            class="type-e">深圳市宝安达汽车销售有限公司</u><span class="type-a"
+                                                                   style="margin-left:15px;">2016年9月2日</span></a></li>
+                    <li><a href="#">山东滨州烟草有限公司市到县（区）、县（区）到中队网络线路租赁</a> <a href="#"><span class="type-n"
+                                                                                         style="margin-right:20px;">中标公司</span><u
+                            class="type-e">常州广汇汽车销售服务有限公司</u><span class="type-a"
+                                                                   style="margin-left:15px;">2016年9月2日</span></a></li>
+                    <li><a href="#">东平县斑鸠店郑沃村利用扶贫资金家禽养殖场建设项目招标公告</a> <a href="#"><span class="type-n"
+                                                                                       style="margin-right:20px;">中标公司</span><u
+                            class="type-e">潍坊皓鸿电动科技有限公司</u><span class="type-a"
+                                                                 style="margin-left:15px;">2016年9月2日</span></a></li>
+                    <li><a href="#">东营市河口区人力资源和社会保障局档案管理系统硬件设备更正公告</a> <a href="#"><span class="type-n"
+                                                                                         style="margin-right:20px;">中标公司</span><u
+                            class="type-e">常州恒腾汽车配件有限公司</u><span class="type-a"
+                                                                 style="margin-left:15px;">2016年9月2日</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer self">
+        <div class="bidFoot hdTitle">
+            <div class="footLogo"><img src="./images/logo.png" alt="圣龙马招标">
+                <p>圣龙马，专注于中小企业招标</p>
+            </div>
+            <div class="footContent">
+                <dl>
+                    <dt>网站导航</dt>
+                    <dd><a href="#">物资采购</a></dd>
+                    <dd><a href="#">工程项目</a></dd>
+                    <dd><a href="#">延期公告</a></dd>
+                    <dd><a href="#">中标公告</a></dd>
+                </dl>
+                <dl>
+                    <dt>招标法规则</dt>
+                    <dd><a href="#">用户协议</a></dd>
+                    <dd><a href="#">用户协议</a></dd>
+                    <dd><a href="#">保险法规</a></dd>
+                    <dd><a href="#">履约协议</a></dd>
+                </dl>
+                <dl>
+                    <dt>其他</dt>
+                    <dd><a href="#">关于我们</a></dd>
+                    <dd><a href="#">使用指南</a></dd>
+                    <dd><a href="#">加入我们</a></dd>
+                    <dd><a href="#">联系我们</a></dd>
+                </dl>
+            </div>
+            <div class="serve">
+                <p>服务热线：<strong>0573-88787878</strong></p> <img src="./images/Qcode.png" alt="#"></div>
+        </div>
+        <div class="copyRight hdTitle">
+            <p>Copyright &#169; 2013-2016
+                <a href="https://www.slm168.com">slm168.com</a> All Rights Reversed. 浙ICP备11018032号-8
+                浙公网安备11010802020210
+            </p>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>

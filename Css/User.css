@@ -288,8 +288,14 @@
 }
 
 .StateLink {
+    display: inline-block;
     margin-right: 30px;
     margin-left: 10px;
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height:16px;
 }
 
 .StateLink:hover {
@@ -345,7 +351,7 @@
 }
 
 .userCRList .StateLink:hover {
-    color: #f27838;
+    color: #10ac86;
 }
 
 .userCRList .StateLink span {
