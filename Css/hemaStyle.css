@@ -1254,7 +1254,9 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=649849
     color: #aab2bd;
     font-size: 12px;
 }
-
+.type-auto{
+    background: #06c27a;
+}
 /*整体框架模块*/
 
 html,

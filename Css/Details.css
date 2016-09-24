@@ -1,22 +1,24 @@
-.DetailsLift,.DetailsRight{
+.DetailsLift, .DetailsRight {
     float: left;
     margin-top: 10px;
 }
-.DetailsLift{
+
+.DetailsLift {
     width: 78%;
     /*border: 1px solid #10ac86;*/
     margin-right: 20px;
 }
 
-.breadcrumb{
- margin-bottom: 8px;
+.breadcrumb {
+    margin-bottom: 8px;
 }
-.breadcrumb a:hover{
+
+.breadcrumb a:hover {
     color: #06c27a;
 }
 
 /*招标标题背景*/
-.DLTitle{
+.DLTitle {
     background: #f5f5f5;
     width: 100%;
     height: auto;
@@ -28,8 +30,9 @@
     border-bottom: 1px solid #ffffff;
     padding-bottom: 8px;
 }
+
 /*标题SPAN元素*/
-.DLTitle .spanTitle{
+.DLTitle .spanTitle {
     display: block;
     float: left;
     width: 90%;
@@ -41,8 +44,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 /*收藏图标*/
-.DLTitle span:last-child{
+.DLTitle span:last-child {
     display: block;
     float: right;
     margin-top: 12px;
@@ -52,10 +56,12 @@
     background: url("../images/so1.png") no-repeat;
     cursor: pointer;
 }
-.DLTitle span:last-child:hover{
+
+.DLTitle span:last-child:hover {
     background: url("../images/so2.png") no-repeat;
 }
-.DLHead{
+
+.DLHead {
     /*background: #f5f5f5;*/
     border: 1px solid #f5f5f5;
     width: 100%;
@@ -66,35 +72,40 @@
 }
 
 /*招标方式和延期时间*/
-.DLHTitle{
+.DLHTitle {
     display: inline-block;
     width: 100%;
     border-bottom: 1px solid #06c27a;
     padding-bottom: 5px;
 }
+
 /*招标方式*/
-.DLHTitle ul li{
+.DLHTitle ul li {
     float: left;
     margin-left: 10px;
     margin-right: 10px;
+    color: #06c27a;
 }
+
 /*延期时间*/
-.DLHTitle span{
+.DLHTitle span {
     float: right;
     margin-right: 20px;
     color: #f27838;
 }
+
 /*时间轴*/
-.DLHAxis{
+.DLHAxis {
     margin-left: 40px;
     margin-top: 20px;
 }
-.DLHAxis li{
+
+.DLHAxis li {
     display: block;
     float: left;
 }
 
-.DLHTimeRound{
+.DLHTimeRound {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -105,31 +116,36 @@
     font-weight: 600;
     font-size: 16px;
 }
-.DLHTimeLine{
+
+.DLHTimeLine {
     width: 113px;
     height: 2px;
     background: #10ac96;
     margin-top: 20px;
 }
-.ShowTime{
+
+.ShowTime {
     background: #aab2bd;
 }
+
 /*事件名称和时间*/
-.DLHEvents{
+.DLHEvents {
     display: inline-block;
     float: left;
     margin-left: 22px;
     margin-top: 2px;
 }
-.DLHEvents li{
+
+.DLHEvents li {
     display: block;
     float: left;
     width: 80px;
     text-align: center;
-    margin-right:72px;
+    margin-right: 72px;
     margin-top: 4px;
 }
-.DLHEvents li span{
+
+.DLHEvents li span {
     display: inline-block;
     float: left;
     width: 80px;
@@ -138,25 +154,28 @@
     font-weight: 600;
     font-size: 12px;
 }
+
 /*内容 */
-.DLHCFalse{
+.DLHCFalse {
     display: block;
     width: 320px;
-    height:70px;
+    height: 70px;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -35px;
     margin-left: -160px;
 }
-.DLContent{
+
+.DLContent {
     border: 1px solid #f5f5f5;
     width: 100%;
     min-height: 400px;
     height: auto;
     position: relative;
 }
-.goSg{
+
+.goSg {
     display: block;
     background: #10ac86;
     color: #ffffff;
@@ -168,11 +187,13 @@
     border-radius: 5px;
     margin: 0 auto;
 }
-.goSg:hover{
+
+.goSg:hover {
     color: #ffffff;
     background: #06c27a;
 }
-.hTitle{
+
+.hTitle {
     font-size: 14px;
     color: #10ac86;
     margin-left: 10px;
@@ -181,29 +202,33 @@
     width: 80px;
     text-align: center;
 }
-.cTitle{
+
+.cTitle {
     padding-left: 10px;
     padding-right: 10px;
 }
 
 /*文件下载、报名*/
-.DLCFLift,.DLCFRight{
+.DLCFLift, .DLCFRight {
     float: left;
     width: 460px;
     height: 120px;
     border: 1px solid #f5f5f5;
     margin-top: 10px;
 }
-.DLCFLift{
+
+.DLCFLift {
     margin-right: 16px;
 }
-.FRp{
+
+.FRp {
     display: block;
     width: 130px;
     margin: 0 auto;
     font-size: 16px;
 }
-.TitleFile{
+
+.TitleFile {
     display: block;
     float: left;
     width: 120px;
@@ -212,26 +237,90 @@
     margin: 0 10px;
     cursor: pointer;
 }
-.ImgFile{
+
+.ImgFile {
     width: 60px;
-    height:auto;
-    margin:0 auto;
+    height: auto;
+    margin: 0 auto;
     display: block;
 }
-.TitleFile h4{
+
+.TitleFile h4 {
     font-size: 14px;
     color: #10ac86;
     text-align: center;
     margin-top: 3px;
 }
+
 /*右测-浏览量*/
-.DetailsRight{
+.DetailsRight {
     width: 20%;
     /*position: fixed;*/
     /*border: 1px solid #10ac86;*/
 }
-.DRTop{
+
+.DRTop {
     width: 100%;
-    height: 150px;
+    min-height: 150px;
+    height: auto;
     border: 1px solid #e4e4e4;
+    position: relative;
+}
+
+.DRTop p {
+    font-size: 14px;
+    border-bottom: 1px solid #e4e4e4;
+    padding-left: 10px;
+}
+.DRTop p span{
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    background: url("../images/zj.png") no-repeat 0 0/16px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.DRTop ul li{
+    display: block;
+    margin-left: 10px;
+    color: #10ac86;
+    padding-bottom: 5px;
+    width: 230px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.DRTop ul li:hover{
+    color: #06c27a;
+}
+.DRTSign{
+    position: absolute;
+    display: block;
+    float: left;
+    width: 180px;
+    height: 50px;
+    left: 50%;
+    top: 50%;
+    margin-left: -90px;
+    margin-top: -25px;
+}
+.DRTSign p{
+    color: #aab2bd;
+    border-bottom: none;
+}
+.DRTSign a{
+    display: block;
+    margin: 0 auto;
+    background: #10ac86;
+    text-align: center;
+    width: 90px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 3px 0;
+}
+.DRTSign a:hover{
+    background: #06c27a;
 }
