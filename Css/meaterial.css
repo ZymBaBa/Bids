@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a, img {
+    border: 0;
+}
+
+/* select */
+.select {
+    padding: 5px 10px;
+    border: #ddd 1px solid;
+    border-radius: 4px;
+    width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 14px
+}
+
+.select li {
+    list-style: none;
+    padding: 10px 0 5px 100px
+}
+
+.select .select-list {
+    border-bottom: #eee 1px dashed;
+    position: relative;
+    padding-right: 35px;
+}
+
+.select .select-list span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 5px 5px;
+    margin-top: 5px;
+    color: #10ac86;
+}
+
+.select .select-list span:hover {
+    color: #06C27A;
+}
+
+.select dl {
+    zoom: 1;
+    position: relative;
+    line-height: 24px;
+}
+
+.select dl:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden
+}
+
+.select dt {
+    width: 100px;
+    margin-bottom: 5px;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    text-align: right;
+    color: #666;
+    height: 24px;
+    line-height: 24px
+}
+
+.select dd {
+    float: left;
+    display: inline;
+    margin: 0 0 5px 5px;
+    padding-top: 2px;
+}
+
+.select a {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 2px 10px;
+    text-decoration: none;
+    color: #434a54;
+    border-radius: 2px;
+}
+
+.select a:hover {
+    color: #fff;
+    background-color: #87d5c2;
+}
+
+.select .selected a {
+    color: #fff;
+    background-color: #10ac86;
+}
+
+.select-result dt {
+    font-weight: bold
+}
+
+.select-no {
+    color: #999
+}
+
+.select .select-result a {
+    line-height: 17px;
+    padding-right: 20px;
+    background: #10ac86 url("../images/close.gif") right 5px no-repeat
+}
+
+.select .select-result a:hover {
+    background-position: right -20px;
+    background-color: #06C27A;
+}
+
+/*列表*/
+.metContent {
+    margin-top: 10px;
+}
+.metContent>div:last-child{
+    border-bottom: none;
+}
+.metList {
+    cursor: pointer;
+    border-bottom: 1px solid #e4e4e4;
+    display: block;
+    float: left;
+    margin: 3px 0;
+    padding: 3px 0;
+    width: 100%;
+}
+
+.metLogo, .metCent, .metTimeS {
+    float: left;
+    display: block;
+}
+.metLogo{
+    width: 70px;
+    height: 35px;
+}
+/*竞价、综合、保险正常按钮形态*/
+.metLogo1 {
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #10ac86;
+    margin-right: 4px;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+/*综合颜色*/
+.metLogoZ{
+    background: #f27838;
+}
+/*无需保险*/
+.metLogoW{
+    background: none;
+    color: #aab2bd;
+    border: 1px solid #aab2bd;
+}
+
+
+.metCent {
+    padding-left: 20px;
+    width: 58%;
+    line-height: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+}
+.metCent a:hover {
+    color: #06C27A;
+}
+
+.metTimeS {
+    width: 35%;
+    text-align: left;
+    line-height: 32px;
+    font-size: 12px;
+    color: #10ac86;
+    margin-left: 12px;
+}
+
+.metTimeS span {
+    color: #f27838;
+    margin-right: 8px;
+}
+/*非报名阶段的文字颜色*/
+.notRge{
+    color: #aab2bd;
+}
+/*无需要保险*/
+
+/*综合招标*/
