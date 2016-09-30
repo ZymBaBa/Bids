@@ -10,7 +10,7 @@ $(function () {
         layer.open({
             title: '延期招标',
             type: 1,
-            closeBtn: 0, //不显示关闭按钮
+            closeBtn: 1, //不显示关闭按钮
             shift: 2,
             move: '.mine-move',
             shadeClose: true, //开启遮罩关闭
@@ -28,7 +28,7 @@ $(function () {
         layer.open({
             title: '报名查看',
             type: 1,
-            closeBtn: 0, //不显示关闭按钮
+            closeBtn: 1, //不显示关闭按钮
             shift: 2,
             move: '.mine-move',
             shadeClose: true, //开启遮罩关闭
@@ -46,7 +46,7 @@ $(function () {
         layer.open({
             title: '报名查看',
             type: 1,
-            closeBtn: 0, //不显示关闭按钮
+            closeBtn: 1, //不显示关闭按钮
             shift: 2,
             move: '.mine-move',
             shadeClose: true, //开启遮罩关闭
@@ -63,7 +63,7 @@ $(function () {
     function selectCost() {
         layer.tab({
             type: 1,
-            closeBtn: 0,
+            closeBtn: 1,
             shift: 2,
             area: '700px',
             move: '.mine-move',
@@ -89,7 +89,7 @@ $(function () {
         layer.open({
             title: '选标',
             type: 1,
-            closeBtn: 0, //不显示关闭按钮
+            closeBtn: 1, //不显示关闭按钮
             shift: 2,
             move: '.mine-move',
             shadeClose: true, //开启遮罩关闭
@@ -110,7 +110,7 @@ $(function () {
         layer.open({
             title: '交标书',
             type: 1,
-            closeBtn: 0, //不显示关闭按钮
+            closeBtn: 1, //不显示关闭按钮
             shift: 2,
             move: '.mine-move',
             shadeClose: true, //开启遮罩关闭
@@ -129,12 +129,12 @@ $(function () {
         layer.open({
             title: '报价',
             type: 1,
-            closeBtn: 0, //不显示关闭按钮
+            closeBtn: 1, //不显示关闭按钮
             shift: 2,
             move: '.mine-move',
             shadeClose: true, //开启遮罩关闭
             content: $("#supplyCost"),
-            area: '350px',//这样设置的话高度自增的
+            area: '650px',//这样设置的话高度自增的
         });
     }
 
@@ -148,12 +148,12 @@ $(function () {
         layer.open({
             title: '查看报价',
             type: 1,
-            closeBtn: 0, //不显示关闭按钮
+            closeBtn: 1, //不显示关闭按钮
             shift: 2,
             move: '.mine-move',
             shadeClose: true, //开启遮罩关闭
             content: $("#BidsCostWait"),
-            area: '450px',//这样设置的话高度自增的
+            area: '650px',//这样设置的话高度自增的
         });
     }
 
@@ -164,7 +164,7 @@ $(function () {
     function biddingDelete() {
         layer.confirm('是否删除些条记录？', {
             title:'重要提示',
-            closeBtn:0,
+            closeBtn:1,
             shadeClose:true,
             btn: ['删除', '取消'] //按钮
         }, function () {
@@ -184,12 +184,12 @@ $(function () {
         layer.open({
             title: '上传合同',
             type: 1,
-            closeBtn: 0, //不显示关闭按钮
+            closeBtn: 1, //不显示关闭按钮
             shift: 2,
             move: '.mine-move',
             shadeClose: true, //开启遮罩关闭
             content: $("#upPact"),
-            area: '400px',//这样设置的话高度自增的
+            area: '500px',//这样设置的话高度自增的
             btn: ['确认', '取消'],
         });
     }
@@ -218,7 +218,7 @@ $(function () {
     function upCheckNo() {
         layer.confirm('是否驳回验收？', {
             title:'驳回验收',
-            closeBtn:0,
+            closeBtn:1,
             shadeClose:true,
             btn: ['驳回', '取消'] //按钮
         }, function () {
@@ -238,7 +238,7 @@ $(function () {
     function upPact() {
         layer.confirm('是否确认此份合同？', {
             title:'合同确认',
-            closeBtn:0,
+            closeBtn:1,
             shadeClose:true,
             btn: ['签约', '驳回'] //按钮
         }, function () {
@@ -256,7 +256,7 @@ $(function () {
     function askCheck() {
         layer.confirm('是否向招标方申请验收？', {
             title:'申请验收',
-            closeBtn:0,
+            closeBtn:1,
             shadeClose:true,
             btn: ['申请', '取消'] //按钮
         }, function () {
@@ -276,12 +276,12 @@ $(function () {
         layer.open({
             title: '修改密码',
             type: 1,
-            closeBtn: 0, //不显示关闭按钮
+            closeBtn: 1, //不显示关闭按钮
             shift: 2,
             move: '.mine-move',
             shadeClose: true, //开启遮罩关闭
             content: $("#revamp"),
-            area: '350px',//这样设置的话高度自增的
+            area: '500px',//这样设置的话高度自增的
             btn: ['修改', '取消'],
         });
     }
@@ -293,12 +293,12 @@ $(function () {
         layer.open({
             title: '旧手机号码验证',
             type: 1,
-            closeBtn: 0, //不显示关闭按钮
+            closeBtn: 1, //不显示关闭按钮
             shift: 2,
             move: '.mine-move',
             shadeClose: true, //开启遮罩关闭
             content: $("#revampTel"),
-            area: '350px',//这样设置的话高度自增的
+            area: '500px',//这样设置的话高度自增的
             btn: ['验证', '取消'],
             btn1:function (index) {
                 layer.close(index);
@@ -325,12 +325,12 @@ $(function () {
         layer.open({
             title: '选标密码',
             type: 1,
-            closeBtn: 0, //不显示关闭按钮
+            closeBtn: 1, //不显示关闭按钮
             shift: 2,
             move: '.mine-move',
             shadeClose: true, //开启遮罩关闭
             content: $("#setBidsPwFist"),
-            area: '350px',//这样设置的话高度自增的
+            area: '500px',//这样设置的话高度自增的
             btn: ['设置', '取消'],
         });
     }
@@ -343,12 +343,12 @@ $(function () {
         layer.open({
             title: '设置关键字',
             type: 1,
-            closeBtn: 0, //不显示关闭按钮
+            closeBtn: 1, //不显示关闭按钮
             shift: 2,
             move: '.mine-move',
             shadeClose: true, //开启遮罩关闭
             content: $("#addKeyword"),
-            area: '240px',//这样设置的话高度自增的
+            area: '500px',//这样设置的话高度自增的
             btn: ['设置', '取消'],
         });
     }

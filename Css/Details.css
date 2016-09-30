@@ -43,7 +43,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
+/*招标编号*/
+.bidsNum{
+    margin-top: 10px;
+    color: #aab2bd;
+}
 /*收藏图标*/
 .DLTitle span:last-child {
     display: block;

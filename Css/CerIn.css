@@ -54,60 +54,36 @@
 
 .form-item {
     position: relative;
-    border: solid 1px #ddd;
+    /*border: solid 1px #ddd;*/
     width: 500px;
     height: 52px;
     margin-bottom: 14px;
 }
 
-.form-item span {
+.spanTitle {
     float: left;
-    width: 130px;
+    width: 170px;
     height: 52px;
     line-height: 52px;
-    padding-left: 20px;
     padding-right: 20px;
     font-size: 14px;
     text-align: center;
 }
-
-.form-item .field {
-    border: 0 none;
-    font-size: 14px;
+.spanIn{
     width: 250px;
-    height: 16px;
-    margin-top: 8px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-    z-index: 100;
+    text-align: left;
 }
-.form-item input[type='file']{
-    margin: 0;
+.reg-form{
+    width: 500px;
+    float: left;
 }
-.form-item select{
-    width: 260px;
-    border-right: none;
-    border-left: none;
-    border-top: none;
-    margin-top:18px;
-}
-.form-item select:hover{
-    outline: none;
-}
-.form-ck input{
-    width: 18px;
-    height: 18px;
-    border: solid 1px #cfd1d3;
-    vertical-align: text-top;
-    padding: 0;
-    margin: 0;
-    margin-right: 10px;
-    -webkit-appearance: checkbox;
-}
-.form-ck a{
-    color: #f27838;
-    font-size: 12px;
+/*企业执照*/
+.ELImg{
+    margin-top: 10px;
+    display: block;
+    width: 300px;
+    height: 400px;
+    background: #f5f5f5 url("../images/P60810.jpg") 0 0/300px no-repeat ;
 }
 .form-item .getCode{
     position: absolute;

@@ -3,25 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="Js/jquery.min.js"></script>
-    <script>
-        $(function () {
-           var oUl=document.getElementById('kUl');
-            var kUi=oUl.getElementsByTagName('li');
-            alert(kUi.length);
-        })
-    </script>
+    <link rel="stylesheet" href="Css/hemaStyle.css">
+    <style type="text/css">
+        #bidsIn {
+            display: block;
+            width: 380px;
+            overflow: hidden;
+            zoom:1;
+            margin:  0 auto;
+            color: #aab2bd;
+            -moz-box-shadow:5px 5px 5px #f5f5f5;
+            -webkit-box-shadow:5px 5px 5px #f5f5f5;
+            box-shadow:5px 5px 5px #f5f5f5;
+        }
+        #bidsIn ul li{
+            display: block;
+            float: left;
+            width: 350px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            margin-left: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        #bidsIn ul li span{
+            color: #10ac86;
+        }
+    </style>
 </head>
 <body>
-            <ul id="kUl">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
-            </ul>
+<div id="bidsIn">
+    <ul>
+        <li>招标单位：<span>嘉兴禾码科技服务有限公司</span></li>
+        <li>联系电话：<span>13967314931</span></li>
+        <li>标的名称：<span>研究级透反偏光显微镜项目单一来源招标公告研究级透反偏光显微镜项目单一来源招标公告研究级透反偏光显微镜项目单一来源招标公告</span></li>
+        <li>标的编号：<span>JXHEMA0001201609301000</span></li>
+        <li>招标阶段：<span>交标书\待报价\待选标</span></li>
+    </ul>
+</div>
 </body>
 </html>
