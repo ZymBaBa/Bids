@@ -1568,8 +1568,15 @@ body {
 
 .informConter ul {
     margin-left: 8px;
+    height: 150px;
+    overflow: hidden;
 }
-
+.informConter ul li{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 .informConter ul li a:hover {
     color: #10ac86;
 }
