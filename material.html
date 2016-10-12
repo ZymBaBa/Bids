@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="Css/meaterial.css">
     <script type="text/javascript" src="Js/jquery.min.js"></script>
     <script type="text/javascript" src="Js/material.js"></script>
+    <script src="Js/style.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -18,12 +19,21 @@
     <div class="header self">
         <div class="hdTitle self">
             <ul>
-                <li><a href="#">关注我们</a></li>
-                <li><a href="./law/law.html">招标规则</a></li>
-                <li><a href="./User/User.html">我的招标</a></li>
-                <li><a href="./User/User.html">我的投标</a></li>
-                <li><a href="sign.html">免费注册</a></li>
-                <li><a href="register.html">登录</a></li>
+                <ul>
+                    <li><a href="#">关注我们</a></li>
+                    <li><a href="rules.html">招标规则</a></li>
+                    <li id="bid" class="bid self"><a href="./User/User.html" >招标中心</a> <img src="images/down.png" id="img1">
+                        <ul id="bidList" class="bidListHid">
+                            <a href="./User/Bidding.html">我的招标</a>
+                            <a href="./User/Tender.html">我的投标</a>
+                            <a href="./User/Contract.html">合同管理</a>
+                            <a href="./Wallet/Wallet.html">我的钱包</a>
+                            <a href="./Publicmodules/accounts.html">账号安全</a>
+                        </ul>
+                    </li>
+                    <li><a href="sign.html">免费注册</a></li>
+                    <li><a href="register.html">登录</a></li>
+                </ul>
             </ul>
         </div>
     </div>
@@ -76,20 +86,6 @@
         </div>
     </div>
     <!--        End 网站导航-->
-    <!--       重要通知-->
-    <div class="notify self" style="display: none;">
-        <div class="hdTitle self">
-            <div class="messageTitle">重要通知</div>
-            <div class="messageList">
-                <ul>
-                    <li><a href="#">【重要通知】关于2017年招标通收费通知</a></li>
-                    <li><a href="#">【重要通知】8月部分企业履约纠纷处理公告</a></li>
-                    <li><a href="#">【规则通知】关于圣龙马招标网用户遵守变更通知</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--        End 重要内容-->
     <!--        核心内容-->
     <div class="container self">
         <!--筛选-->

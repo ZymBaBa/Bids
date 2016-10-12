@@ -14,6 +14,7 @@
     <!--核心JS-->
     <script src="Js/jquery-3.1.0.js"></script>
     <script src="Js/bootstrap.js"></script>
+    <script src="Js/style.js"></script>
     <script type="text/javascript">
         <!--左侧栏的选取效果-->
         $(function () {
@@ -34,12 +35,21 @@
     <div class="header self">
         <div class="hdTitle self">
             <ul>
-                <li><a href="#">关注我们</a></li>
-                <li><a href="rules.html">招标规则</a></li>
-                <li><a href="User/User.html">我的招标</a></li>
-                <li><a href="User/User.html">我的投标</a></li>
-                <li><a href="sign.html">免费注册</a></li>
-                <li><a href="register.html">登录</a></li>
+                <ul>
+                    <li><a href="#">关注我们</a></li>
+                    <li><a href="rules.html">招标规则</a></li>
+                    <li id="bid" class="bid self"><a href="./User/User.html" >招标中心</a> <img src="images/down.png" id="img1">
+                        <ul id="bidList" class="bidListHid">
+                            <a href="./User/Bidding.html">我的招标</a>
+                            <a href="./User/Tender.html">我的投标</a>
+                            <a href="./User/Contract.html">合同管理</a>
+                            <a href="./Wallet/Wallet.html">我的钱包</a>
+                            <a href="./Publicmodules/accounts.html">账号安全</a>
+                        </ul>
+                    </li>
+                    <li><a href="sign.html">免费注册</a></li>
+                    <li><a href="register.html">登录</a></li>
+                </ul>
             </ul>
         </div>
     </div>

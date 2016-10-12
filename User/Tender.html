@@ -13,6 +13,7 @@
     <!--当前页面CSS-->
     <link rel="stylesheet" href="../Css/UserStyle.css">
     <link rel="stylesheet" href="../Css/Bidding.css">
+    <script src="../Js/style.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -21,9 +22,16 @@
         <div class="hdTitle self">
             <ul>
                 <li><a href="#">关注我们</a></li>
-                <li><a href="../law/law.html">招标规则</a></li>
-                <li><a href="../User/User.html">我的招标</a></li>
-                <li><a href="../User/Tender.html">我的投标</a></li>
+                <li><a href="../rules.html">招标规则</a></li>
+                <li id="bid" class="bid self"><a href="../User/User.html" >招标中心</a> <img src="images/down.png" id="img1">
+                    <ul id="bidList" class="bidListHid">
+                        <a href="../User/Bidding.html">我的招标</a>
+                        <a href="../User/Tender.html">我的投标</a>
+                        <a href="../User/Contract.html">合同管理</a>
+                        <a href="../Wallet/Wallet.html">我的钱包</a>
+                        <a href="../Publicmodules/accounts.html">账号安全</a>
+                    </ul>
+                </li>
                 <li><a href="../sign.html">免费注册</a></li>
                 <li><a href="../register.html">登录</a></li>
             </ul>

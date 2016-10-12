@@ -37,3 +37,16 @@ $(function () {
 $(document).ready(function () {
     $("#calendar1").bootstrapDatepickr({date_format: "Y-m-d"});
 });
+
+$(function () {
+    $("#bid").mouseover(function () {
+        $("#bidList").removeClass("bidListHid").addClass("bidList");
+        $("#bid>a").css("color","#06c27a");
+        $("#img1").attr("src","images/up.png")
+    });
+    $("#bidList").mouseout(function () {
+        $("#bidList").removeClass("bidList").addClass("bidListHid");
+        $("#bid>a").css("color","#ffffff");
+        $("#img1").attr("src","images/down.png")
+    })
+})

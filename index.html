@@ -12,16 +12,7 @@
     <script src="Js/jquery-3.1.0.js"></script>
     <script src="Js/bootstrap.js"></script>
     <script src="Js/style.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $("#bid").mouseover(function () {
-                $("#bidList").removeClass("bidListHid").addClass("bidList")
-            });
-            $("#bidList").mouseout(function () {
-                $("#bidList").removeClass("bidList").addClass("bidListHid")
-            })
-        })
-    </script>
+
 </head>
 <body>
 <div class="wrap">
@@ -31,13 +22,13 @@
             <ul>
                 <li><a href="#">关注我们</a></li>
                 <li><a href="rules.html">招标规则</a></li>
-                <li  class="bid self"><a href="./User/User.html" id="bid">招标中心</a>
+                <li id="bid" class="bid self"><a href="./User/User.html" >招标中心</a> <img src="images/down.png" id="img1">
                     <ul id="bidList" class="bidListHid">
-                        <a href="#">我的招标</a>
-                        <a href="#">我的投标</a>
-                        <a href="#">合同管理</a>
-                        <a href="#">我的钱包</a>
-                        <a href="#">账号安全</a>
+                        <a href="./User/Bidding.html">我的招标</a>
+                        <a href="./User/Tender.html">我的投标</a>
+                        <a href="./User/Contract.html">合同管理</a>
+                        <a href="./Wallet/Wallet.html">我的钱包</a>
+                        <a href="./Publicmodules/accounts.html">账号安全</a>
                     </ul>
                 </li>
                 <li><a href="sign.html">免费注册</a></li>
@@ -52,7 +43,7 @@
             <div class="logo left self">
                 <a href="index.html"></a>
             </div>
-            <!--                搜索-->
+            <!--           搜索-->
             <div class="cast left">
                 <form id="formSerch" action="get">
                     <input type="text" value="请输入您所需要查找的内容或标底" id="inputBids">
@@ -91,19 +82,19 @@
             </ul>
         </div>
     </div>
-    <!--       重要通知-->
-    <div class="notify self">
-        <div class="hdTitle self">
-            <div class="messageTitle">重要通知</div>
-            <div class="messageList">
-                <ul>
-                    <li><a href="#">【重要通知】关于2017年招标通收费通知</a></li>
-                    <li><a href="#">【重要通知】8月部分企业履约纠纷处理公告</a></li>
-                    <li><a href="#">【规则通知】关于圣龙马招标网用户遵守变更通知</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <!--&lt;!&ndash;       重要通知&ndash;&gt;-->
+    <!--<div class="notify self">-->
+        <!--<div class="hdTitle self">-->
+            <!--<div class="messageTitle">重要通知</div>-->
+            <!--<div class="messageList">-->
+                <!--<ul>-->
+                    <!--<li><a href="#">【重要通知】关于2017年招标通收费通知</a></li>-->
+                    <!--<li><a href="#">【重要通知】8月部分企业履约纠纷处理公告</a></li>-->
+                    <!--<li><a href="#">【规则通知】关于圣龙马招标网用户遵守变更通知</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
     <!--        核心内容-->
     <div class="container self">
         <!--           广告、通知、规则-->
