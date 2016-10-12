@@ -2083,3 +2083,37 @@ border-bottom: none;
 .table{
     font-size: 14px;
 }
+/*招标中心下拉*/
+.bidListHid{
+    display: none;
+}
+.bidList{
+    display: block;
+    position: absolute;
+    background: #ffffff;
+    margin-left: 6px;
+    height: auto;
+    border-bottom: 1px solid #aab2bd;
+    -moz-box-shadow:4px 4px 5px #4d4c4d;
+    -webkit-box-shadow:4px 4px 5px #4d4c4d;
+    box-shadow:4px 4px 5px #4d4c4d;
+}
+.bidList a{
+    float: none;
+    display: block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    color: #333333 !important;
+    padding: 0 10px;
+    text-align: center;
+    margin-left: 0 !important;
+    border-bottom: 1px solid #aab2bd;
+}
+.bidList a:last-child{
+    border-bottom: none;
+}
+.bidList a:hover{
+    color: #10ac86 !important;
+    background: #ffffff;
+}

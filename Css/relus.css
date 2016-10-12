@@ -48,15 +48,16 @@
     display: block;
     float: left;
     height: auto;
-    width: 28%;
+    width: 20%;
     background: #ecf0f4;
     margin-right: 10px;
+    padding-bottom: 5px;
 }
 .conContent{
     float: left;
-    height: 30px;
-    width: 70%;
-    border: 1px solid #aab2bd;
+    height: auto;
+    width: 78%;
+    /*border: 1px solid #aab2bd;*/
 }
 .cLTile{
     height: 50px;
@@ -75,6 +76,10 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    cursor: pointer;
+}
+.CLCList li a{
+    color: #333333;
 }
 .cLSpan{
     margin: 0 10px;
@@ -86,4 +91,18 @@
     overflow-x: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+/*点击加上CLASS效果*/
+.addList{
+    background: #fff;
+    border-left:3px solid #06C27A;
+}
+/*内容*/
+#ccTile{
+    padding: 5px 10px;
+    font-size: 22px;
+    border-bottom:1px solid #aab2bd;
+}
+#ccContent{
+    padding: 5px 10px;
 }

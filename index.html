@@ -12,6 +12,16 @@
     <script src="Js/jquery-3.1.0.js"></script>
     <script src="Js/bootstrap.js"></script>
     <script src="Js/style.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#bid").mouseover(function () {
+                $("#bidList").removeClass("bidListHid").addClass("bidList")
+            });
+            $("#bidList").mouseout(function () {
+                $("#bidList").removeClass("bidList").addClass("bidListHid")
+            })
+        })
+    </script>
 </head>
 <body>
 <div class="wrap">
@@ -21,8 +31,15 @@
             <ul>
                 <li><a href="#">关注我们</a></li>
                 <li><a href="rules.html">招标规则</a></li>
-                <li><a href="./User/User.html">我的招标</a></li>
-                <li><a href="./User/User.html">我的投标</a></li>
+                <li  class="bid self"><a href="./User/User.html" id="bid">招标中心</a>
+                    <ul id="bidList" class="bidListHid">
+                        <a href="#">我的招标</a>
+                        <a href="#">我的投标</a>
+                        <a href="#">合同管理</a>
+                        <a href="#">我的钱包</a>
+                        <a href="#">账号安全</a>
+                    </ul>
+                </li>
                 <li><a href="sign.html">免费注册</a></li>
                 <li><a href="register.html">登录</a></li>
             </ul>
@@ -67,10 +84,10 @@
                 <li><a href="index.html" class="type-auto">首页</a></li>
                 <li><a href="material.html">物资采购</a></li>
                 <li><a href="Project.html">工程项目</a></li>
-                <li><a href="#">延期招标</a></li>
-                <li><a href="#">中标公告</a></li>
+                <li><a href="Extension.html">延期报名</a></li>
+                <li><a href="bidnotices.html">中标公告</a></li>
                 <li><a href="rules.html">招标规则</a></li>
-                <li><a href="#">通知公告</a></li>
+                <li><a href="notification.html">通知公告</a></li>
             </ul>
         </div>
     </div>
@@ -151,7 +168,7 @@
             <div class="inform">
                 <div class="inform-1">
                     <div class="informTitle"><span>通知公告</span>
-                        <a href="#" class="more"></a>
+                        <a href="notification.html" class="more"></a>
                     </div>
                     <div class="informConter">
                         <ul>
@@ -166,7 +183,7 @@
                 </div>
                 <div class="inform-1">
                     <div class="informTitle"><span>招标规则|法规</span>
-                        <a href="#" class="more"></a>
+                        <a href="rules.html" class="more"></a>
                     </div>
                     <div class="informConter">
                         <ul>
@@ -807,6 +824,7 @@
         </div>
     </div>
 </div>
+
 </body>
 
 </html>
